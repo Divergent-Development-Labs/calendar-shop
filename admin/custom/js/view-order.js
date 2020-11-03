@@ -1,78 +1,3 @@
-$( document ).ready(function() {
-
-    let profile_id = ($('#profileId').attr('value'));
-    if(!profile_id){
-        profile_id = 'all';
-    }
-    // console.log(profile_id);
-
-    $('#dz').DataTable( {
-
-        "processing": true,
-        "serverSide": true,
-        "buttons": true,
-        dom: 'Blfrtip',
-        buttons: [
-            {
-                extend: 'copy',
-                footer: true,
-                exportOptions: {
-                    columns: [0,1,2,3,4,5,6]
-                }
-            },
-            {
-                extend: 'print',
-                footer: true,
-                exportOptions: {
-                    columns: [0,1,2,3,4,5,6]
-                }
-            },
-            {
-                extend: 'colvis',
-                footer: true,
-            }
-        ],
-
-        "searching": true,
-        "ajax": ({
-            url:"ajax/loadOrderData.php",
-            method:"get",
-            data:{
-                customer_id: profile_id
-            },
-            dataType:"json",
-        }),
-        columns: [            
-            {
-                data: 'id'
-            },
-            {
-                data: 'customer_id'
-            },
-            {
-                data: 'subtotal'
-            },
-            {
-                data: 'gst'
-            },
-            {
-                data: 'total'
-            },
-            {
-                data: 'order_date'
-            },
-            {
-                data: 'payment_status'
-            },
-            {
-                data: 'action',
-                "orderable": false,
-            }
-        ]
-    });
-
-});
-
 function doPayment(orderId){
 
     console.log(switchElement = $(event.target));
@@ -128,7 +53,6 @@ function doPayment(orderId){
                         $(paymentElement).html('Unpaid');
                     }
                 
-                    amtCalc();
                 }
                 else{
                     alert('Someting went wrong 1');

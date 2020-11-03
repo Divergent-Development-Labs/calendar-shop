@@ -7,6 +7,8 @@
 
     $outp = new \stdClass();
 
+    $customer_id = $_GET['customer_id'];
+
     $offset = $_GET["start"];
     $limit = $_GET["length"];
     $order = $_GET["order"][0];
@@ -27,13 +29,23 @@
              $outp->recordsTotal = $c['COUNT(*)'];       
         }
 
-        if($search == ''){
-            $stmt = $conn->prepare("SELECT * FROM `orders` LIMIT $limit OFFSET $offset");
+        if($customer_id != 'all'){
+            if($search == ''){
+                $stmt = $conn->prepare("SELECT * FROM `orders` WHERE `customer_id` = '$customer_id' LIMIT $limit OFFSET $offset");
+            }
+            else{
+                $stmt = $conn->prepare("SELECT * FROM `orders` WHERE `customer_id` = '$customer_id' AND (CONVERT(`id` USING utf8) LIKE '%%$search%%' OR CONVERT(`subtotal` USING utf8) LIKE '%%$search%%' OR CONVERT(`gst` USING utf8) LIKE '%%$search%%' OR CONVERT(`total` USING utf8) LIKE '%%$search%%' OR CONVERT(`order_date` USING utf8) LIKE '%%$search%%') LIMIT $limit OFFSET $offset");
+            }
         }
         else{
-            $stmt = $conn->prepare("SELECT * FROM `orders` WHERE (CONVERT(`id` USING utf8) LIKE '%%$search%%' OR CONVERT(`subtotal` USING utf8) LIKE '%%$search%%' OR CONVERT(`gst` USING utf8) LIKE '%%$search%%' OR CONVERT(`total` USING utf8) LIKE '%%$search%%' OR CONVERT(`order_date` USING utf8) LIKE '%%$search%%') LIMIT $limit OFFSET $offset");
-        }
-            
+            if($search == ''){
+                $stmt = $conn->prepare("SELECT * FROM `orders` LIMIT $limit OFFSET $offset");
+            }
+            else{
+                $stmt = $conn->prepare("SELECT * FROM `orders` WHERE (CONVERT(`id` USING utf8) LIKE '%%$search%%' OR CONVERT(`subtotal` USING utf8) LIKE '%%$search%%' OR CONVERT(`gst` USING utf8) LIKE '%%$search%%' OR CONVERT(`total` USING utf8) LIKE '%%$search%%' OR CONVERT(`order_date` USING utf8) LIKE '%%$search%%') LIMIT $limit OFFSET $offset");
+            }
+        }        
+     
         $stmt->execute();
         $result = $stmt->get_result();
         
@@ -61,7 +73,7 @@
                 'action' => '<div class="d-flex justify-content-around">
                                 <input type="checkbox" id="switch'.$value['id'].'" switch="success" ' . ($value['payment_status'] == 'true' ? "checked" : '') . ' class="paymentBtn" onclick=doPayment(' . $value['id'] . ') />
                                 <label for="switch'.$value['id'].'" data-on-label="Paid" data-off-label="pay"></label>                                    
-                                <a type="button" onclick="deleteRow(this)" data-content="backend/delete-ledger.php?id=' . $value["id"] . '" class="delete-record-btn waves-effect waves-light" data-toggle="modal" data-target="#myModal" data-content="11">
+                                <a type="button" onclick="deleteRow(this)" data-content="backend/delete-ledger.php?id=' . $value["id"] . '" class="delete-record-btn ml-1 my-auto waves-effect waves-light" data-toggle="modal" data-target="#myModal" data-content="11">
                                     <i  data-container="body" data-toggle="tooltip" data-placement="top" title="Delete Record" class="fas fa-trash-alt font-size-16 text-danger mr-1"></i>
                                 </a>
                             </div>'

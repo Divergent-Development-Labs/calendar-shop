@@ -24,15 +24,8 @@
     $sql4 = "SELECT * FROM `size`";
     $sql5 = "SELECT * FROM `design`";
 
-    // $sizes = $conn->prepare($sql4);    
-    // $sizes->execute();
-    // $sizeArray = $sizes->get_result();
-    $sizeArray = ($conn->query($sql4))->fetch_all();
-
-    // $designs = $conn->prepare($sql5);    
-    // $designs->execute();
-    // $designArray = $designs->get_result();
-    $designArray = ($conn->query($sql5))->fetch_all();
+    $sizeArray = $conn->query($sql4);
+    $designArray = $conn->query($sql5);
 ?>
 <!Doctype html>
 <html>
@@ -59,109 +52,107 @@
                         </div>
                         <!-- end page title -->
 
-                        <div class="row">
-                            <div class="col-xl-12 mx-auto">
-                                <div class="card">
-                                    <div class="card-body">                                        
-                                        <div class="row">
-                                            <?php 
-                                                $customerId = $result->fetch_assoc()['customer_id'];
-                                                $sql1 = "SELECT * FROM `customer` WHERE `id`='$customerId'";
-                                                $customer = $conn->prepare($sql1);
-                                            
-                                                $customer->execute();
-                                            
-                                                $result1 = $customer->get_result();
-                                            
-                                                if($result1->num_rows > 0){
-                                                    while ($row = $result1->fetch_assoc()) { ?>
-          
-                                            <div class=" border my-2 p-2">
-                                                <div class=" d-lg-flex justify-content-end my-2">
-                                                    <label class="my-auto mr-3">Name</label>
-                                                    <div>
-                                                        <input value="<?php echo $row['name']; ?>" type="text" name="name" id="name" class="customerCheck form-control customer form-control-sm" required placeholder="Enter Customer Name"/>
-                                                    </div>
-                                                </div>
-                                                <div class=" d-lg-flex justify-content-end my-2">
-                                                    <label class="my-auto mr-3">Mobile Number</label>
-                                                    <div>
-                                                        <input value="<?php echo $row['mobile_number']; ?>" type="text" name="mobileNumber"  id="mobile_number" class="customerCheck form-control form-control-sm my-auto" 
-                                                                data-parsley-length="[10,10]"
-                                                                maxlength="10"
-                                                                placeholder="Enter Customer Mobile Number"/>
-                                                    </div>
-                                                </div>
-                                                <div class=" d-lg-flex justify-content-end my-2">
-                                                    <label class="my-auto mr-3">E-Mail</label>
-                                                    <div>
-                                                        <input value="<?php echo $row['email']; ?>" type="email" name="eMail" class="form-control form-control-sm my-auto" 
-                                                                parsley-type="email" placeholder="Enter Customer e-mail"/>
-                                                    </div>
-                                                </div>
-                                            </div>
+                        <div class="d-md-flex justify-content-around">
+                            <?php 
+                                $customerId = $result->fetch_assoc()['customer_id'];
+                                $sql1 = "SELECT * FROM `customer` WHERE `id`='$customerId'";
+                                $customer = $conn->prepare($sql1);
+                            
+                                $customer->execute();
+                            
+                                $result1 = $customer->get_result();
+                            
+                                if($result1->num_rows > 0){
+                                    while ($row = $result1->fetch_assoc()) { ?>
 
-                                            <div class=" justify-content-around border my-2 p-2">
-                                                <div class=" d-lg-flex justify-content-end my-2">
-                                                    <label class="my-auto mr-3">Address Line</label>
-                                                    <div>
-                                                        <input value="<?php echo $row['address_line']; ?>" type="text" name="addressLine1"
-                                                                class="form-control form-control-sm my-auto" 
-                                                                placeholder="Enter Door No, Street Name"/>
-                                                    </div>
-                                                </div>
-                                                <div class="d-lg-flex justify-content-end my-2">
-                                                    <label class="my-auto mr-3">Area</label>
-                                                    <div>
-                                                        <input value="<?php echo $row['area']; ?>" type="text" name="area"
-                                                                class="form-control form-control-sm my-auto" 
-                                                                placeholder="Enter Area Name / Land Mark"/>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class=" justify-content-around border my-2 p-2">
-                                                <div class="d-lg-flex justify-content-end  my-2">
-                                                    <label class="my-auto mr-3">District</label>
-                                                    <div>
-                                                        <input value="<?php echo $row['district']; ?>" type="text"  name="district"
-                                                                class="form-control form-control-sm my-auto" 
-                                                                placeholder="Enter Customer District"/>
-                                                    </div>
-                                                </div>
-                                                <div class="d-lg-flex justify-content-end my-2">
-                                                    <label class="my-auto mr-3">State</label>
-                                                    <div>
-                                                        <input value="<?php echo $row['state']; ?>" type="text" name="state"
-                                                                class="form-control form-control-sm my-auto" 
-                                                                placeholder="Enter Customer State"/>
-                                                    </div>
-                                                </div>
-                                                <div class="d-lg-flex justify-content-end my-2">
-                                                    <label class="my-auto mr-3">Pin Code</label>
-                                                    <div>
-                                                    <input value="<?php echo $row['pincode']; ?>" type="text" class="form-control form-control-sm my-auto"  name="pinCode"
-                                                                data-parsley-length="[6,6]"
-                                                                maxlength="6"
-                                                                placeholder="Enter Pincode"/>
-                                                    </div>
+                                        <div class="card col-sm-5">
+                                            <div class="card-body">
+                                                <h4 class="card-title mb-4">Personal Information</h4>
+                                                <div class="table-responsivez">
+                                                    <table class="table table-nowrap mb-0 w-100" >
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">Full Name :</th>
+                                                                <td><?php echo $row['name']; ?></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">Mobile :</th>
+                                                                <td><?php echo $row['mobile_number']; ?></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">E-mail :</th>
+                                                                <td><?php echo $row['email']; ?></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">Location :</th>
+                                                                <td><?php echo $row['address_line'] .', ' . $row['area'] .',<br> ' . $row['district'] .', ' . $row['state'] . ',<br>' . $row['pincode']; ?></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
-                                                  <?php }
-                                                } ?>
                                         </div>
+                                        <?php 
+                                    }
+                                } 
+                                ?>
+                            <div class="card col-sm-5">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-3">Order Summary</h4>
+
+                                    <div class="table-responsive">
+                                        <table class="table mb-0">
+                                            <tbody>
+                                                <?php 
+                                                    $orders_summary = $conn->prepare($sql);
+                                                    $orders_summary->execute();
+                                                    $result3 = $orders_summary->get_result();
+                                                    while($row_summary = $result3->fetch_assoc()){
+                                                        ?>
+                                                <tr>
+                                                    <td>Grand Total :</td>
+                                                    <td><?php echo $row_summary['subtotal'];?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CGST Tax :</td>
+                                                    <td><?php echo ($row_summary['gst'] / 2); ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>SGST Tax :</td>
+                                                    <td><?php echo ($row_summary['gst'] / 2); ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Total :</th>
+                                                    <td><?php echo $row_summary['total']; ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Payment Status :
+                                                        <span class="paymentStatus"  id="spanswitch<?php echo $row_summary['id'];?>"><?php echo ($row_summary['payment_status'] == 'true' ? 'Paid' : 'Unpaid');?></span>
+                                                    </th>
+                                                    <td>
+                                                        <input type="checkbox" id="switch<?php echo $row_summary['id']; ?>" switch="success" <?php echo ($row_summary['payment_status'] == 'true') ? "checked" : ''; ?> class="paymentBtn" onclick="doPayment(<?php echo $row_summary['id'];?>)" />
+                                                        <label for="switch<?php echo $row_summary['id'];?>" data-on-label="Paid" data-off-label="pay"></label>                                    
+                                                    </td>
+                                                </tr>
+                                                <?php
+                                                    }
+                                                ?>
+                                            </tbody>
+                                        </table>
                                     </div>
+                                    <!-- end table-responsive -->
                                 </div>
-                            </div> <!-- end col -->
+                            </div><!-- end card -->                                    
                         </div> <!-- end row -->
 
                         <div class="row">
-                            <div class="col-xl-8">
+                            <div class="col-12">
                                 <div class="card">
-                                    <div class="card-header  bg-white">
+                                    <div class="card-header pb-0 bg-white">
                                         <h4 class="mb-0 font-size-18">Products</h4>
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body pt-0">
                                         <div class="table-responsive">
                                             <table class="table table-centered mb-0 table-nowrap">
                                                 <thead class="thead-light">
@@ -189,25 +180,19 @@
                                                             while($rowProduct = $copy->fetch_assoc()){
                                                                 echo '<tr>';
                                                                 echo '<td>'.$sno.'</td>';
-                                                                while($design = $designArray[0]) { 
-                                                                    if($design['id'] == $rowProduct['design']){
-                                                                        echo '<td><img src="https://drive.google.com/thumbnail?id='.$design['design_link'].'" alt="product-img" title="product-img" class="avatar-md" /></td>';
-                                                                    }
-                                                                }    
-                                                                $result -> free_result();    
-                                                                // // foreach ($sizeArray as $key => $value) {
-                                                                // //     echo $value;
-                                                                // //     # code...
-                                                                // } 
-                                                                if($sizeArray->num_rows > 0){
-                                                                    while($size = $sizeArray->fetch_assoc()) { 
-                                                                        echo $size['id'];
-                                                                        echo '<br>';
-                                                                        if($size['id'] == $rowProduct['size']){
-                                                                            echo '<td><h5 class="font-size-14 text-truncate"><a href="ecommerce-product-detail.html" class="text-dark">'.$size['size_label'].'</a></h5></td>';
+                                                                if($designArray->num_rows > 0){
+                                                                        foreach ($designArray as $key => $value) {
+                                                                        if($value['id'] == $rowProduct['design']){
+                                                                            echo '<td><img src="https://drive.google.com/thumbnail?id=' . $value['design_link'] . '" alt="product-img" title="product-img" class="avatar-md" /></td>';
                                                                         }
-                                                                    }    
-                                                                    $result -> free_result();
+                                                                    }
+                                                                }
+                                                                if($sizeArray->num_rows > 0){
+                                                                    foreach ($sizeArray as $key => $value) {
+                                                                        if($value['id'] == $rowProduct['size']){
+                                                                            echo '<td><h5 class="font-size-14 text-truncate"><a href="ecommerce-product-detail.html" class="text-dark">'.$value['size_label'].'</a></h5></td>';
+                                                                        }
+                                                                    }
                                                                 }
                                                                 echo '<td><span>'.$rowProduct['rate'].'</span></td>';
                                                                 echo '<td><span>'.$rowProduct['quantity'].'</span></td>';
@@ -219,63 +204,12 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div class="row mt-4">
-                                            <div class="col-sm-6">
-                                                <a href="ecommerce-products.html" class="btn btn-secondary">
-                                                    <i class="mdi mdi-arrow-left mr-1"></i> Continue Shopping </a>
-                                            </div> <!-- end col -->
-                                            <div class="col-sm-6">
-                                                <div class="text-sm-right mt-2 mt-sm-0">
-                                                    <a href="ecommerce-checkout.html" class="btn btn-success">
-                                                        <i class="mdi mdi-cart-arrow-right mr-1"></i> Checkout </a>
-                                                </div>
-                                            </div> <!-- end col -->
-                                        </div> <!-- end row-->
                                     </div>
                                 </div>
-                            </div> <!-- end col -->
-                            <div class="col-xl-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-3">Order Summary</h4>
-
-                                        <div class="table-responsive">
-                                            <table class="table mb-0">
-                                                <tbody>
-                                                    <?php 
-                                                        $orders_summary = $conn->prepare($sql);
-                                                        $orders_summary->execute();
-                                                        $result3 = $orders_summary->get_result();
-                                                        while($row_summary = $result3->fetch_assoc()){
-                                                            ?>
-                                                    <tr>
-                                                        <td>Grand Total :</td>
-                                                        <td><?php echo $row_summary['subtotal'];?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>CGST Tax :</td>
-                                                        <td><?php echo ($row_summary['gst'] / 2); ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>SGST Tax : </td>
-                                                        <td><?php echo ($row_summary['gst'] / 2); ?></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Total :</th>
-                                                        <td><?php echo $row_summary['total']; ?></td>
-                                                    </tr>
-                                                    <?php
-                                                        }
-                                                    ?>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <!-- end table-responsive -->
-                                    </div>
-                                </div>
-                            </div> <!-- end row -->
-
+                            </div> <!-- end col -->                    
+                        </div>
                     <?php include 'footer.php'; ?>
-                    <script src="assets/js/pages/ecommerce-cart.init.js"></script>
+                    <script src="custom/js/view-order.js"></script>
+                    <!-- <script src="assets/js/pages/ecommerce-cart.init.js"></script> -->
     </body>
 </html>

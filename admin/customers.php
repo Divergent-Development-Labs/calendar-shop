@@ -13,7 +13,7 @@
                             <div class="col-12">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
                                     <h4 class="mb-0 font-size-18">Projects</h4>
-                                    <a  href="add-project.php" type="button" class="btn btn-success font-weight-bold"><i class="fas fa-plus mr-1"></i> Add Project</a>
+                                    <a  href="new-customer.php" type="button" class="btn btn-success font-weight-bold"><i class="fas fa-plus mr-1"></i> Add Customer</a>
                                 </div>
                             </div>
                         </div>

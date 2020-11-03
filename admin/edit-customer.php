@@ -42,7 +42,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
-                                    <h4 class="mb-0 font-size-18">Customer Profile</h4>
+                                    <h4 class="mb-0 font-size-18" value="<?php echo $_GET['id']; ?>" id="profileId">Customer Profile</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
@@ -192,40 +192,38 @@
                                 </div>     
                             </div>                               
                         </div>
-
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <!-- <table id="dz" class="table table-hover table-bordered nowrap" > -->
+                
+                                        <!-- <table id="dz" class="table table-bordered dt-responsive nowrap table-hover" style="border-collapse: collapse; border-spacing: 0; width: 100%;"> -->
                                         <table id="dz" class="table table-hover table-bordered dt-responsive display" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                             <thead>
-                                                <tr>
-                                                    <th>Created At</th>
-                                                    <th>Ledger Id</th>
-                                                    <th>Invoice Id</th>
-                                                    <th>Bags</th>
-                                                    <th>Weight</th>
-                                                    <th>Oil Content</th>
-                                                    <th>Price Method</th>
-                                                    <th>Rate</th>
-                                                    <th>Unit Rate</th>
-                                                    <th>Total Cost</th>
+                                                <tr >
+                                                    <!-- <th><input id="all_ids" type="checkbox" name="all_ids" value="" class="myCustomCheckBox all_ids font-warning" /></th> -->
+                                                    <th>Id</th>
+                                                    <th>Customer Name</th>
+                                                    <th>subtotal</th>
+                                                    <th>gst</th>
+                                                    <th>Total Amount</th>
+                                                    <th>Order Date</th>
                                                     <th>Payment Status</th>
-                                                    <th>Payment Date</th>
                                                     <th>Action</th>
                                                 </tr>
-                                            </thead>            
-                                            <tbody id="tBody" class="text-center">
+                                            </thead>                
+                                            <tbody id="tBody">
                                             </tbody>
                                         </table>
+        
                                     </div>
                                 </div>
                             </div> <!-- end col -->
                         </div> <!-- end row -->        
-
+    
                     <?php include 'footer.php'; ?>
-        <script src="custom/js/edit-customer.js"></script>
+        <script src="custom/js/orders-table.js"></script>
+        <script src="custom/js/general.js"></script>
         <?php include 'datatables.php' ?>
 
     </body>
