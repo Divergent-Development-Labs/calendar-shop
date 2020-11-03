@@ -67,7 +67,7 @@
                 'customer_id' => '<a href="edit-customer.php?id='.$value['customer_id'].'">'.$customerName.'</a>',            
                 'subtotal' => $value['subtotal'],            
                 'gst' => $value['gst'],            
-                'total' => $value['total'],            
+                'total' => '<span class="totalCost">'.$value['total'].'</span>', 
                 'order_date' => $value['order_date'],            
                 'payment_status' => '<span class="paymentStatus"  id="spanswitch'.$value['id'].'">'.($value['payment_status'] == 'true' ? 'Paid' : 'Unpaid').'</span>',
                 'action' => '<div class="d-flex justify-content-around">

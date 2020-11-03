@@ -41,72 +41,14 @@ $(document).ready(function() {
     });
 
     setTimeout(()=> {
-        var customerName = $('#customerName').val();
-
-        $('#dz').DataTable( {
-            "processing": true,
-            "serverSide": true,
-            // "paging" : false,
-            "buttons": true,
-            dom: 'Blfrtip',
-            buttons: [
-                {
-                    extend: 'copy',
-                    footer: true,
-                    exportOptions: {
-                        columns: [0,1,2,3,4,5,6,7,8,9,10,11]
-                    }
-                },
-                {
-                    extend: 'print',
-                    footer: true,
-                    exportOptions: {
-                        columns: [0,1,2,3,4,5,6,7,8,9,10,11]
-                    }
-                },
-                {
-                    extend: 'colvis',
-                    footer: true,
-                }
-            ],
-
-            // "searching": false,
-            "ajax": {
-                "url": "ajax/loadCustomerData.php",
-                "data": {
-                    "name": customerName
-                },                
-            },
-            columns: [
-                {data: 'createdAt'},
-                {data: 'ledgerId'},
-                {data: 'invoiceId'},
-                {data: 'bags'},
-                {data: 'weight'},
-                {data: 'oilContent'},
-                {data: 'priceMethod'},
-                {data: 'rate'},
-                {data: 'unitRate'},
-                {data: 'totalCost'},
-                {data: 'paymentStatus'},
-                {data: 'paymentDate'},
-                {
-                    data: 'action',
-                    "orderable": false,
-                    "order": [],
-                }
-            ],
-            "fnInitComplete": function (oSettings, json) {
-                amtCalc();
-            }
-        });
-
+        amtCalc();
     }, 100);
 
 } );
 
 
 function amtCalc(){
+    console.log('amt calc called');
     span = $('td span.totalCost');
     paymentSpan = $('td span.paymentStatus');
 
@@ -138,28 +80,23 @@ function amtCalc(){
     // },200);    
 }
 
-function doPayment(ledgerId){
-    customerName = $('#customerName').val();
+function doPayment(orderId){
 
     console.log(switchElement = $(event.target));
     
     targetId = $(event.target).attr('id');
     
-    paymentDateElement = $('#paymentDate'+targetId);
-
-    paymentDate = $(paymentDateElement).val();
-
     console.log(state = $(switchElement).prop('checked'));
 
     paymentElement = $('#span'+targetId);
 
-    console.log(ledgerId, customerName, $(paymentElement));
+    console.log(orderId, $(paymentElement));
 
     console.log('doPayment calling');
 
     error = 2;
 
-    if(ledgerId!="" && customerName!="")
+    if(orderId!="")
     {
 
         var r = confirm("Are you sure to change the Payment Status?");
@@ -170,18 +107,10 @@ function doPayment(ledgerId){
         }
         else{
             if(state == true){
-                if($(paymentDateElement).val() == ''){
-                    alert('Kindly Select Payment Date')
-                    $(switchElement).prop('checked', !state);
-                    return false;
-                }
-                else{
                     isPaid = true;
-                }
             }
             else{
                 isPaid = false;
-                paymentDate = '';
             }    
         }
 
@@ -190,9 +119,7 @@ function doPayment(ledgerId){
             url:"ajax/doPayment.php",
             method:"post",
             data:{
-                ledgerId:ledgerId,
-                customerName:customerName,
-                paymentDate:paymentDate,
+                orderId:orderId,
                 isPaid: isPaid,
             },
             dataType:"json",
@@ -205,16 +132,13 @@ function doPayment(ledgerId){
                         $(paymentElement).html('Paid');
                     }
                     else{
-                        $(paymentElement).html('Pending');
-                        $(paymentDateElement).val('');
+                        $(paymentElement).html('Unpaid');
                     }
-                
-                    amtCalc();
+                    amtCalc();            
                 }
                 else{
                     alert('Someting went wrong 1');
                     $(switchElement).prop('checked', !state);
-                    // $(paymentDateElement).val('');
                     error = 1;
                 }
             }
@@ -227,4 +151,5 @@ function doPayment(ledgerId){
         error = 1;
         $(switchElement).prop('checked', !state);
     }
+
 }
