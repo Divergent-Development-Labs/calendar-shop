@@ -1,0 +1,126 @@
+table, input, select, button{
+    font-size: small !important;
+}
+
+.rupees{
+    width: 200px;
+    text-align: right !important;
+}
+
+.projectDropDown, .projectDropDown select{
+    min-width: 100px !important;
+    width: 130px !important;
+    text-align: start !important;
+}
+
+.serialNo{
+    width: 20px;
+}
+
+.e-div, .e-table{
+    width: 80% !important;
+    margin-left: 20% !important;
+}
+
+.e-table{
+    text-align: right !important;
+}
+
+.logo span img{
+    border-radius: 30px !important;
+}
+
+.topnav .container-fluid{
+    max-width: 100% !important;
+}
+
+.page-content .container-fluid{
+    max-width: 100% !important;
+}
+
+td.serialNo {
+    vertical-align: middle !important;
+    text-align: center;
+    text-align-last: center;
+}
+
+.expenseInputs{
+    display: inline !important;
+    /* width: auto; */
+    /* height: 100%; */
+    padding: .25rem .5rem;
+    font-weight: 400;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da !important;
+    border-radius: .2rem;
+}
+
+.myDropdownUL{
+    border: 1px solid #eff2f7!important;
+    background-color: white!important;
+    padding-left: 0;
+    list-style: none;
+    position: relative!important;
+    width: 256px;
+    overflow: auto;
+    max-height: 300px;
+}
+.myDropdownUL li{
+    cursor: pointer;
+}
+
+.myDropdownUL li.active{
+    background-color: #556ee6 !important;
+    color: white !important;
+}
+
+.myCustomCheckBox{
+    width: 1rem;
+    height: 1.10938rem;
+}
+
+@media screen {
+    header.page-header {
+        display: none;        
+    }
+
+    div.page-footer {
+        display: none;
+    }
+}
+
+@media print {
+    .rupees{
+        width: auto;
+    }
+
+    .dropdown-content{
+        display: inline-block;
+        word-break: break-word !important;        
+    }
+
+}
+
+iframe{
+    width: 100% !important;
+}
+
+.bankloan-text{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px;}
+    25%  {background-color:yellow; left:200px;}
+    50%  {background-color:blue; left:0px;}
+    75%  {background-color:green; left:200px;}
+    100% {background-color:red; left:0px;}
+}

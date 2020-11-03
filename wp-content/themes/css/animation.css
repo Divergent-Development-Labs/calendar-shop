@@ -1,0 +1,30 @@
+.magictime{-webkit-animation-fill-mode: both;-moz-animation-fill-mode: both;-ms-animation-fill-mode: both;-o-animation-fill-mode: both;animation-fill-mode: both;}
+
+.move-forever {-webkit-animation-name: move-forever;animation-name: move-forever;-o-animation-name: move-forever;animation-name: move-forever;}
+@keyframes move-forever {
+0% {transform: translate3d(-90px, 0, 0);}
+100% {transform: translate3d(85px, 0, 0);}
+}
+
+.floating {-webkit-animation-name: floating;animation-name: floating;-o-animation-name: floating;animation-name: floating;}
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    35%  { transform: translate(0, 4px);}
+    to   { transform: translate(0, -0px); }    
+}
+@-webkit-keyframes floating {
+    from { transform: translate(0,  0px); }
+    35%  { transform: translate(0, 4px);}
+    to   { transform: translate(0, -0px); }    
+}
+.hrFloating {-webkit-animation-name: hrFloating;animation-name: hrFloating;-o-animation-name: hrFloating;animation-name: hrFloating;}
+@keyframes hrFloating {
+    from { transform: translate(0,  0px);}
+    35%  { transform: translate(6px, 0);}
+    to   { transform: translate(0, -0px);}    
+}
+@-webkit-keyframes hrFloating {
+    from { transform: translate(0,  0px);}
+    35%  { transform: translate(6px, 0);}
+    to   { transform: translate(0, -0px);}    
+}
