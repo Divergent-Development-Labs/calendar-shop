@@ -8,16 +8,17 @@
 
 	
 	<!-- This site is optimized with the Yoast SEO Premium plugin v15.1.2 - https://yoast.com/wordpress/plugins/seo/ -->
-	<title>red Archives - Tyche Demo</title>
+	<title>Shop - Page 2 of 2 - Tyche Demo</title>
 	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-	<link rel="canonical" href="https://demo.colorlib.com/tyche/product-tag/red/" />
+	<link rel="canonical" href="https://demo.colorlib.com/tyche/shop/" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content="red Archives - Tyche Demo" />
-	<meta property="og:url" content="https://demo.colorlib.com/tyche/product-tag/red/" />
+	<meta property="og:title" content="Shop - Page 2 of 2 - Tyche Demo" />
+	<meta property="og:description" content="raibercristianEd esmod sapien sit amet porttitor faucibus. Cras libero sapien, consequat ac sagittis non, dignissim et odio.Aenean iaculis sem eget lacus tempor, vel tristique eros congue. Mauris tempus ex ac ipsum rhoncus aliquet." />
+	<meta property="og:url" content="https://demo.colorlib.com/tyche/shop/" />
 	<meta property="og:site_name" content="Tyche Demo" />
 	<meta name="twitter:card" content="summary" />
-	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://demo.colorlib.com/tyche/#website","url":"https://demo.colorlib.com/tyche/","name":"Tyche Demo","description":"Just another colorlib.com site","potentialAction":[{"@type":"SearchAction","target":"https://demo.colorlib.com/tyche/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"CollectionPage","@id":"https://demo.colorlib.com/tyche/product-tag/red/#webpage","url":"https://demo.colorlib.com/tyche/product-tag/red/","name":"red Archives - Tyche Demo","isPartOf":{"@id":"https://demo.colorlib.com/tyche/#website"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://demo.colorlib.com/tyche/product-tag/red/"]}]}]}</script>
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://demo.colorlib.com/tyche/#website","url":"https://demo.colorlib.com/tyche/","name":"Tyche Demo","description":"Just another colorlib.com site","potentialAction":[{"@type":"SearchAction","target":"https://demo.colorlib.com/tyche/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://demo.colorlib.com/tyche/shop/#webpage","url":"https://demo.colorlib.com/tyche/shop/","name":"Shop - Page 2 of 2 - Tyche Demo","isPartOf":{"@id":"https://demo.colorlib.com/tyche/#website"},"datePublished":"2017-05-24T06:27:05+00:00","dateModified":"2017-05-24T06:27:05+00:00","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://demo.colorlib.com/tyche/shop/"]}]}]}</script>
 	<!-- / Yoast SEO Premium plugin. -->
 
 
@@ -25,7 +26,7 @@
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Tyche Demo &raquo; Feed" href="https://demo.colorlib.com/tyche/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Tyche Demo &raquo; Comments Feed" href="https://demo.colorlib.com/tyche/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Tyche Demo &raquo; red Tag Feed" href="https://demo.colorlib.com/tyche/product-tag/red/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Tyche Demo &raquo; Products Feed" href="https://demo.colorlib.com/tyche/shop/feed/" />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/demo.colorlib.com\/tyche\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.3"}};
 			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -80,7 +81,7 @@ var tycheHelper = {"initZoom":"1","ajaxURL":"https:\/\/demo.colorlib.com\/tyche\
 
 		<!-- There is no amphtml version available for this URL. --><style id="kirki-inline-styles"></style></head>
 
-<body class="archive tax-product_tag term-red term-25 wp-custom-logo theme-tyche woocommerce woocommerce-page woocommerce-no-js hfeed elementor-default elementor-kit-1236">
+<body class="archive paged post-type-archive post-type-archive-product wp-custom-logo paged-2 post-type-paged-2 theme-tyche woocommerce woocommerce-page woocommerce-no-js hfeed elementor-default elementor-kit-1236">
 <div id="page" class="site">
 	
 <!-- Top Header Bar -->
@@ -95,7 +96,7 @@ var tycheHelper = {"initZoom":"1","ajaxURL":"https:\/\/demo.colorlib.com\/tyche\
 					<!-- / Email -->
 											<!-- Cart -->
 						<li class="top-cart">
-							<a href="https://demo.colorlib.com/tyche/cart/"><i class="fa fa-shopping-cart"></i> My Cart								- &#036; <span class="price">1259.44</span>							</a>
+							<a href="https://demo.colorlib.com/tyche/cart/"><i class="fa fa-shopping-cart"></i> My Cart								- &#036; <span class="price">957.84</span>							</a>
 						</li> <!-- / Cart -->
 					
 											<!-- Account -->
@@ -135,7 +136,7 @@ var tycheHelper = {"initZoom":"1","ajaxURL":"https:\/\/demo.colorlib.com\/tyche\
 				<div class="row">
 					<div class="col-md-12">
 						<ul id="desktop-menu" class="sf-menu"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-83" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-83"><a title="Home" href="https://demo.colorlib.com/tyche">Home</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a title="Shop" href="https://demo.colorlib.com/tyche/shop/">Shop</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item menu-item-86 active"><a title="Shop" href="https://demo.colorlib.com/tyche/shop/">Shop</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a title="Blog" href="https://demo.colorlib.com/tyche/blog/">Blog</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a title="Contact" href="https://demo.colorlib.com/tyche/contact/">Contact</a></li>
 </ul>						<!-- /// Mobile Menu Trigger //////// -->
@@ -153,7 +154,7 @@ var tycheHelper = {"initZoom":"1","ajaxURL":"https:\/\/demo.colorlib.com\/tyche\
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<nav class="woocommerce-breadcrumb"><a href="https://demo.colorlib.com/tyche">Home</a>&nbsp;&#47;&nbsp;Products tagged &ldquo;red&rdquo;</nav>		</div>
+			<nav class="woocommerce-breadcrumb"><a href="https://demo.colorlib.com/tyche">Home</a>&nbsp;&#47;&nbsp;<a href="https://demo.colorlib.com/tyche/shop/">Shop</a>&nbsp;&#47;&nbsp;Page 2</nav>		</div>
 	</div>
 	<div class="row">
 					<div class="col-md-4 hidden-xs">
@@ -164,12 +165,12 @@ var tycheHelper = {"initZoom":"1","ajaxURL":"https:\/\/demo.colorlib.com\/tyche\
 	<input type="hidden" name="post_type" value="product" />
 </form>
 </div><div id="woocommerce_price_filter-3" class="widget woocommerce widget_price_filter"><h5 class="widget-title"><span>Filter by price</span></h5>
-<form method="get" action="https://demo.colorlib.com/tyche/product-tag/red/">
+<form method="get" action="https://demo.colorlib.com/tyche/shop/">
 	<div class="price_slider_wrapper">
 		<div class="price_slider" style="display:none;"></div>
 		<div class="price_slider_amount" data-step="10">
-			<input type="text" id="min_price" name="min_price" value="20" data-min="20" placeholder="Min price" />
-			<input type="text" id="max_price" name="max_price" value="40" data-max="40" placeholder="Max price" />
+			<input type="text" id="min_price" name="min_price" value="10" data-min="10" placeholder="Min price" />
+			<input type="text" id="max_price" name="max_price" value="60" data-max="60" placeholder="Max price" />
 						<button type="submit" class="button">Filter</button>
 			<div class="price_label" style="display:none;">
 				Price: <span class="from"></span> &mdash; <span class="to"></span>
@@ -273,7 +274,7 @@ var tycheHelper = {"initZoom":"1","ajaxURL":"https:\/\/demo.colorlib.com\/tyche\
 				<div class="col-md-8 tyche-has-sidebar">
 			
 			
-				<h1 class="woocommerce-products-header__title page-title">red</h1>
+				<h1 class="woocommerce-products-header__title page-title">Shop</h1>
 
 			
 			
@@ -289,23 +290,64 @@ var tycheHelper = {"initZoom":"1","ajaxURL":"https:\/\/demo.colorlib.com\/tyche\
 	<input type="hidden" name="paged" value="1" />
 	</form>
 <p class="woocommerce-result-count">
-	Showing all 2 results</p>
+	Showing 13&ndash;22 of 22 results</p>
 
 				<ul class="products columns-3">
 
-				<li class="product type-product post-35 status-publish first instock product_cat-scarfs product_tag-red product_tag-scarf product_tag-white has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
-	<a href="https://demo.colorlib.com/tyche/product/jennifer-scarf/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="255" height="320" src="https://demo.colorlib.com/tyche/wp-content/uploads/sites/64/2017/06/a-neckerchief-1315912_1920-255x320.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /><h2 class="woocommerce-loop-product__title">Jennifer Scarf</h2>
-	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>36.00</bdi></span></span>
-</a><a href="?add-to-cart=35" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="35" data-product_sku="" aria-label="Add &ldquo;Jennifer Scarf&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a></li>
+				<li class="product type-product post-15 status-publish first instock product_cat-tops product_tag-black product_tag-shirt product_tag-top has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://demo.colorlib.com/tyche/product/little-black-shirt/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="255" height="320" src="https://demo.colorlib.com/tyche/wp-content/uploads/sites/64/2017/06/model-858751_1920-255x320.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /><h2 class="woocommerce-loop-product__title">Little Black Shirt</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>40.00</bdi></span></span>
+</a><a href="?add-to-cart=15" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="15" data-product_sku="" aria-label="Add &ldquo;Little Black Shirt&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a></li>
+<li class="product type-product post-17 status-publish instock product_cat-tops product_tag-black product_tag-shirt product_tag-top has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://demo.colorlib.com/tyche/product/little-black-top/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+	<span class="onsale">Sale!</span>
+	<img width="255" height="320" src="https://demo.colorlib.com/tyche/wp-content/uploads/sites/64/2017/06/girl-1286993_1920-255x320.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /><h2 class="woocommerce-loop-product__title">Little Black Top</h2>
+	<span class="price"><del><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>35.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>20.00</bdi></span></ins></span>
+</a><a href="?add-to-cart=17" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="17" data-product_sku="" aria-label="Add &ldquo;Little Black Top&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a></li>
+<li class="product type-product post-29 status-publish last instock product_cat-dresses product_cat-most-wanted product_tag-dress product_tag-magnolia product_tag-yellow has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://demo.colorlib.com/tyche/product/magnolia-dress/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="255" height="320" src="https://demo.colorlib.com/tyche/wp-content/uploads/sites/64/2017/06/fashion-731827_1920-255x320.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /><h2 class="woocommerce-loop-product__title">Magnolia Dress</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>25.00</bdi></span></span>
+</a><a href="?add-to-cart=29" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="29" data-product_sku="" aria-label="Add &ldquo;Magnolia Dress&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a></li>
+<li class="product type-product post-56 status-publish first instock product_cat-featured product_cat-shirts product_tag-manago product_tag-shirt has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://demo.colorlib.com/tyche/product/manago-shirt/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="255" height="320" src="https://demo.colorlib.com/tyche/wp-content/uploads/sites/64/2017/06/cute-955782_1920-255x320.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /><h2 class="woocommerce-loop-product__title">Manago Shirt</h2><div class="star-rating" role="img" aria-label="Rated 3.50 out of 5"><span style="width:70%">Rated <strong class="rating">3.50</strong> out of 5</span></div>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>25.00</bdi></span></span>
+</a><a href="?add-to-cart=56" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="56" data-product_sku="" aria-label="Add &ldquo;Manago Shirt&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a></li>
+<li class="product type-product post-60 status-publish instock product_cat-dresses product_cat-trends product_tag-dress product_tag-sleeveless has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://demo.colorlib.com/tyche/product/marcara-sleeveless-dress/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="255" height="320" src="https://demo.colorlib.com/tyche/wp-content/uploads/sites/64/2017/06/girl-in-white-dress-1333640_1920-255x320.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /><h2 class="woocommerce-loop-product__title">Marcara Sleeveless Dress</h2><div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span></div>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>55.00</bdi></span></span>
+</a><a href="?add-to-cart=60" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="60" data-product_sku="" aria-label="Add &ldquo;Marcara Sleeveless Dress&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a></li>
+<li class="product type-product post-64 status-publish last instock product_cat-shirts product_cat-trends product_tag-blouse product_tag-blue product_tag-shirt has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://demo.colorlib.com/tyche/product/marina-style/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="255" height="320" src="https://demo.colorlib.com/tyche/wp-content/uploads/sites/64/2017/06/woman-1484279_1920-255x320.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /><h2 class="woocommerce-loop-product__title">Marina Style</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>35.00</bdi></span></span>
+</a><a href="?add-to-cart=64" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="64" data-product_sku="" aria-label="Add &ldquo;Marina Style&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a></li>
+<li class="product type-product post-50 status-publish first instock product_cat-blouse product_cat-featured product_tag-blouse product_tag-white has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://demo.colorlib.com/tyche/product/merchantile-blouse/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="255" height="320" src="https://demo.colorlib.com/tyche/wp-content/uploads/sites/64/2017/06/fashion-984044_1920-255x320.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /><h2 class="woocommerce-loop-product__title">Merchantile &#8211; Blouse</h2><div class="star-rating" role="img" aria-label="Rated 3.00 out of 5"><span style="width:60%">Rated <strong class="rating">3.00</strong> out of 5</span></div>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>15.00</bdi></span></span>
+</a><a href="?add-to-cart=50" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="50" data-product_sku="" aria-label="Add &ldquo;Merchantile - Blouse&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a></li>
 <li class="product type-product post-25 status-publish instock product_cat-shoes product_tag-heels product_tag-red product_tag-shoes has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
 	<a href="https://demo.colorlib.com/tyche/product/red-magawi-shoes/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
 	<span class="onsale">Sale!</span>
 	<img width="255" height="320" src="https://demo.colorlib.com/tyche/wp-content/uploads/sites/64/2017/06/elegance-18594_1920-255x320.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /><h2 class="woocommerce-loop-product__title">Red Magawi Shoes</h2>
 	<span class="price"><del><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>35.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>25.00</bdi></span></ins></span>
 </a><a href="?add-to-cart=25" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="25" data-product_sku="" aria-label="Add &ldquo;Red Magawi Shoes&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a></li>
+<li class="product type-product post-27 status-publish last instock product_cat-jeans product_cat-most-wanted product_tag-blue product_tag-jeans has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://demo.colorlib.com/tyche/product/rocadi-jeans/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+	<span class="onsale">Sale!</span>
+	<img width="255" height="320" src="https://demo.colorlib.com/tyche/wp-content/uploads/sites/64/2017/06/jeans-428614_1920-255x320.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /><h2 class="woocommerce-loop-product__title">Rocadi Jeans</h2>
+	<span class="price"><del><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>70.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>60.00</bdi></span></ins></span>
+</a><a href="?add-to-cart=27" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="27" data-product_sku="" aria-label="Add &ldquo;Rocadi Jeans&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a></li>
+<li class="product type-product post-43 status-publish first instock product_cat-shirts product_tag-shirt product_tag-white has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://demo.colorlib.com/tyche/product/visual-m-t-shirt/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="255" height="320" src="https://demo.colorlib.com/tyche/wp-content/uploads/sites/64/2017/06/boy-882334_1920-255x320.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" /><h2 class="woocommerce-loop-product__title">Visual M. T-Shirt</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>10.00</bdi></span></span>
+</a><a href="?add-to-cart=43" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="43" data-product_sku="" aria-label="Add &ldquo;Visual M. T-Shirt&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a></li>
 </ul>
 
-				
+				<div class="row text-center"><ul class="tyche-pager">
+<li><a href="https://demo.colorlib.com/tyche/shop/" ><span class="fa fa-long-arrow-left"></span> <span class="pager-text prev">PREV</span></a></li>
+<li><a href="https://demo.colorlib.com/tyche/shop/">1</a></li>
+<li class="active"><a href="https://demo.colorlib.com/tyche/shop/page/2/">2</a></li>
+</ul></div>
+
 					</div>
 				</main></div>	</div>
 </div>
@@ -434,7 +476,7 @@ var tycheHelper = {"initZoom":"1","ajaxURL":"https:\/\/demo.colorlib.com\/tyche\
 <script type="text/javascript">
 var sbiajaxurl = "https://demo.colorlib.com/tyche/wp-admin/admin-ajax.php";
 </script>
-<script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"https:\/\/demo.colorlib.com\/tyche"}},{"@type":"ListItem","position":2,"item":{"name":"Products tagged &amp;ldquo;red&amp;rdquo;","@id":"https:\/\/demo.colorlib.com\/tyche\/product-tag\/red\/"}}]}</script>	<script type="text/javascript">
+<script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"https:\/\/demo.colorlib.com\/tyche"}},{"@type":"ListItem","position":2,"item":{"name":"Shop","@id":"https:\/\/demo.colorlib.com\/tyche\/shop\/"}},{"@type":"ListItem","position":3,"item":{"name":"Page 2","@id":"https:\/\/demo.colorlib.com\/tyche\/shop\/page\/2\/"}}]}</script>	<script type="text/javascript">
 		(function () {
 			var c = document.body.className;
 			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
