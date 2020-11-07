@@ -133,7 +133,7 @@
                                         <input type="text" placeholder="Search" name="designSearchText" id="designSearchText" class="col-4 designSearchText form-control" />
                                     </div>
                                     <div id="designsList" class="row mt-3">
-
+                                    </div>
                                 </div>
                             </div> <!-- end col -->
                         </div> <!-- end row -->

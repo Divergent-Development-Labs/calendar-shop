@@ -6,7 +6,7 @@
                       <ul class="top-header-bar">
                           <!-- Email -->
                           <li class="top-email">
-                              <i class="fa fa-envelope-o"></i> flyass@gmail.com
+                              <i class="fa fa-envelope-o"></i> dummy@gmail.com
                           </li>
                           <!-- / Email -->
                           <!-- Cart -->
@@ -23,6 +23,15 @@
                               </a>
                           </li>
                           <!-- / Account -->
+
+                          <?php if($userId && $userId != null){ ?>
+                          <!-- Logout -->
+                            <li class="top-account">
+                              <a href="logout.php"><i class="fa fa-sign-out"></i> Logout
+                              </a>
+                            </li>
+                            <!-- / Logout -->
+                          <?php } ?>
 
                           <!-- Top Search -->
                           <li class="top-search">

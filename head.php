@@ -1,3 +1,8 @@
+
+<?php 
+    session_start();
+    include 'backend/get-customer-details.php'; 
+?>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -265,3 +270,6 @@
 
 <!-- There is no amphtml version available for this URL. -->
 <style id="kirki-inline-styles"></style>
+
+<!-- Bootstrap Css -->
+<link href="admin/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />

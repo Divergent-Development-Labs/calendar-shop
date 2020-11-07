@@ -1,5 +1,5 @@
 /**
- * WordPress Zero Spam jQuery plugin.
+ * PHP Zero Spam jQuery plugin.
  *
  * Handles adding the required functionality for spam detections.
  *
@@ -11,7 +11,7 @@
     if (typeof wpzerospam.key == "undefined") {
       // The key is not defined, alert the site owner via the console.
       console.log(
-        "WordPress Zero Spam is unable to initialize, missing the required key."
+        "PHP Zero Spam is unable to initialize, missing the required key."
       );
 
       return this;
@@ -20,14 +20,14 @@
     // Check if the element is on the page.
     if (!this.length) {
       console.log(
-        "WordPress Zero Spam could not find a " + this.selector + " instance."
+        "PHP Zero Spam could not find a " + this.selector + " instance."
       );
 
       return this;
     }
 
     console.log(
-      "WordPress Zero Spam found " +
+      "PHP Zero Spam found " +
         this.length +
         " instance(s) of " +
         this.selector +

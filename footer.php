@@ -7,9 +7,9 @@
                     <div id="meta-4" class="widget widget_meta">
                         <h5 class="widget-title"><span>Meta</span></h5>
                         <ul>
-                            <li><a rel="nofollow" href="https://demo.colorlib.com/tyche/wp-login.php">Log in</a></li>
-                            <li><a href="https://demo.colorlib.com/tyche/feed/">Entries feed</a></li>
-                            <li><a href="https://demo.colorlib.com/tyche/comments/feed/">Comments feed</a></li>
+                            <li><a rel="nofollow" href="wp-login.php">Log in</a></li>
+                            <li><a href="feed/">Entries feed</a></li>
+                            <li><a href="comments/feed/">Comments feed</a></li>
 
                             <li><a href="https://wordpress.org/">WordPress.org</a></li>
                         </ul>
@@ -25,17 +25,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <!-- <div class="col-md-3 col-sm-6">
                     <div id="tag_cloud-3" class="widget widget_tag_cloud">
                         <h5 class="widget-title"><span>Tags</span></h5>
-                        <div class="tagcloud"><a href="https://demo.colorlib.com/tyche/tag/autumn/" class="tag-cloud-link tag-link-52 tag-link-position-1" style="font-size: 8pt;" aria-label="Autumn (1 item)">Autumn</a>
-                            <a href="https://demo.colorlib.com/tyche/tag/dress/" class="tag-cloud-link tag-link-56 tag-link-position-2" style="font-size: 8pt;" aria-label="dress (1 item)">dress</a>
-                            <a href="https://demo.colorlib.com/tyche/tag/fashion/" class="tag-cloud-link tag-link-54 tag-link-position-3" style="font-size: 18.5pt;" aria-label="fashion (3 items)">fashion</a>
-                            <a href="https://demo.colorlib.com/tyche/tag/jackets/" class="tag-cloud-link tag-link-57 tag-link-position-4" style="font-size: 8pt;" aria-label="jackets (1 item)">jackets</a>
-                            <a href="https://demo.colorlib.com/tyche/tag/stockings/" class="tag-cloud-link tag-link-55 tag-link-position-5" style="font-size: 8pt;" aria-label="stockings (1 item)">stockings</a>
-                            <a href="https://demo.colorlib.com/tyche/tag/trends/" class="tag-cloud-link tag-link-53 tag-link-position-6" style="font-size: 22pt;" aria-label="trends (4 items)">trends</a></div>
+                        <div class="tagcloud"><a href="tag/autumn/" class="tag-cloud-link tag-link-52 tag-link-position-1" style="font-size: 8pt;" aria-label="Autumn (1 item)">Autumn</a>
+                            <a href="tag/dress/" class="tag-cloud-link tag-link-56 tag-link-position-2" style="font-size: 8pt;" aria-label="dress (1 item)">dress</a>
+                            <a href="tag/fashion/" class="tag-cloud-link tag-link-54 tag-link-position-3" style="font-size: 18.5pt;" aria-label="fashion (3 items)">fashion</a>
+                            <a href="tag/jackets/" class="tag-cloud-link tag-link-57 tag-link-position-4" style="font-size: 8pt;" aria-label="jackets (1 item)">jackets</a>
+                            <a href="tag/stockings/" class="tag-cloud-link tag-link-55 tag-link-position-5" style="font-size: 8pt;" aria-label="stockings (1 item)">stockings</a>
+                            <a href="tag/trends/" class="tag-cloud-link tag-link-53 tag-link-position-6" style="font-size: 22pt;" aria-label="trends (4 items)">trends</a></div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!--.row-->
         </div>

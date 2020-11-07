@@ -38,8 +38,16 @@
 
 									<h2>Login</h2>
 
-									<form class="woocommerce-form woocommerce-form-login login" method="post">
+									<form class="woocommerce-form woocommerce-form-login login" method="post" action="backend/customer-login.php">
 
+										<?php 
+											if(isset($_SESSION["msg"])) {
+												?>
+												<div class="alert-danger pl-3 mt-1"><i class="fa fa-warning"></i><?php  echo $_SESSION["msg"]; unset($_SESSION["msg"]); ?></div>
+												<?php 
+												
+												} 
+										?>
 
 										<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 											<label for="username">Username or email address&nbsp;<span class="required">*</span></label>
@@ -51,15 +59,16 @@
 
 
 										<p class="form-row">
-											<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+											<!-- <label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
 												<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span>Remember me</span>
-											</label>
-											<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="0d78ba4afa" /><input type="hidden" name="_wp_http_referer" value="/tyche/my-account/" /> <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Log in">Log in</button>
+											</label> -->
+											<!-- <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="0d78ba4afa" />
+											<input type="hidden" name="_wp_http_referer" value="/tyche/my-account/" />  -->
+											<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="loginBtn" value="Log in">Log in</button>
 										</p>
-										<p class="woocommerce-LostPassword lost_password">
+										<!-- <p class="woocommerce-LostPassword lost_password">
 											<a href="lost-password.php">Lost your password?</a>
-										</p>
-
+										</p> -->
 
 									</form>
 
