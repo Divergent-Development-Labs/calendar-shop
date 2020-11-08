@@ -8,7 +8,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="text-sm-right d-none d-sm-block">
-                            <a href="https://d-devlabs.com/" style="color: #74788d;" >Developed by Divergent Development Labs</a>
+                            <a href="https://kvncloud.com/" style="color: #74788d;" >Developed by KVN Cloud</a>                            
                         </div>
                     </div>
                 </div>

@@ -71,8 +71,8 @@
                         </div>
                         <div class="mt-5 text-center">
                             
-                            <div>
-                                <p>© 2020 Calendar Shop. <a href="https://d-devlabs.com/" style="color: #74788d;" >Developed by Divergent Development Labs</a></p>
+                            <div>                            
+                                <p>© 2020 Calendar Shop. <a href="https://kvncloud.com/" style="color: #74788d;" >Developed by KVN Cloud</a></p>
                             </div>
                         </div>
 
