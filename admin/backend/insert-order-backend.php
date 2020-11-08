@@ -11,13 +11,17 @@
         $cgst = mysqli_real_escape_string($conn, $_POST["orderCGST"]);
         $sgst = mysqli_real_escape_string($conn, $_POST["orderSGST"]);
 
+        date_default_timezone_set("Asia/Calcutta");   //India time (GMT+5:30)
+        $order_date = date("Y-m-d h:i:s");
+        // echo date('d-m-Y');
+
         $gst = $cgst +  $sgst;
 
-        $sql = "INSERT INTO `orders` (`customer_id`, `products`, `subtotal`, `gst`, `total`, `payment_status`) VALUES ('$customer_id', '$products', '$subtotal', '$gst', '$total', '$payment_status')";
+        $sql = "INSERT INTO `orders` (`customer_id`, `products`, `subtotal`, `gst`, `total`, `payment_status`, `order_date`) VALUES ('$customer_id', '$products', '$subtotal', '$gst', '$total', '$payment_status', '$order_date')";
 
         if ($conn->query($sql) === TRUE) {
             $order_id = $conn->insert_id;
-            $_SESSION["msg"] = 'Products added Successfull. Order id : ' . $order_id;
+            $_SESSION["msg"] = 'Products added Successfully. Order id : ' . $order_id;
             header('Location: ../orders.php');
             echo "New record created successfully";
         } else {
@@ -32,6 +36,10 @@
             echo $k1;
             foreach ($arr[$k1] as $k => $v) {
                 switch ($k) {
+                    case 'calendar_type':
+                        # code...
+                        $calendar_type = $v;
+                        break;
                     case 'size':
                         # code...
                         $size = $v;
@@ -59,7 +67,7 @@
                 }
             }    
 
-            $sql2 = "INSERT INTO `products` (`order_id`, `customer`, `size`, `design`, `rate`, `quantity`, `cost`) VALUES ('$order_id', '$customer_id', '$size', '$design', '$rate', '$quantity', '$cost')";
+            $sql2 = "INSERT INTO `products` (`order_id`, `customer`, `calendar_type`, `size`, `design`, `rate`, `quantity`, `cost`) VALUES ('$order_id', '$customer_id', '$calendar_type', '$size', '$design', '$rate', '$quantity', '$cost')";
 
             if ($conn->query($sql2) === TRUE) {
                 $last_id = $conn->insert_id;

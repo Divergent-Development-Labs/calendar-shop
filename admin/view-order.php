@@ -178,8 +178,30 @@
                                                             echo '<br>';
                                                             $copy = $result2;
                                                             while($rowProduct = $copy->fetch_assoc()){
+                                                                switch ($rowProduct['calendar_type']) {
+                                                                    case 'm6':
+                                                                        # code...
+                                                                        $calendar_type = 'Monthly - 6 Sheet';
+                                                                        break;
+                                                                    case 'm6':
+                                                                        # code...
+                                                                        $calendar_type = 'Monthly - 12 Sheet';
+                                                                        break;
+                                                                    case 'm6':
+                                                                        # code...
+                                                                        $calendar_type = 'Daily';
+                                                                        break;
+                                                                    case 'm6':
+                                                                        # code...
+                                                                        $calendar_type = 'Table';
+                                                                        break;                                                                        
+                                                                    default:
+                                                                        # code...
+                                                                        break;
+                                                                }
                                                                 echo '<tr>';
                                                                 echo '<td>'.$sno.'</td>';
+                                                                echo '<td><span>'.$calendar_type.'</span></td>';
                                                                 if($designArray->num_rows > 0){
                                                                         foreach ($designArray as $key => $value) {
                                                                         if($value['id'] == $rowProduct['design']){

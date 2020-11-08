@@ -60,6 +60,7 @@
                                                     <table class="table table-bordered table-sm ledgerTable" id="pTable">
                                                         <thead class="text-center">
                                                             <th class="serialNo">S.No</th>
+                                                            <th class="supplierDropDown">Calendar Type</th>
                                                             <th class="supplierDropDown">Size</th>
                                                             <th >Design</th>
                                                             <th class="rupees">Rate</th>
@@ -143,9 +144,18 @@
                                     <td class="serialNo">
                                         <span class="sno" aria-describedby="sno"></span>
                                     </td>
+                                    <td>
+                                        <select id="calendar_type" class="form-control form-control-sm" required>
+                                            <option value="" selected disabled>Select Type</option>                                            
+                                            <option value="m6">Monthly - 6 Sheet</option>
+                                            <option value="m12">Monthly - 12 Sheet</option>
+                                            <option value="d">Daily</option>
+                                            <option value="t">Table</option>
+                                        </select>
+                                    </td>
                                     <td class="supplierDropDown">
                                         <div id="myDropdown" class="dropdown-content">
-                                            <select id="size" class="form-control form-control-sm sizeChange">
+                                            <select id="size" class="form-control form-control-sm sizeChange" required>
                                                 <option value="" selected disabled>Select Size</option>
                                                     <?php 
                                                         if ($sizeArray->num_rows > 0) {                                
@@ -158,8 +168,10 @@
                                         </div>
                                     </td>
                                     <td class="d-flex justify-content-center">
-                                        <input type="text" class=" form-control form-control-sm design col-2"  aria-describedby="design" disabled required>
-                                        <span type="text" class=" form-control form-control-sm designName h-auto"  aria-describedby="designName"></span>
+                                        <input type="text" style="width:0px !important;" class="border-0 form-control form-control-sm design"  aria-describedby="design" disabled >
+                                        <div class="d-block">
+                                            <input type="text" class="border form-control form-control-sm designName h-auto"  aria-describedby="designName" disabled required>
+                                        </div>
                                         <a type="button" class="designSelect text-center text-primary" ><i class="fa fa-search p-2"></i></a>
                                     </td>
                                     <td class="">

@@ -118,14 +118,14 @@ function selectDesign(id, name, designId){
     console.log(id);
     // console.log($('#'+designId));
     if(designId){
-        $('#'+designId).prev().html(name);
+        $('#'+designId).prev().find('input').val(name);
         console.log($('#'+designId).prev().prev());
         $('#'+designId).prev().prev().val(id);
         $('#designCard').addClass('d-none');        
     }
     else{
         $('#designCard').addClass('d-none');        
-        alert('Kindly Select any Row');
+        alert('Kindly Select any Row | Cannot get Product Row');
     }
 
     setPurchaseData();

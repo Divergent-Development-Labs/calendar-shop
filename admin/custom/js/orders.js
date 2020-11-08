@@ -154,11 +154,12 @@
  
  var getPInput = (ele) => {
      var inputs = {
-       size:  ele.children().eq(1).find('select').val() ,
-       design:  ele.children().eq(2).find('input').val() ,
-       rate:  ele.children().eq(3).find('input').val() ,
-       quantity:  ele.children().eq(4).find('input').val() ,
-       cost:  ele.children().eq(5).find('input').val() ,
+       calendar_type:  ele.children().eq(1).find('select').val() ,
+       size:  ele.children().eq(2).find('select').val() ,
+       design:  ele.children().eq(3).find('input').val() ,
+       rate:  ele.children().eq(4).find('input').val() ,
+       quantity:  ele.children().eq(5).find('input').val() ,
+       cost:  ele.children().eq(6).find('input').val() ,
        
        setOutput: (cost) => {
          //   console.log('print : ' + unitRate, totalCost)
@@ -169,10 +170,10 @@
        }
      }
  
-     var returnInput = {setOutput: inputs.setOutput, size: inputs.size, design: inputs.design};
+     var returnInput = {setOutput: inputs.setOutput, calendar_type: inputs.calendar_type, size: inputs.size, design: inputs.design};
    
      Object.keys(inputs).forEach(key => {
-       if(['setOutput','size','design'].indexOf(key) == -1) { 
+       if(['setOutput','calendar_type','size','design'].indexOf(key) == -1) { 
          returnInput[key] = inputs[key] == "" ? 0 : parseFloat( inputs[key] ).toFixed(2);
        }
      });

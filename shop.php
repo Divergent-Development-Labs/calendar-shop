@@ -29,6 +29,14 @@
 					<div class="col-sm-2 hidden-xs border-right border-dark">
 
 						<div class="styled-select woocommerce-ordering">
+							<select id="calendar_type" class="form-control form-control-sm">
+								<option value="" selected disabled>Select Type</option>                                            
+								<option value="m6">Monthly - 6 Sheet</option>
+								<option value="m12">Monthly - 12 Sheet</option>
+								<option value="d">Daily</option>
+								<option value="t">Table</option>
+							</select>
+
 							<select name="orderby" class="orderby text-dark" aria-label="Shop order">
 								<option value="menu_order" selected="selected">Default sorting</option>
 								<option value="popularity">Sort by popularity</option>
