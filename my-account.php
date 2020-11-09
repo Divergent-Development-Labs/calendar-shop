@@ -50,10 +50,10 @@
 										?>
 
 										<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-											<label for="username">Username or email address&nbsp;<span class="required">*</span></label>
+											<label for="username" class="col-12 col-md-4">Username or email address&nbsp;<span class="required">*</span></label>
 											<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="" /> </p>
 										<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-											<label for="password">Password&nbsp;<span class="required">*</span></label>
+											<label for="password" class="col-12 col-md-4">Password&nbsp;<span class="required">*</span></label>
 											<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
 										</p>
 
