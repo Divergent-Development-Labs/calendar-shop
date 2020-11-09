@@ -1,7 +1,7 @@
 
 <!-- JAVASCRIPT -->
 <script src="admin/assets/libs/jquery/jquery.min.js"></script>
-<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="admin/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- <script src="assets/libs/metismenu/metisMenu.min.js"></script>
 <script src="assets/libs/simplebar/simplebar.min.js"></script>
 <script src="assets/libs/node-waves/waves.min.js"></script>
@@ -45,7 +45,8 @@
     })()
 </script>
 
-<link rel="stylesheet" href="custom/css/style.css">
+<!-- <link rel="stylesheet" href="custom/css/style.css"> -->
+<?php include "custom/css/style.php"; ?>
 
 <script type='text/javascript' id='contact-form-7-js-extra'>
     /* <![CDATA[ */
