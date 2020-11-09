@@ -1,3 +1,5 @@
+<?php include './session-checking.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -25,7 +27,6 @@
 					<div id="primary" class="content-area col-md-12">
 						<main id="main" class="site-main" role="main">
 
-
 							<article id="post-5" class="post-5 page type-page status-publish hentry">
 								<div class="row">
 									<div class="col-md-12">
@@ -36,73 +37,31 @@
 								</div>
 								<div class="woocommerce">
 									<div class="woocommerce-notices-wrapper"></div>
-									<form class="woocommerce-cart-form" action="https://demo.colorlib.com/tyche/cart/" method="post">
+									<form class="woocommerce-cart-form" action="backend/update-cart-backend.php" method="post">
 
-										<table>
+										<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
 											<thead>
-												<th>Size</th>
+												<tr>
+													<th class="product-thumbnail">S.No</th>
+													<th class="product-thumbnail">Design</th>
+													<th class="product-name">Calendary Type</th>
+													<th class="product-name">Size</th>
+													<th class="product-price">Price</th>
+													<th class="product-quantity">Quantity</th>
+													<th class="product-subtotal">Total</th>
+													<th class="product-remove">&nbsp;</th>
+												</tr>
 											</thead>
 											<tbody id="cartList">
 
 											</tbody>
+											<tfoot id="cartFooter">
+
+											</tfoot>
 										</table>
-										<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
-											<thead>
-												<tr>
-													<th class="product-remove">&nbsp;</th>
-													<th class="product-thumbnail">&nbsp;</th>
-													<th class="product-name">Product</th>
-													<th class="product-price">Price</th>
-													<th class="product-quantity">Quantity</th>
-													<th class="product-subtotal">Subtotal</th>
-												</tr>
-											</thead>
-											<tbody>
+										<input hidden type="text" name="cartData" id="cartData">
 
-												<tr class="woocommerce-cart-form__cart-item cart_item">
-
-													<td class="product-remove">
-														<a href="https://demo.colorlib.com/tyche/cart/?remove_item=44f683a84163b3523afe57c2e008bc8c&amp;_wpnonce=151792d96f" class="remove" aria-label="Remove this item" data-product_id="62" data-product_sku="">×</a> </td>
-
-													<td class="product-thumbnail">
-														<a href="https://demo.colorlib.com/tyche/product/amari-shirt/"><img width="255" height="320" src="https://demo.colorlib.com/tyche/wp-content/uploads/sites/64/2017/06/key-692199_1920-255x320.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy"></a> </td>
-
-													<td class="product-name" data-title="Product">
-														<a href="https://demo.colorlib.com/tyche/product/amari-shirt/">Amari Shirt</a> </td>
-
-													<td class="product-price" data-title="Price">
-														<span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>25.00</bdi></span> </td>
-
-													<td class="product-quantity" data-title="Quantity">
-														<div class="quantity">
-															<label class="screen-reader-text" for="quantity_5fa6b7bd6dbea">Amari Shirt quantity</label>
-															<div class="styled-number"><a href="#" class="arrow-down incrementor" data-increment="down"><span class="dashicons dashicons-minus"></span></a><input type="number" id="quantity_5fa6b7bd6dbea" class="input-text qty text" step="1" min="0" max="" name="cart[44f683a84163b3523afe57c2e008bc8c][qty]" value="1" title="Qty" size="4" placeholder="" inputmode="numeric"><a href="#" class="arrow-up incrementor" data-increment="up"><span class="dashicons dashicons-plus"></span></a></div>
-														</div>
-													</td>
-
-													<td class="product-subtotal" data-title="Subtotal">
-														<span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>25.00</bdi></span> </td>
-												</tr>
-
-
-												<tr>
-													<td colspan="6" class="actions">
-
-														<div class="coupon">
-															<label for="coupon_code">Coupon:</label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code"> <button type="submit" class="button" name="apply_coupon" value="Apply coupon">Apply coupon</button>
-														</div>
-
-														<button type="submit" class="button" name="update_cart" value="Update cart" disabled="" aria-disabled="true">Update cart</button>
-
-
-														<input type="hidden" id="woocommerce-cart-nonce" name="woocommerce-cart-nonce" value="151792d96f"><input type="hidden" name="_wp_http_referer" value="/tyche/cart/">
-													</td>
-												</tr>
-
-											</tbody>
-										</table>
 									</form>
-
 
 									<div class="cart-collaterals">
 										<div class="cart_totals ">
@@ -115,31 +74,36 @@
 												<tbody>
 													<tr class="cart-subtotal">
 														<th>Subtotal</th>
-														<td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>25.00</bdi></span></td>
+														<td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#x20B9; </span><span id="subtotalCost"></span></bdi></span></td>
 													</tr>
-
-
-
 
 													<tr class="tax-rate tax-rate-us-ny-state-tax-1">
-														<th>State Tax</th>
-														<td data-title="State Tax"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>1.00</span></td>
+														<th>CGST</th>
+														<td data-title="State Tax"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#x20B9; </span><span id="cgstCost"></span></span></td>
 													</tr>
 
+													<tr class="tax-rate tax-rate-us-ny-state-tax-1">
+														<th>SGST</th>
+														<td data-title="State Tax"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#x20B9; </span><span id="sgstCost"></span></span></td>
+													</tr>
 
 													<tr class="order-total">
 														<th>Total</th>
-														<td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>26.00</bdi></span></strong> </td>
+														<td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#x20B9; </span><span  id="totalCost"></span></bdi></span></strong> </td>
 													</tr>
 
 
 												</tbody>
 											</table>
 
-											<div class="wc-proceed-to-checkout">
+											<div class="wc-proceed-to-checkout text-right">
+												<form method="post" id="make_order_form" action="backend/insert-order-backend.php">
+													<input hidden type="text" name="customer_id" id="customer_id" value="<?php echo $userId; ?>">
+													<input hidden type="text" name="orderData" id="orderData">
+													<input hidden type="text" name="totalOrderData" id="totalOrderData">
 
-												<a href="https://demo.colorlib.com/tyche/checkout/" class="checkout-button button alt wc-forward">
-													Proceed to checkout</a>
+													<button type="submit" name="saveBtn" class="checkout-button button alt wc-forward make_order" <?php echo $userId; ?> >Make Order</button>
+												</form>
 											</div>
 
 
@@ -150,7 +114,7 @@
 							</article><!-- #post-## -->
 
 						</main>
-						<main id="main" class="site-main" role="main">
+						<main id="main-empty" class="site-main" role="main">
 							<article id="post-5" class="post-5 page type-page status-publish hentry">
 								<div class="row">
 									<div class="col-md-12">

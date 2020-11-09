@@ -58,7 +58,9 @@
                         </ul>
                     </div>
                     <div class="copyright-text pull-right">
-                        Copyright &copy; 2020 <span class="sep">|</span> <a href="https://colorlib.com/tyche">Theme: Tyche</a> <span class="sep">|</span> Powered by WordPress. </div>
+                        Copyright &copy; 2020 <span class="sep">|</span> 
+                        <a href="https://kvncloud.com/" style="color: #74788d;" >Developed by KVN Cloud</a>                            
+                     </div>
                 </div>
             </div>
         </div>

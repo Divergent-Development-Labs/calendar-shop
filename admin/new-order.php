@@ -147,10 +147,10 @@
                                     <td>
                                         <select id="calendar_type" class="form-control form-control-sm" required>
                                             <option value="" selected disabled>Select Type</option>                                            
-                                            <option value="m6">Monthly - 6 Sheet</option>
-                                            <option value="m12">Monthly - 12 Sheet</option>
-                                            <option value="d">Daily</option>
-                                            <option value="t">Table</option>
+                                            <option value="Monthly - 6 Sheet">Monthly - 6 Sheet</option>
+                                            <option value="Monthly - 12 Sheet">Monthly - 12 Sheet</option>
+                                            <option value="Daily">Daily</option>
+                                            <option value="Table">Table</option>
                                         </select>
                                     </td>
                                     <td class="supplierDropDown">
@@ -160,7 +160,7 @@
                                                     <?php 
                                                         if ($sizeArray->num_rows > 0) {                                
                                                             while($size = $sizeArray->fetch_assoc()) { ?>
-                                                                <option value="<?php echo $size['id'];?>" class=""><?php echo $size['size_label'];?></option>
+                                                                <option value='<?php echo $size['size_label'];?>' class=""><?php echo $size['size_label'];?></option>
                                                             <?php }
                                                         } 
                                                     ?> 
@@ -175,10 +175,10 @@
                                         <a type="button" class="designSelect text-center text-primary" ><i class="fa fa-search p-2"></i></a>
                                     </td>
                                     <td class="">
-                                        <input type="number" min="0" class="form-control form-control-sm rate toOCalc w-lg" disabled aria-describedby="rate" required>
+                                        <input type="number" min="0" class="form-control form-control-sm rate toOCalc w-sm" disabled aria-describedby="rate" required>
                                     </td>
                                     <td class="">
-                                        <input type="number" min="0" class="form-control form-control-sm quantity toOCalc w-lg" aria-describedby="Quantity" disabled required>
+                                        <input type="number" min="0" class="form-control form-control-sm quantity toOCalc" aria-describedby="Quantity" disabled required>
                                     </td>
                                     <td class="rupees">
                                         <input type="number" min="0" class="form-control form-control-sm cost"  aria-describedby="cost" placeholder="" step="any" disabled>

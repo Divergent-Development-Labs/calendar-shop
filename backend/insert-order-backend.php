@@ -1,29 +1,28 @@
 <?php
-    include '../session-checking.php';
-    include '../db/connection.php';
+    include '../admin/db/connection.php';
     if(isset($_POST["saveBtn"])) {
-        $customer_id = mysqli_real_escape_string($conn, $_POST["customer_id"]);
+        $customer_id = $_POST["customer_id"];
         $products = mysqli_real_escape_string($conn, $_POST['orderData']);
-        $subtotal = mysqli_real_escape_string($conn, $_POST["orderSubtotal"]);
-        $total = mysqli_real_escape_string($conn, $_POST["orderTotal"]);
+        $totalOrderData = json_decode($_POST['totalOrderData']);
+
+        print_r($totalOrderData->subtotalCost);
+
+        $subtotal = $totalOrderData->subtotalCost;
+        $total = $totalOrderData->totalCost;
+
         $payment_status = 'false';
 
-        $cgst = mysqli_real_escape_string($conn, $_POST["orderCGST"]);
-        $sgst = mysqli_real_escape_string($conn, $_POST["orderSGST"]);
+        $gst = $totalOrderData->gst / 2;
 
         date_default_timezone_set("Asia/Calcutta");   //India time (GMT+5:30)
         $order_date = date("Y-m-d h:i:s");
         // echo date('d-m-Y');
 
-        $gst = $cgst +  $sgst;
-
         $sql = "INSERT INTO `orders` (`customer_id`, `products`, `subtotal`, `gst`, `total`, `payment_status`, `order_date`) VALUES ('$customer_id', '$products', '$subtotal', '$gst', '$total', '$payment_status', '$order_date')";
 
         if ($conn->query($sql) === TRUE) {
             $order_id = $conn->insert_id;
-            $_SESSION["msg"] = 'Products added Successfully. Order id : ' . $order_id;
-            header('Location: ../orders.php');
-            echo "New record created successfully";
+            echo "New Order created successfully";
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
             header('Location: ../500.php');
@@ -71,18 +70,24 @@
 
             if ($conn->query($sql2) === TRUE) {
                 $last_id = $conn->insert_id;
-                // $_SESSION["msg"] = 'Products added Successfull. Order id : ' . $last_id;
-                header('Location: ../orders.php');
-                echo "New record created successfully";
+                echo "New Order Products created successfully";
             } else {
                 echo "Error: " . $sql2 . "<br>" . $conn->error;
                 header('Location: ../500.php');
             }    
-        echo $sql2;
+
+            echo $sql2;
 
         }
 
+        $sql3 = "DELETE FROM `carts` WHERE `carts`.`customer` = $customer_id";
+
+        if($conn->query($sql3) === TRUE){
+            header('Location: ../cart.php');
+        }
+        
         echo $sql;
+        echo $sql3;
     }
     else{
         session_destroy();

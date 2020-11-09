@@ -73,7 +73,7 @@
                 'action' => '<div class="d-flex justify-content-around">
                                 <input type="checkbox" id="switch'.$value['id'].'" switch="success" ' . ($value['payment_status'] == 'true' ? "checked" : '') . ' class="paymentBtn" onclick=doPayment(' . $value['id'] . ') />
                                 <label for="switch'.$value['id'].'" data-on-label="Paid" data-off-label="pay"></label>                                    
-                                <a type="button" onclick="deleteRow(this)" data-content="backend/delete-ledger.php?id=' . $value["id"] . '" class="delete-record-btn ml-1 my-auto waves-effect waves-light" data-toggle="modal" data-target="#myModal" data-content="11">
+                                <a type="button" onclick="deleteRow(this)" data-content="backend/delete-order.php?id=' . $value["id"] . '" class="delete-record-btn ml-1 my-auto waves-effect waves-light" data-toggle="modal" data-target="#myModal" data-content="11">
                                     <i  data-container="body" data-toggle="tooltip" data-placement="top" title="Delete Record" class="fas fa-trash-alt font-size-16 text-danger mr-1"></i>
                                 </a>
                             </div>'

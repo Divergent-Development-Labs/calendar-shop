@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    let userId = $('#accountLink').attr('data');
+
+    console.log(userId);
+    
     retrieveRecords("");
     
     $("#designSearchText").keyup(function(){
@@ -138,42 +142,60 @@ function addToCartz(e){
 }
 
 function addToCart(design_id, design_name, design_link, type, rate){
-    var id = '#add-btn-'+design_id;
+    let userId = $('#accountLink').attr('data');
 
-    $(id).removeClass('added');
-    $(id).addClass('loading');
+    if(userId){
 
-    console.log(id);
-    var size = $(id).attr('data-product_size');
-    console.log(design_name, design_link, type, size, rate);
-    console.log(id);
-
-    $.ajax({
-        url:"backend/insert-cart-backend.php",
-        method:"post",
-        data:{
-            design_name: design_name,
-            design_link: design_link,
-            type: type,
-            size: size,
-            rate: rate,
-        },
-        dataType:"json",
-        success:function(data)
-        {
-            console.log(data);
-            if(data == '1'){
-                setTimeout(()=>{
+        var id = '#add-btn-'+design_id;
+        
+        $(id).removeClass('added');
+        $(id).addClass('loading');
+    
+        console.log(id);
+        var size = $(id).attr('data-product_size');
+        console.log(design_name, design_link, type, size, rate);
+        console.log(id);
+    
+        $.ajax({
+            url:"backend/insert-cart-backend.php",
+            method:"post",
+            data:{
+                design_name: design_name,
+                design_link: design_link,
+                type: type,
+                size: size,
+                rate: rate,
+            },
+            dataType:"json",
+            success:function(data)
+            {
+                console.log(data);
+                if(data == '1'){
+                    setTimeout(()=>{
+                        $(id).removeClass('loading');
+                        $(id).addClass('added');    
+                        
+                        let cart_price = parseFloat($('#cart_price').html()) + parseFloat(rate);
+                        $('#cart_price').html(cart_price.toFixed(2));
+                    }, 100)
+                }
+                else{
+                    // $(id).removeClass('added');    
                     $(id).removeClass('loading');
-                    $(id).addClass('added');    
-                }, 1000)
+                    console.log('Something error ' + data);
+                }
             }
-            else{
-                console.log('Something error ' + data);
-            }
+        });
+    }
+    else{
+        var con = confirm('Kindly Login into your accout');
+        if(con == true){
+            window.open('my-account.php', '_blank');
         }
-    });
-
+        else{
+            return false;
+        }
+    }
 
 }
 

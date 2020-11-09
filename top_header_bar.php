@@ -10,9 +10,16 @@
                           </li>
                           <!-- / Email -->
                           <!-- Cart -->
-                          <li class="top-cart">
-                              <a href="cart.php"><i class="fa fa-shopping-cart"></i> My Cart - &#036;
-                                  <span class="price">0</span>
+                          <li class="top-cart" <?php echo ($userId == null) ? 'hidden' : ''; ?>>
+                              <a href="cart.php"><i class="fa fa-shopping-cart"></i> My Cart - &#x20B9;
+                                <span class="price" id="cart_price">
+                                    <?php 
+                                        $sql = "SELECT SUM(cost) as totalcost FROM `carts` WHERE `carts`.`customer`='$userId'";
+                                        $result = $conn->query($sql);
+                                        $cart_price = $result->fetch_assoc()['totalcost'];
+                                        echo number_format($cart_price, 2);
+                                    ?>
+                                </span>
                               </a>
                           </li>
                           <!-- / Cart -->
@@ -77,7 +84,7 @@
                   <div class="row">
                       <div class="col-md-12">
                           <ul id="desktop-menu" class="sf-menu">
-                              <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-83" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-83 active">
+                              <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
                                   <a title="Home" href="index.php">Home</a>
                               </li>
                               <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">

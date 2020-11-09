@@ -47,7 +47,7 @@ function setRate(){
         data:{
         retriveTxt:txt,
         table: 'size',
-        field: 'id',
+        field: 'size_label',
         retrieveFields: 'rate'
         },
         dataType:"json",
@@ -99,7 +99,7 @@ function retrieveRecords(txt, designId){
                                 <div class="card-body">\
                                     <div class="d-flex justify-content-between mt-3">\
                                         <h4 class="card-title text-capitalize">'+element.name+'</h4>\
-                                        <button type="button" onclick="selectDesign(\''+element.id+'\', \''+element.name+'\', \''+designId+'\')" class="font-weight-bold btn btn-outline-primary waves-effect waves-light">Pick</button>\
+                                        <button type="button" onclick="selectDesign(\''+element.design_link+'\', \''+element.name+'\', \''+designId+'\')" class="font-weight-bold btn btn-outline-primary waves-effect waves-light">Pick</button>\
                                     </div>\
                                 </div>\
                             </div>\
@@ -114,13 +114,13 @@ function retrieveRecords(txt, designId){
     });
 }
 
-function selectDesign(id, name, designId){
-    console.log(id);
+function selectDesign(design_link, name, designId){
+    console.log(design_link);
     // console.log($('#'+designId));
     if(designId){
         $('#'+designId).prev().find('input').val(name);
         console.log($('#'+designId).prev().prev());
-        $('#'+designId).prev().prev().val(id);
+        $('#'+designId).prev().prev().val(design_link);
         $('#designCard').addClass('d-none');        
     }
     else{

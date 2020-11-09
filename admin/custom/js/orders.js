@@ -18,14 +18,6 @@
      $(clone).find('.myDatalistInput').attr('list', 'suppliers'+rc);
      $(clone).find('.myDatalist').attr('id', 'suppliers'+rc);
  
- 
-     // $(clone).find('.myInput').attr('aria-controls', selectId);
-     // $(clone).find('.myDropdownUL').attr('id', selectId);
- 
-     // console.log($(clone));
- 
-     // console.log('Row added');
- 
      initEvents();
      doTotalCalc();
  
@@ -156,7 +148,7 @@
      var inputs = {
        calendar_type:  ele.children().eq(1).find('select').val() ,
        size:  ele.children().eq(2).find('select').val() ,
-       design:  ele.children().eq(3).find('input').val() ,
+       design:  ele.children().eq(3).find('input.design').val() ,
        rate:  ele.children().eq(4).find('input').val() ,
        quantity:  ele.children().eq(5).find('input').val() ,
        cost:  ele.children().eq(6).find('input').val() ,

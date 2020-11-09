@@ -3,8 +3,10 @@
 include '../admin/db/connection.php'; 
 session_start();
 
-$userId = $_SESSION["userId"];
-if (isset($_SESSION["userId"]) && ($_SESSION["userId"] != '')) {
+
+
+if (($_SESSION["userId"]) && ($_SESSION["userId"] != null)) {
+    $userId = $_SESSION["userId"];
     
     if(isset($_POST["design_name"]) && isset($_POST["design_link"]) && isset($_POST["type"]) && isset($_POST["size"]) && isset($_POST["rate"])) {
         $design_name = mysqli_real_escape_string($conn, $_POST["design_name"]);
@@ -35,7 +37,7 @@ if (isset($_SESSION["userId"]) && ($_SESSION["userId"] != '')) {
     
 }
 else{
-    echo 'Kindly do a login';
+    echo '2';
 }
 
 ?>

@@ -158,10 +158,11 @@
                                                 <thead class="thead-light">
                                                     <tr>
                                                         <th>S.No</th>
+                                                        <th>Calendar Type</th>
                                                         <th>Design</th>
                                                         <th>Size</th>
                                                         <th>Price</th>
-                                                        <th>Quantity</th>
+                                                        <th class="text-center">Quantity</th>
                                                         <th colspan="2">Total Cost</th>
                                                     </tr>
                                                 </thead>
@@ -178,47 +179,14 @@
                                                             echo '<br>';
                                                             $copy = $result2;
                                                             while($rowProduct = $copy->fetch_assoc()){
-                                                                switch ($rowProduct['calendar_type']) {
-                                                                    case 'm6':
-                                                                        # code...
-                                                                        $calendar_type = 'Monthly - 6 Sheet';
-                                                                        break;
-                                                                    case 'm12':
-                                                                        # code...
-                                                                        $calendar_type = 'Monthly - 12 Sheet';
-                                                                        break;
-                                                                    case 'd':
-                                                                        # code...
-                                                                        $calendar_type = 'Daily';
-                                                                        break;
-                                                                    case 't':
-                                                                        # code...
-                                                                        $calendar_type = 'Table';
-                                                                        break;                                                                        
-                                                                    default:
-                                                                        # code...
-                                                                        break;
-                                                                }
                                                                 echo '<tr>';
                                                                 echo '<td>'.$sno.'</td>';
-                                                                echo '<td><span>'.$calendar_type.'</span></td>';
-                                                                if($designArray->num_rows > 0){
-                                                                        foreach ($designArray as $key => $value) {
-                                                                        if($value['id'] == $rowProduct['design']){
-                                                                            echo '<td><img src="https://drive.google.com/thumbnail?id=' . $value['design_link'] . '" alt="product-img" title="product-img" class="avatar-md" /></td>';
-                                                                        }
-                                                                    }
-                                                                }
-                                                                if($sizeArray->num_rows > 0){
-                                                                    foreach ($sizeArray as $key => $value) {
-                                                                        if($value['id'] == $rowProduct['size']){
-                                                                            echo '<td><h5 class="font-size-14 text-truncate"><a href="ecommerce-product-detail.html" class="text-dark">'.$value['size_label'].'</a></h5></td>';
-                                                                        }
-                                                                    }
-                                                                }
-                                                                echo '<td><span>'.$rowProduct['rate'].'</span></td>';
-                                                                echo '<td><span>'.$rowProduct['quantity'].'</span></td>';
-                                                                echo '<td><span>'.$rowProduct['cost'].'</span></td>';
+                                                                echo '<td><span>'.$rowProduct['calendar_type'].'</span></td>';
+                                                                echo '<td><img src="https://drive.google.com/thumbnail?id=' . $rowProduct['design'] . '" alt="product-img" title="product-img" class="avatar-md" /></td>';
+                                                                echo '<td><span>'.$rowProduct['size'].'</span></td>';
+                                                                echo '<td><span>&#x20B9; '.number_format($rowProduct['rate'], 2).'</span></td>';
+                                                                echo '<td class="text-center"><span>'.$rowProduct['quantity'].'</span></td>';
+                                                                echo '<td><span>&#x20B9; '.number_format($rowProduct['cost'], 2).'</span></td>';
                                                                 echo '</tr>';
                                                                 $sno++;
                                                             }
