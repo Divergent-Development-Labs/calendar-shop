@@ -75,7 +75,7 @@
                 header('Location: ../orders.php');
                 echo "New record created successfully";
             } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
+                echo "Error: " . $sql2 . "<br>" . $conn->error;
                 header('Location: ../500.php');
             }    
         echo $sql2;

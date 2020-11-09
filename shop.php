@@ -18,7 +18,7 @@
 
 		<?php include 'top_header_bar.php'; ?>
 
-		<div class="site-content">
+		<div class="site-content bg-white">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -26,54 +26,43 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-2 hidden-xs border-right border-dark">
-
-						<div class="styled-select woocommerce-ordering">
-							<select id="calendar_type" class="form-control form-control-sm">
-								<option value="" selected disabled>Select Type</option>                                            
-								<option value="m6">Monthly - 6 Sheet</option>
-								<option value="m12">Monthly - 12 Sheet</option>
-								<option value="d">Daily</option>
-								<option value="t">Table</option>
-							</select>
-
-							<select name="orderby" class="orderby text-dark" aria-label="Shop order">
-								<option value="menu_order" selected="selected">Default sorting</option>
-								<option value="popularity">Sort by popularity</option>
-								<option value="rating">Sort by average rating</option>
-								<option value="date">Sort by latest</option>
-								<option value="price">Sort by price: low to high</option>
-								<option value="price-desc">Sort by price: high to low</option>
-							</select>
+					<div class="col-md-4 col-lg-3 col-12 border-md-right border-dark">
+						<h4 class="font-weight-bold text-dark"><span>Calendar Type</span></h4>
+						<div class="woocommerce-ordering float-none" style="width: 100% !important;">
+							<div class="styled-select">
+								<select name="orderby" onchange="selectCalendarType(event)" id="calendar_type_menu" style="min-width: 185px !important;width: 100% !important;" class="w-100 orderby text-dark" aria-label="Calendar Type">
+									<option value="" selected="selected">Select Type</option>
+									<option value="Monthly - 6 Sheet">Monthly - 6 Sheet</option>
+									<option value="Monthly - 12 Sheet">Monthly - 12 Sheet</option>
+									<option value="Daily">Daily</option>
+									<option value="Table">Table</option>
+								</select>
+							</div>
 						</div>
-
-						<div id="woocommerce_products-3" class="widget woocommerce widget_products">
-							<h5 class=" page-title text-dark"><span>Sizes</span></h5>
-							<ul class="product_list_widget list-group">
+					
+						<div id="woocommerce_products-3" class="widget woocommerce widget_products mt-sm-3">						
+							<h4 class="font-weight-bold text-dark"><span>Sizes</span></h4>
+							<select multiple  id="size_menu" class="border dropdown-menu-left w-100 overflow-auto" style="max-height: 375px !important; font-size: initial;">
 								<?php 
 									if ($sizeArray->num_rows > 0) {                                
 										while($size = $sizeArray->fetch_assoc()) { ?>
-											<li class="">
-												<span type="button" onclick="selectSize(event)" name="<?php echo $size['id'];?>" class="woocommerce-Price-amount amount"><?php echo $size['size_label'];?></span>
-											</li>
+											<option type="button"  class="text-lg  list-group-item text-danger border-0" onclick="selectSize(event, <?php echo $size['rate'];?>)" value='<?php echo $size['id'];?>'><?php echo $size['size_label'];?></option>
 										<?php }
 									} 
 								?> 
-							</ul>
+							</select>							
 						</div>
 					</div>
-					<div class="col-sm-10 tyche-has-sidebar">
+					<div class="col-md-8 col-lg-9 col-12 tyche-has-sidebar">
 
-						<h1 class="woocommerce-products-header__title page-title text-dark">Designs</h1>
-
-						<div class="woocommerce-notices-wrapper"></div>
-					
-						<input type="text" placeholder="Search" name="designSearchText" id="designSearchText" class="woocommerce-ordering col-4 designSearchText form-control" />
-						
+						<div class="row">
+							<h4 class="col-sm-8 col-6 font-weight-bold text-dark"><span>Designs</span></h4>						
+							<input type="text" placeholder="Search" name="designSearchText" id="designSearchText" class="woocommerce-ordering col-sm-4 col-6 designSearchText form-control" />								
+						</div>
 						<!-- <p class="woocommerce-result-count">
 							Showing 1&ndash;12 of 22 results</p> -->
 
-						<ul class="products columns-5" id="designsList">
+						<ul class="columns-3 justify-content-center justify-content-sm-start products row" id="designsList">
 						</ul>
 
 						<div class="row text-center">

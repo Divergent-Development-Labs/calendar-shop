@@ -17,12 +17,21 @@
                           </li>
                           <!-- / Cart -->
 
+                          <?php if($userId && $userId != null){ ?>
+                          <!-- Account -->
+                          <li class="top-account">
+                              <a href="my-account.php" id="accountLink" data="<?php echo $userId;?>"><i class="fa fa-user"></i> <?php echo $userName; ?>
+                              </a>
+                          </li>
+                          <!-- / Account -->
+                          <?php } else { ?>
                           <!-- Account -->
                           <li class="top-account">
                               <a href="my-account.php"><i class="fa fa-user"></i> Account
                               </a>
                           </li>
                           <!-- / Account -->
+                          <?php } ?>
 
                           <?php if($userId && $userId != null){ ?>
                           <!-- Logout -->

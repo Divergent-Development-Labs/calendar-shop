@@ -38,6 +38,14 @@
 									<div class="woocommerce-notices-wrapper"></div>
 									<form class="woocommerce-cart-form" action="https://demo.colorlib.com/tyche/cart/" method="post">
 
+										<table>
+											<thead>
+												<th>Size</th>
+											</thead>
+											<tbody id="cartList">
+
+											</tbody>
+										</table>
 										<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
 											<thead>
 												<tr>
@@ -175,7 +183,7 @@
 
 		<?php include 'footer.php'; ?>
 		<?php include 'scripts.php'; ?>
-
+		<script type="text/javascript" src="custom/js/cart.js"></script>
 </body>
 
 </html>

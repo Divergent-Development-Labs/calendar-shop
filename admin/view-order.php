@@ -183,15 +183,15 @@
                                                                         # code...
                                                                         $calendar_type = 'Monthly - 6 Sheet';
                                                                         break;
-                                                                    case 'm6':
+                                                                    case 'm12':
                                                                         # code...
                                                                         $calendar_type = 'Monthly - 12 Sheet';
                                                                         break;
-                                                                    case 'm6':
+                                                                    case 'd':
                                                                         # code...
                                                                         $calendar_type = 'Daily';
                                                                         break;
-                                                                    case 'm6':
+                                                                    case 't':
                                                                         # code...
                                                                         $calendar_type = 'Table';
                                                                         break;                                                                        
