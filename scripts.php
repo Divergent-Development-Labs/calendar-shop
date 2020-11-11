@@ -91,6 +91,7 @@
     };
     /* ]]> */
 </script>
+<script type='text/javascript' src='https://demo.colorlib.com/tyche/wp-content/plugins/woocommerce/assets/js/frontend/checkout.min.js' id='wc-checkout-js'></script>
 <script type='text/javascript' src='wp-contents/pluginss/woocommerce/assets/js/frontend/woocommerce.min.js' id='woocommerce-js'></script>
 <script type='text/javascript' id='wc-cart-fragments-js-extra'>
     /* <![CDATA[ */

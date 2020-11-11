@@ -10,7 +10,7 @@
                           </li>
                           <!-- / Email -->
                           <!-- Cart -->
-                          <li class="top-cart" <?php echo ($userId == null) ? 'hidden' : ''; ?>>
+                          <li class="top-cart" <?php echo ($userId != null) ? $userId : 'hidden'; ?>>
                               <a href="cart.php"><i class="fa fa-shopping-cart"></i> My Cart - &#x20B9;
                                 <span class="price" id="cart_price">
                                     <?php 
@@ -23,6 +23,12 @@
                               </a>
                           </li>
                           <!-- / Cart -->
+
+                          <!-- New user -->
+                          <li class="top-cart">
+                              <a href="new-user-register.php"><i class="fa fa-file-text"></i> New User</a>
+                          </li>
+                          <!-- / New user -->
 
                           <?php if($userId && $userId != null){ ?>
                           <!-- Account -->
