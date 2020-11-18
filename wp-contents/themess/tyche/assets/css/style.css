@@ -1090,7 +1090,7 @@ p {
   font-size: 15px !important ;
   line-height: 23px !important ; }
 
-dfn, cite, em, i {
+dfn, cite, em{
   font-style: italic !important ; }
 
 blockquote {

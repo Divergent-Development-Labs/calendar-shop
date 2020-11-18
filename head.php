@@ -4,17 +4,17 @@
     include 'backend/get-customer-details.php'; 
 ?>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="pingback" href="xmlrpc.php" />
+<link rel="pingback" href="xmlrpc.php" /> -->
 
 <!-- This site is optimized with the Yoast SEO Premium plugin v15.1.2 - https://yoast.com/wordpress/pluginss/seo/ -->
 <title>Home - Tyche Demo</title>
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<!-- <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" /> -->
 
-<link rel="canonical" href="" />
+<!-- <link rel="canonical" href="" /> -->
 
-<meta property="og:locale" content="en_US" />
+<!-- <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Home - Tyche Demo" />
 <meta property="og:url" content="" />
@@ -22,7 +22,7 @@
 <meta property="article:author" content="http://facebook.com/silkalns" />
 <meta property="article:modified_time" content="2020-10-22T08:33:44+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:creator" content="@https://twitter.com/ASilkalns" />
+<meta name="twitter:creator" content="@https://twitter.com/ASilkalns" /> -->
 
 <!-- <script type="application/ld+json" class="yoast-schema-graph">
     {
@@ -60,10 +60,16 @@
     }
 </script> -->
 <!-- / Yoast SEO Premium plugin. -->
+<script>
+    if (document.location.protocol != "https:") {
+        document.location = document.URL.replace(/^http:/i, "https:");
+    }
+</script>
 
-<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<!-- <link rel="dns-prefetch" href="//fonts.googleapis.com" /> -->
 <link rel="dns-prefetch" href="//s.w.org" />
-<script type="text/javascript">
+
+<!-- <script type="text/javascript">
     window._wpemojiSettings = {
         baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/",
         ext: ".png",
@@ -196,7 +202,8 @@
                 d(r.concatemoji) :
                 r.wpemoji && r.twemoji && (d(r.twemoji), d(r.wpemoji)));
     })(window, document, window._wpemojiSettings);
-</script>
+</script> -->
+
 <style type="text/css">
     img.wp-smiley,
     img.emoji {
@@ -238,23 +245,25 @@
 <script type="text/javascript" src="wp-includes/js/jquery/jquery.js" id="jquery-core-js"></script>
 <script type="text/javascript" src="wp-contents/themess/tyche/assets/vendors/owl-carousel/owl.carousel.min.js" id="owlCarousel-js"></script>
 <script type="text/javascript" src="wp-contents/themess/tyche/assets/vendors/jquery-zoom/jquery.zoom.min.js" id="jquery-zoom-js"></script>
-<script type="text/javascript" id="tyche-scripts-js-extra">
+
+<!-- <script type="text/javascript" id="tyche-scripts-js-extra">
     /* <![CDATA[ */
     var tycheHelper = {
         initZoom: "1",
         ajaxURL: "https:\/\/demo.colorlib.com\/tyche\/wp-admin\/admin-ajax.php",
     };
     /* ]]> */
-</script>
-<script type="text/javascript" src="wp-contents/themess/tyche/assets/js/functions.js" id="tyche-scripts-js"></script>
+</script> -->
 
-<link rel="https://api.w.org/" href="wp-json/" />
+<!-- <script type="text/javascript" src="wp-contents/themess/tyche/assets/js/functions.js" id="tyche-scripts-js"></script> -->
+
+<!-- <link rel="https://api.w.org/" href="wp-json/" />
 <link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/2" />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
 <link rel="shortlink" href="" />
 <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.colorlib.com%2Ftyche%2F" />
-<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.colorlib.com%2Ftyche%2F&#038;format=xml" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.colorlib.com%2Ftyche%2F&#038;format=xml" /> -->
 
 <noscript>
     <style>
@@ -264,9 +273,9 @@
     </style>
 </noscript>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     var ajaxurl = "wp-admin/admin-ajax.php";
-</script>
+</script> -->
 
 <!-- There is no amphtml version available for this URL. -->
 <style id="kirki-inline-styles"></style>

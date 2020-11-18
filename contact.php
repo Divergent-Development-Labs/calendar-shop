@@ -58,12 +58,12 @@
 
 				<div class="row">
 					<div class="col-sm-4">
-						<div role="form" class="wpcf7" id="wpcf7-f98-o1" lang="en-US" dir="ltr">
+						<div role="form" class="wpcf7z" id="wpcf7-f98-o1" lang="en-US" dir="ltr">
 							<div class="screen-reader-response">
 								<p role="status" aria-live="polite" aria-atomic="true"></p>
 								<ul></ul>
 							</div>
-							<form action="/tyche/contact/#wpcf7-f98-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+							<form action="#" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
 								<div style="display: none;">
 									<input type="hidden" name="_wpcf7" value="98" />
 									<input type="hidden" name="_wpcf7_version" value="5.3" />
@@ -73,14 +73,14 @@
 									<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
 								</div>
 								<p><label> Your Name (required)<br />
-										<span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </label></p>
+										<span class="wpcf7-form-control-wrap your-name"><input required type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </label></p>
 								<p><label> Your Email (required)<br />
-										<span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> </label></p>
+										<span class="wpcf7-form-control-wrap your-email"><input required type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> </label></p>
 								<p><label> Subject<br />
-										<span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span> </label></p>
+										<span class="wpcf7-form-control-wrap your-subject"><input required type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span> </label></p>
 								<p><label> Your Message<br />
-										<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label></p>
-								<p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" /></p>
+										<span class="wpcf7-form-control-wrap your-message"><textarea required name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label></p>
+								<p><input type="submit" name="sendMail" class="wpcf7-form-control wpcf7-submit" /></p>
 								<div class="wpcf7-response-output" aria-hidden="true"></div>
 							</form>
 						</div>

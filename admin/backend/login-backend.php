@@ -2,7 +2,7 @@
     include '../db/connection.php';
 
     session_start();
-    $_SESSION['username'] = null;
+    $_SESSION['userId'] = null;
  
     if(isset($_POST["loginBtn"])) {
         $username = filter_var($_POST["username"], FILTER_SANITIZE_STRING);

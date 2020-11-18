@@ -5,7 +5,7 @@ $(document).ready(function() {
     retrieveRecords(userId);
     
     $("#designSearchText").keyup(function(){
-        console.log('cart.js record retrieve calling');
+        console.log('design.js record retrieve calling');
         var txt = $(this).val();
 
         recordError = $(this).next();
@@ -91,22 +91,20 @@ function retrieveRecords(id){
                                 <td class="product-quantity" data-title="Quantity">\
                                     <div class="quantity">\
                                         <label class="screen-reader-text" for="quantity_5fa6b7bd6dbea">Calendar Quantity</label>\
-                                        <div class="styled-number"><a type="button" class="arrow-down incrementor toCCalc" data-increment="down"><span class="dashicons dashicons-minus"></span></a><input type="number" id="quantity_'+element.id+'" class="input-text qty text" step="1" min="0" max="" name="cart'+element.id+'qty" value="'+element.quantity+'" title="Qty" size="4" placeholder="" inputmode="numeric"><a type="button" class="arrow-up incrementor toCCalc" data-increment="up"><span class="dashicons dashicons-plus"></span></a></div>\
+                                        <input type="number" id="quantity_'+element.id+'" class="input-text qty text" step="1" min="0" max="" name="cart'+element.id+'qty" value="'+element.quantity+'" title="Qty" size="4" placeholder="" inputmode="numeric">\
                                     </div>\
                                 </td>';
 
                     temp += '<td class="product-subtotal" data-title="Subtotal">\
                                     <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#x20B9; </span><span class="cost_input">'+cost.toFixed(2)+'</span></bdi></span> </td>\
-                            <td class="product-remove">\
-                                <a type="button" onclick="removeCart(\''+element.id+'\')" class="remove" aria-label="Remove this item" data-product_id="62" data-product_sku="">×</a> </td>\
                             </tr>';    
                 });
 
-                temp2 += '<tr>\
-                                <td colspan="8" class="actions text-md-right">\
-                                    <button type="submit" class="button alignright" name="update_cart" id="update_cart" value="Update cart" disabled="" aria-disabled="true">Update cart</button>\
-                                </td>\
-                            </tr>';
+                // temp2 += '<tr>\
+                //                 <td colspan="8" class="actions text-md-right">\
+                //                     <button type="submit" class="button alignright" name="update_cart" id="update_cart" value="Update cart" disabled="" aria-disabled="true">Update cart</button>\
+                //                 </td>\
+                //             </tr>';
 
                 $(listDiv).append(temp); 
                 $(cartFooter).append(temp2);       

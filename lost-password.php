@@ -29,7 +29,7 @@
 								<div class="row">
 									<div class="col-md-12">
 										<header>
-											<h1 class="page-title margin-top">Lost password</h1>
+											<h3 class="page-title margin-top">Lost password</h3>
 										</header>
 									</div>
 								</div>

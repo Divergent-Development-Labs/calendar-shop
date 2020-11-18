@@ -3,6 +3,9 @@
 
 <head>
   <?php include 'head.php'; ?>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body class="home page-template-default page page-id-2 wp-custom-logo theme-tyche woocommerce-no-js elementor-default elementor-kit-1236">
@@ -12,15 +15,45 @@
 
     <!-- Main Slider -->
     <section class="main-slider">
+      <div class="containerz" height="100px">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img  src="custom/images/banner.jpg" alt="Los Angeles" style="width:100%; height: 460.172px !important;">
+            </div>
+
+            <div class="item">
+              <img src="custom/images/banner-2.jpg" alt="Chicago" style="width:100%; height: 460.172px !important;">
+            </div>
+
+            <div class="item">
+              <img src="custom/images/banner-3.jpg" alt="New york" style="width:100%; height: 460.172px !important;">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
       <div class="owl-carousel owl-theme" id="main-slider">
         <div class="item">
-          <img width="1600" height="545" src="wp-contents/uploads/sites/64/2017/06/hero.jpg" class="attachment-tyche-slider-image size-tyche-slider-image" alt="" loading="lazy" srcset="
-                wp-contents/uploads/sites/64/2017/06/hero.jpg          1600w,
-                wp-contents/uploads/sites/64/2017/06/hero-300x102.jpg   300w,
-                wp-contents/uploads/sites/64/2017/06/hero-768x262.jpg   768w,
-                wp-contents/uploads/sites/64/2017/06/hero-1024x349.jpg 1024w,
-                wp-contents/uploads/sites/64/2017/06/hero-65x22.jpg      65w
-              " sizes="(max-width: 1600px) 100vw, 1600px" />
+          <img src="custom/images/banner.jpg">
+          <!-- <img src="/custom/images/banner.jpg" class="attachment-tyche-slider-image size-tyche-slider-image" alt="" loading="lazy" sizes="(max-width: 1600px) 100vw, 1600px" /> -->
           <div class="hero-caption left hidden-xs hidden-sm">
             <span class="year">2021</span>
             <span class="caption">Autumn Collection</span>
@@ -54,7 +87,7 @@
                 </div>
                 <div class="cell-content">
                   <span class="cell-caption"> CALL US ANYTIME </span>
-                  <span class="cell-subcaption"> +04786445953 </span>
+                  <span class="cell-subcaption"> +000000000 </span>
                 </div>
               </div>
             </li>
@@ -66,7 +99,7 @@
                 <div class="cell-content">
                   <span class="cell-caption"> OUR LOCATION </span>
                   <span class="cell-subcaption">
-                    557-6308 Lacinia Road. NYC
+                    000000 fdjsljl jrl. SDTR
                   </span>
                 </div>
               </div>

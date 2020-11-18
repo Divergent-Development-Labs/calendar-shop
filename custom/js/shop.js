@@ -1,24 +1,40 @@
+$(window).on('load', function() {
+    // code here
+    console.log('shop.js record retrieve calling');
+    var txt = '';
+    let size = $('#size_menu').find('option:selected').text();
+    let type = $('#calendar_type_menu').val();
+    let rate = $('#size_menu').find('option:selected').val();
+    
+    console.log(txt, type, size, rate);
+
+    retrieveRecords(txt, type, size, rate);
+
+});
+
 $(document).ready(function() {
 
     let userId = $('#accountLink').attr('data');
 
     console.log(userId);
     
-    retrieveRecords("");
     
     $("#designSearchText").keyup(function(){
-        console.log('design.js record retrieve calling');
+        console.log('shop.js record retrieve calling');
         var txt = $(this).val();
+        let size = $('#size_menu').find('option:selected').text();
+        let type = $('#calendar_type_menu').val();
+        let rate = $('#size_menu').find('option:selected').val();
 
         recordError = $(this).next();
-        console.log(recordError, txt);
+        console.log(recordError, txt, type, size, rate);
 
-        retrieveRecords(txt);
+        retrieveRecords(txt, type, size, rate);
     });
     
 
     $("#newDesignName").keyup(function(){
-        console.log('design.js record checking calling');
+        console.log('shop.js record checking calling');
         var txt = $(this).val();
         recordError = $(this).next();
 
@@ -78,20 +94,20 @@ function retrieveRecords(txt, type, size, rate){
             console.log(data.length);
             if(data[0]){
                 data.forEach(element => {
-                    let temp = '<li class="col-sm-4 col-7 col-md-4 col-lg-3 col-xl-3 mx-sm-2 product type-product post-41 status-publish  instock product_cat-shirts product_tag-pokemon product_tag-print product_tag-shirt product_tag-white has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple">\
+                    let temp = '<li class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mx-md-2 product type-product post-62 status-publish instock product_cat-shirts product_cat-trends product_tag-amari product_tag-shirt has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">\
                                     <a href="https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing" target="_blank" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">\
                                         <!-- <span class="onsale">Sale!</span> -->\
-                                        <img style="width:100% !important; height:250px !important;" src="https://drive.google.com/thumbnail?id='+element.design_link+'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail product_design" alt="" loading="lazy" />\
-                                        <h2 class="woocommerce-loop-product__title text-capitalize product_name">'+element.name+'</h2></a>';
+                                        <img style="width:100% !important; height:289.875px !important;" src="https://drive.google.com/thumbnail?id='+element.design_link+'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">\
+                                        <h4 class="woocommerce-loop-product__title text-capitalize product_name">'+element.name+'</h4></a>';
                         
                         if(type){
-                            temp += '<span class="price"><span class="woocommerce-Price-amount amount"><bdi class="product_type">'+type+'</bdi></span></span>';
+                            temp += '<span class="font-weight-bold"><span class="woocommerce-Price-amount amount"><bdi class="product_type">'+type+'</bdi></span></span><br>';
                         }
                         if(size){
-                            temp += '<span class="price"><span class="woocommerce-Price-amount amount"><bdi class="product_size">'+size+'</bdi></span></span>';
+                            temp += '<span class="font-weight-bold"><span class="woocommerce-Price-amount amount"><bdi class="product_size">'+size+'</bdi></span></span><br>';
                         }
                         if(rate){
-                            temp += '<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#x20B9;	</span><span class="product_rate">'+rate+'</span></bdi></span></span>';
+                            temp += '<span class="font-weight-bold"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#x20B9;	</span><span class="product_rate">'+rate+'</span></bdi></span></span><br>';
                             temp += '<a type="button" data-quantity="1" onclick="addToCart(\''+element.id+'\',\''+element.name+'\',\''+element.design_link+'\',\''+type+'\',\''+rate+'\')" id="add-btn-'+element.id+'" class="button product_type_simple add_to_cart_button ajax_add_to_cartz" data-product_size='+size+' data-product_sku="" aria-label="Add &ldquo; '+element.name+'&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a>\
                             </li>';
                         }

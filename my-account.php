@@ -29,7 +29,7 @@
 								<div class="row">
 									<div class="col-md-12">
 										<header>
-											<h1 class="page-title margin-top">My account</h1>
+											<h3 class="page-title margin-top">My account</h3>
 										</header>
 									</div>
 								</div>
@@ -43,14 +43,13 @@
 										<?php 
 											if(isset($_SESSION["msg"])) {
 												?>
-												<div class="alert-danger pl-3 mt-1"><i class="fa fa-warning"></i><?php  echo $_SESSION["msg"]; unset($_SESSION["msg"]); ?></div>
-												<?php 
-												
-												} 
+												<div class="alert-danger mt-1 p-3"><i class="fa fa-warning"></i><?php  echo $_SESSION["msg"]; unset($_SESSION["msg"]); ?></div>
+												<?php 												
+											} 
 										?>
 
 										<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-											<label for="username" class="col-12 col-md-4">Username or email address&nbsp;<span class="required">*</span></label>
+											<label for="username" class="col-12 col-md-4">Username&nbsp;<span class="required">*</span></label>
 											<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="" /> </p>
 										<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 											<label for="password" class="col-12 col-md-4">Password&nbsp;<span class="required">*</span></label>

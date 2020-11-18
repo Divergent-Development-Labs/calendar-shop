@@ -3,8 +3,6 @@
 include '../admin/db/connection.php'; 
 session_start();
 
-
-
 if (($_SESSION["userId"]) && ($_SESSION["userId"] != null)) {
     $userId = $_SESSION["userId"];
     
@@ -22,12 +20,12 @@ if (($_SESSION["userId"]) && ($_SESSION["userId"] != null)) {
 
         if ($conn->query($sql2) === TRUE) {
             $last_id = $conn->insert_id;
-            $_SESSION["msg"] = 'Product added into Cart Successfully. Cart id : ' . $last_id;
+            // $_SESSION["msg"] = 'Product added into Cart Successfully. Cart id : ' . $last_id;
             // header('Location: ../shop.php');
             echo "1";
         } else {
             echo "Error: " . $sql2 . "<br>" . $conn->error;
-            // header('Location: ../500.php');
+            header('Location: ../500.php');
         }    
     }
     else{

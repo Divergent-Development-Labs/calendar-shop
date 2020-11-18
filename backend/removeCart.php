@@ -11,17 +11,17 @@ if(isset($_POST["removeItem"])) {
     $sql2 = "DELETE FROM `carts` WHERE `carts`.`id` = $cart_id";
 
     if ($conn->query($sql2) === TRUE) {        
-        // header('Location: ../shop.php');
+        header('Location: ../shop.php');
         echo "1";
     } else {
         echo "Error: " . $sql2 . "<br>" . $conn->error;
-        // header('Location: ../500.php');
+        header('Location: ../500.php');
     }    
 }
 else{
     session_destroy();
     echo 'cart id required';
-    // header('Location: ../index.php');    
+    header('Location: ../index.php');    
 } 
     
 

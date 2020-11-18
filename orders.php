@@ -1,14 +1,15 @@
-<?php 
-    session_start();
-    if(($_SESSION["userId"]) == null){
-        header('Location: my-account.php');    
-    }
-?>
+
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
 	<?php include 'head.php'; ?>
+	<?php 
+    // session_start();
+    if(($_SESSION["userId"]) == null){
+        header('Location: my-account.php');    
+    }
+?>
 </head>
 
 <body class="page-template-default page page-id-5 wp-custom-logo theme-tyche woocommerce-cart woocommerce-page woocommerce-no-js elementor-default elementor-kit-1236">
@@ -21,7 +22,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs">
-							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://demo.colorlib.com/tyche"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="shop.php"><span itemprop="title">Shop</span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Cart</span>
+							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://demo.colorlib.com/tyche"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Orders</span>
 						</div>
 					</div>
 				</div>
@@ -35,7 +36,7 @@
 								<div class="row">
 									<div class="col-md-12">
 										<header>
-											<h3 class="page-title margin-top">Cart</h3>
+											<h3 class="page-title margin-top">Orders</h3>
 										</header>
 									</div>
 								</div>
@@ -47,31 +48,29 @@
 											<thead>
 												<tr>
 													<th class="product-thumbnail">S.No</th>
-													<th class="product-thumbnail">Design</th>
-													<th class="product-thumbnail">Calendary Type</th>
-													<th class="product-thumbnail">Size</th>
-													<th class="product-thumbnail">Price</th>
-													<th class="product-thumbnail">Quantity</th>
+													<th class="product-thumbnail">Order ID</th>
+													<th class="product-thumbnail">Sub Total</th>
+													<th class="product-thumbnail">GST</th>
 													<th class="product-thumbnail">Total</th>
-													<th class="product-remove">&nbsp;</th>
+													<th class="product-thumbnail">Payment Status</th>
 												</tr>
 											</thead>
-											<tbody id="cartList">
+											<tbody id="orderList">
 
 											</tbody>
-											<tfoot id="cartFooter">
+											<tfoot id="orderFooter">
 
 											</tfoot>
 										</table>
-										<input hidden type="text" name="cartData" id="cartData">
+										<input hidden type="text" name="orderData" id="orderData">
 
 									</form>
 
-									<div class="cart-collaterals">
+									<!-- <div class="cart-collaterals">
 										<div class="cart_totals ">
 
 
-											<h2>Cart totals</h2>
+											<h2>Order totals</h2>
 
 											<table cellspacing="0" class="shop_table shop_table_responsive">
 
@@ -112,7 +111,7 @@
 
 
 										</div>
-									</div>
+									</div> -->
 
 								</div>
 							</article><!-- #post-## -->
@@ -123,14 +122,14 @@
 								<div class="row">
 									<div class="col-md-12">
 										<header>
-											<h3 class="page-title margin-top">Cart</h3>
+											<h3 class="page-title margin-top">Order</h3>
 										</header>
 									</div>
 								</div>
 								<div class="woocommerce">
 									<div class="woocommerce-notices-wrapper"></div>
 									<p class="cart-empty woocommerce-info">
-										Your cart is currently empty.
+										Your order is currently empty.
 									</p>
 									<p class="return-to-shop">
 										<a class="button wc-backward" href="shop.php">
@@ -151,7 +150,7 @@
 
 		<?php include 'footer.php'; ?>
 		<?php include 'scripts.php'; ?>
-		<script type="text/javascript" src="custom/js/cart.js"></script>
+		<script type="text/javascript" src="custom/js/orders.js"></script>
 </body>
 
 </html>

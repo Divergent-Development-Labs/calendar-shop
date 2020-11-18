@@ -11,6 +11,7 @@
                           <!-- / Email -->
                           <!-- Cart -->
                           <li class="top-cart" <?php echo ($userId != null) ? $userId : 'hidden'; ?>>
+                              <!-- <button type="button" data-toggle="modal" data-target="#cartModal" >Cart</button> -->
                               <a href="cart.php"><i class="fa fa-shopping-cart"></i> My Cart - &#x20B9;
                                 <span class="price" id="cart_price">
                                     <?php 
@@ -24,11 +25,6 @@
                           </li>
                           <!-- / Cart -->
 
-                          <!-- New user -->
-                          <li class="top-cart">
-                              <a href="new-user-register.php"><i class="fa fa-file-text"></i> New User</a>
-                          </li>
-                          <!-- / New user -->
 
                           <?php if($userId && $userId != null){ ?>
                           <!-- Account -->
@@ -38,6 +34,12 @@
                           </li>
                           <!-- / Account -->
                           <?php } else { ?>
+                          <!-- New user -->
+                          <li class="top-cart">
+                              <a href="new-user-register.php"><i class="fa fa-file-text"></i> New User</a>
+                          </li>
+                          <!-- / New user -->
+
                           <!-- Account -->
                           <li class="top-account">
                               <a href="my-account.php"><i class="fa fa-user"></i> Account
@@ -56,9 +58,9 @@
                           <?php } ?>
 
                           <!-- Top Search -->
-                          <li class="top-search">
+                          <!-- <li class="top-search"> -->
                               <!-- Search Form -->
-                              <form role="search" method="get" class="pull-right" id="searchform_topbar" action="">
+                              <!-- <form role="search" method="get" class="pull-right" id="searchform_topbar" action="">
                                   <label>
                                       <span class="screen-reader-text"></span>
                                       <input class="search-field-top-bar" id="search-field-top-bar" placeholder="Search ..." value="" name="s" type="search" />
@@ -66,8 +68,8 @@
                                   <button id="search-top-bar-submit" type="submit" class="search-top-bar-submit">
                                       <span class="fa fa-search"></span>
                                   </button>
-                              </form>
-                          </li>
+                              </form> -->
+                          <!-- </li> -->
                           <!-- / Top Search -->
                       </ul>
                   </div>
@@ -96,6 +98,13 @@
                               <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
                                   <a title="Shop" href="shop.php">Shop</a>
                               </li>
+
+                              <?php if($userId && $userId != null){ ?>
+                              <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
+                                  <a title="Orders" href="orders.php">Orders</a>
+                              </li>
+                              <?php } ?>
+                              
                               <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85">
                                   <a title="Contact" href="contact.php">Contact</a>
                               </li>

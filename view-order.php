@@ -1,14 +1,40 @@
-<?php 
-    session_start();
-    if(($_SESSION["userId"]) == null){
-        header('Location: my-account.php');    
-    }
-?>
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
 	<?php include 'head.php'; ?>
+    <?php 
+        // session_start();
+        if(($_SESSION["userId"]) == null){
+            header('Location: my-account.php');    
+        }
+    ?>
+    <?php 
+        include './admin/db/connection.php';
+        if(isset($_GET['id'])){
+            if(!($_GET['id'])){
+                header('Location: index.php');
+            }    
+            else{
+                $q = intval($_GET['id']);
+                $customer_id = ($_SESSION["userId"]);
+                $sql = "SELECT * FROM `orders` WHERE `id`='$q' AND `customer_id`='$customer_id'";
+
+                $orders = $conn->prepare($sql);
+                $orders->execute();
+            
+                $result = $orders->get_result();
+                if(!$result->fetch_assoc()){
+                    header('Location: index.php');
+                }
+            }
+        }
+        else{
+            header('Location: index.php');
+        }
+
+    ?>
+
 </head>
 
 <body class="page-template-default page page-id-5 wp-custom-logo theme-tyche woocommerce-cart woocommerce-page woocommerce-no-js elementor-default elementor-kit-1236">
@@ -21,7 +47,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs">
-							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://demo.colorlib.com/tyche"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="shop.php"><span itemprop="title">Shop</span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Cart</span>
+							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://demo.colorlib.com/tyche"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="orders.php"><span itemprop="title">Orders</span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">View Order</span>
 						</div>
 					</div>
 				</div>
@@ -35,7 +61,7 @@
 								<div class="row">
 									<div class="col-md-12">
 										<header>
-											<h3 class="page-title margin-top">Cart</h3>
+											<h3 class="page-title margin-top">View Order : <?php echo $q; ?></h3>
 										</header>
 									</div>
 								</div>
@@ -53,7 +79,6 @@
 													<th class="product-thumbnail">Price</th>
 													<th class="product-thumbnail">Quantity</th>
 													<th class="product-thumbnail">Total</th>
-													<th class="product-remove">&nbsp;</th>
 												</tr>
 											</thead>
 											<tbody id="cartList">
@@ -71,7 +96,7 @@
 										<div class="cart_totals ">
 
 
-											<h2>Cart totals</h2>
+											<h2>Order totals</h2>
 
 											<table cellspacing="0" class="shop_table shop_table_responsive">
 
@@ -106,7 +131,7 @@
 													<input hidden type="text" name="orderData" id="orderData">
 													<input hidden type="text" name="totalOrderData" id="totalOrderData">
 
-													<button type="submit" name="saveBtn" class="checkout-button button alt wc-forward make_order" <?php echo $userId; ?> >Make Order</button>
+													<a href="orders.php" name="saveBtn" class="checkout-button button alt wc-forward make_order" <?php echo $userId; ?> >Back to Orders</a>
 												</form>
 											</div>
 
@@ -123,14 +148,14 @@
 								<div class="row">
 									<div class="col-md-12">
 										<header>
-											<h3 class="page-title margin-top">Cart</h3>
+											<h3 class="page-title margin-top">Order</h3>
 										</header>
 									</div>
 								</div>
 								<div class="woocommerce">
 									<div class="woocommerce-notices-wrapper"></div>
 									<p class="cart-empty woocommerce-info">
-										Your cart is currently empty.
+										Your order is currently empty.
 									</p>
 									<p class="return-to-shop">
 										<a class="button wc-backward" href="shop.php">
@@ -151,7 +176,7 @@
 
 		<?php include 'footer.php'; ?>
 		<?php include 'scripts.php'; ?>
-		<script type="text/javascript" src="custom/js/cart.js"></script>
+		<script type="text/javascript" src="custom/js/view-order.js"></script>
 </body>
 
 </html>
