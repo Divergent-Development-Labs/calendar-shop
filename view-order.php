@@ -47,7 +47,8 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs">
-							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://demo.colorlib.com/tyche"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="orders.php"><span itemprop="title">Orders</span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">View Order</span>
+							<input disbaled hidden class="order-id" id="order-id" value="<?php echo $q; ?>" />
+							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="index.php"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="orders.php"><span itemprop="title">Orders</span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">View Order</span>
 						</div>
 					</div>
 				</div>

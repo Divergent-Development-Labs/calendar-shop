@@ -43,6 +43,10 @@
                         # code...
                         $size = $v;
                         break;
+                    case 'is_custom_design':
+                        # code...
+                        $is_custom_design = $v;
+                        break;    
                     case 'design':
                         # code...
                         $design = $v;
@@ -66,7 +70,7 @@
                 }
             }    
 
-            $sql2 = "INSERT INTO `products` (`order_id`, `customer`, `calendar_type`, `size`, `design`, `rate`, `quantity`, `cost`) VALUES ('$order_id', '$customer_id', '$calendar_type', '$size', '$design', '$rate', '$quantity', '$cost')";
+            $sql2 = "INSERT INTO `products` (`order_id`, `customer`, `calendar_type`, `size`, `is_custom_design`, `design`, `rate`, `quantity`, `cost`) VALUES ('$order_id', '$customer_id', '$calendar_type', '$size', '$is_custom_design', '$design', '$rate', '$quantity', '$cost')";
 
             if ($conn->query($sql2) === TRUE) {
                 $last_id = $conn->insert_id;

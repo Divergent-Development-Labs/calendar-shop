@@ -8,7 +8,7 @@ $(window).on('load', function() {
     
     console.log(txt, type, size, rate);
 
-    retrieveRecords(txt, type, size, rate);
+    retrieveDesignRecords(txt, type, size, rate);
 
 });
 
@@ -17,7 +17,6 @@ $(document).ready(function() {
     let userId = $('#accountLink').attr('data');
 
     console.log(userId);
-    
     
     $("#designSearchText").keyup(function(){
         console.log('shop.js record retrieve calling');
@@ -29,54 +28,41 @@ $(document).ready(function() {
         recordError = $(this).next();
         console.log(recordError, txt, type, size, rate);
 
-        retrieveRecords(txt, type, size, rate);
+        retrieveDesignRecords(txt, type, size, rate);
     });
-    
 
-    $("#newDesignName").keyup(function(){
-        console.log('shop.js record checking calling');
-        var txt = $(this).val();
-        recordError = $(this).next();
-
-        console.log(recordError, txt);
-
-        if(txt!="")
-        {
-        $.ajax({
-            url:"ajax/isRecordExist.php",
-            method:"post",
-            data:{
-            searchTxt:txt,
-            table: 'design',
-            field: 'name'
-            },
-            dataType:"json",
-            success:function(data)
-            {
-            if(data != 2){
-                $('#newDesignSaveBtn').prop('disabled', true);
-                $(recordError).html('Design name already Exist.!!');
-            }
-            else{
-                $(recordError).html('');
-                $('#newDesignSaveBtn').prop('disabled', false);
-            }
-            }
-        });
-        }
-        else
-        {
-        $(recordError).html("");
-        }
-    });
+    $(".design-tab").off('click').on('click', designTabSelection);    
 
 });
 
-function retrieveRecords(txt, type, size, rate){
-    console.log('design.js record retrieve calling');
+function designTabSelection(){
+    console.log($(this));
+    var designTab = $(this).attr('data');
+    if(designTab == 'custom'){
+        $('#custom-counts').removeClass('d-none');
+        $('#design-counts').addClass('d-none');
+    }
+    else{
+        $('#design-counts').removeClass('d-none');
+        $('#custom-counts').addClass('d-none');
+    }
+    console.log($(this).attr('data'));
+    console.log(designTab);
+}
 
+function retrieveDesignRecords(txt, type, size, rate){
+    console.log('design.js record retrieve calling');
+    
     listDiv = $('#designsList');
+    designCounts = $('#design-counts');
+    customCounts = $('#custom-counts');
+    totalCounts = $('#total-counts');
+    customListDiv = $('#customDesignsList');
+
+    let count1 = 0, count2 = 0;
+
     $(listDiv).html('');
+    $(customListDiv).html('');
 
     $.ajax({
         url:"admin/ajax/retrieveRecords.php",
@@ -90,16 +76,32 @@ function retrieveRecords(txt, type, size, rate){
         dataType:"json",
         success:function(data)
         {
+            let userId = $('#accountLink').attr('data');
+
+            console.log(userId);
+        
+            console.log('userId : '+userId);
             console.log(data);
             console.log(data.length);
             if(data[0]){
                 data.forEach(element => {
-                    let temp = '<li class="col-sm-6 col-12 col-md-6 col-lg-4 col-xl-4 mx-md-2 product type-product post-62 status-publish instock product_cat-shirts product_cat-trends product_tag-amari product_tag-shirt has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">\
-                                    <a href="https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing" target="_blank" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">\
-                                        <!-- <span class="onsale">Sale!</span> -->\
-                                        <img style="width:100% !important; height:289.875px !important;" src="https://drive.google.com/thumbnail?id='+element.design_link+'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">\
-                                        <h4 class="woocommerce-loop-product__title text-capitalize product_name">'+element.name+'</h4></a>';
-                        
+                    if(element.user_id == 0 || element.user_id == userId){
+                    let temp = '<li class="col-sm-6 col-12 col-md-6 col-lg-5 col-xl-5 mr-md-2 product type-product post-62 status-publish instock product_cat-shirts product_cat-trends product_tag-amari product_tag-shirt has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">';
+
+                        if(element.is_custom_design == 'true'){
+                            temp +='<a href="'+element.design_link+'" target="_blank" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">\
+                                    <!-- <span class="onsale">Sale!</span> -->\
+                                    <img style="width:100% !important; height:289.875px !important;" src="'+element.design_link+'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">\
+                                    <h4 class="my-custom-wrap woocommerce-loop-product__title text-capitalize product_name">'+element.name+'</h4></a>';
+                            count1++;
+                        }
+                        else{
+                            temp +='<a href="https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing" target="_blank" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">\
+                                    <!-- <span class="onsale">Sale!</span> -->\
+                                    <img style="width:100% !important; height:289.875px !important;" src="https://drive.google.com/thumbnail?id='+element.design_link+'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">\
+                                    <h4 class="my-custom-wrap woocommerce-loop-product__title text-capitalize product_name">'+element.name+'</h4></a>';
+                            count2++;
+                        }                    
                         if(type){
                             temp += '<span class="font-weight-bold"><span class="woocommerce-Price-amount amount"><bdi class="product_type">'+type+'</bdi></span></span><br>';
                         }
@@ -108,15 +110,27 @@ function retrieveRecords(txt, type, size, rate){
                         }
                         if(rate){
                             temp += '<span class="font-weight-bold"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#x20B9;	</span><span class="product_rate">'+rate+'</span></bdi></span></span><br>';
-                            temp += '<a type="button" data-quantity="1" onclick="addToCart(\''+element.id+'\',\''+element.name+'\',\''+element.design_link+'\',\''+type+'\',\''+rate+'\')" id="add-btn-'+element.id+'" class="button product_type_simple add_to_cart_button ajax_add_to_cartz" data-product_size='+size+' data-product_sku="" aria-label="Add &ldquo; '+element.name+'&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a>\
+                            temp += '<a type="button" data-quantity="1" onclick="addToCart(\''+element.id+'\',\''+element.name+'\',\''+element.is_custom_design+'\',\''+element.design_link+'\',\''+type+'\',\''+rate+'\')" id="add-btn-'+element.id+'" class="button product_type_simple add_to_cart_button ajax_add_to_cartz" data-product_size='+size+' data-product_sku="" aria-label="Add &ldquo; '+element.name+'&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a>\
                             </li>';
                         }
 
-                    $(listDiv).append(temp);                        
+                        if(element.is_custom_design == 'true'){
+                            $(customListDiv).append(temp);                        
+                        }
+                        else{
+                            $(listDiv).append(temp);                        
+                        }        
+                    }
                 });
+
+                $(customCounts).html(count1);   
+                $(designCounts).html(count2);
+                $(totalCounts).html(count2+count1);
+                console.log(count1, count2);   
             }
             else{
                 $(listDiv).html('<span class="font-weight-bold mx-auto text-center">No Data Available</span>');
+                $(customListDiv).html('<span class="font-weight-bold mx-auto text-center">No Data Available</span>');
             }
         }
     });
@@ -133,7 +147,7 @@ function selectSize(e, rate){
     }
     
     console.log(txt, type, size, rate);
-    retrieveRecords(txt, type, size, rate);
+    retrieveDesignRecords(txt, type, size, rate);
 }
 
 function selectCalendarType(e){
@@ -150,14 +164,10 @@ function selectCalendarType(e){
         rate = $('#size_menu').find('option:selected').val();
     }
     console.log(txt, type, size, rate);
-    retrieveRecords(txt, type, size, rate);
+    retrieveDesignRecords(txt, type, size, rate);
 }
 
-function addToCartz(e){
-    console.log(e);
-}
-
-function addToCart(design_id, design_name, design_link, type, rate){
+function addToCart(design_id, design_name, is_custom_design, design_link, type, rate){
     let userId = $('#accountLink').attr('data');
 
     if(userId){
@@ -177,6 +187,7 @@ function addToCart(design_id, design_name, design_link, type, rate){
             method:"post",
             data:{
                 design_name: design_name,
+                is_custom_design: is_custom_design,
                 design_link: design_link,
                 type: type,
                 size: size,

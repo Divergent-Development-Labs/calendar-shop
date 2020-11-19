@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-    let userId = $('#accountLink').attr('data');
+    let orderId = $('#order-id').attr('value');
 
-    retrieveRecords(userId);
+    retrieveRecords(orderId);
     
     $("#designSearchText").keyup(function(){
         console.log('design.js record retrieve calling');
@@ -36,8 +36,8 @@ function removeCart(id){
         success:function(data)
         {
             console.log(data);
-            let userId = $('#accountLink').attr('data');
-            retrieveRecords(userId);
+            let orderId = $('#accountLink').attr('data');
+            retrieveRecords(orderId);
         }
     });
 }
@@ -54,8 +54,8 @@ function retrieveRecords(id){
         method:"post",
         data:{
         retriveTxt:id,
-        table: 'carts',
-        field: 'customer',
+        table: 'products',
+        field: 'order_id',
         retrieveFields: 'all'
         },
         dataType:"json",
@@ -79,21 +79,31 @@ function retrieveRecords(id){
                     temp += '<tr class="woocommerce-cart-form__cart-item cart_item" id="cRow'+i+'">\
                                 <td class="product-sno" data-title="Sno">\
                                     <input disbaled hidden class="cart_id" value='+element.id+' />\
-                                    <span class="woocommerce-Price-amount amount"><bdi>'+i+'</bdi></span> </td>\
-                                <td class="product-thumbnail">\
-                                    <a href="https://drive.google.com/file/d/'+element.design+'/view?usp=sharing"><img width="255" style="height: 620px !impotant;" src="https://drive.google.com/thumbnail?id='+element.design+'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" data='+element.design+' loading="lazy"></a> </td>\
-                                <td class="product-name" data-title="Product">\
-                                    <span >'+element.calendar_type+'</span> </td>\
-                                <td class="product-name" data-title="Size">\
-                                    <span class="woocommerce-Price-amount amount"><bdi>'+element.size+'</bdi></span> </td>\
-                                <td class="product-price" data-title="Price">\
-                                    <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#x20B9; </span><span class="rate_input">'+element.rate.toFixed(2)+'</span></bdi></span> </td>\
-                                <td class="product-quantity" data-title="Quantity">\
-                                    <div class="quantity">\
-                                        <label class="screen-reader-text" for="quantity_5fa6b7bd6dbea">Calendar Quantity</label>\
-                                        <input type="number" id="quantity_'+element.id+'" class="input-text qty text" step="1" min="0" max="" name="cart'+element.id+'qty" value="'+element.quantity+'" title="Qty" size="4" placeholder="" inputmode="numeric">\
-                                    </div>\
-                                </td>';
+                                    <span class="woocommerce-Price-amount amount"><bdi>'+i+'</bdi></span> </td>';
+
+                    if(element.is_custom_design == 'true'){
+                        temp += '<td class="product-thumbnail">\
+                                    <input disbaled hidden class="is_custom_design" value='+element.is_custom_design+' />\
+                                    <a href="'+element.design+'"><img width="255" style="height: 620px !impotant;" src="'+element.design+'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" data='+element.design+' loading="lazy"></a> </td>';
+                    }
+                    else{
+                        temp += '<td class="product-thumbnail">\
+                                    <input disbaled hidden class="is_custom_design" value='+element.is_custom_design+' />\
+                                    <a href="https://drive.google.com/file/d/'+element.design+'/view?usp=sharing"><img width="255" style="height: 620px !impotant;" src="https://drive.google.com/thumbnail?id='+element.design+'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" data='+element.design+' loading="lazy"></a> </td>';
+                    }
+                
+                    temp +='<td class="product-name" data-title="Product">\
+                                <span >'+element.calendar_type+'</span> </td>\
+                            <td class="product-name" data-title="Size">\
+                                <span class="woocommerce-Price-amount amount"><bdi>'+element.size+'</bdi></span> </td>\
+                            <td class="product-price" data-title="Price">\
+                                <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#x20B9; </span><span class="rate_input">'+element.rate.toFixed(2)+'</span></bdi></span> </td>\
+                            <td class="product-quantity" data-title="Quantity">\
+                                <div class="quantity">\
+                                    <label class="screen-reader-text" for="quantity_5fa6b7bd6dbea">Calendar Quantity</label>\
+                                    <input type="number" id="quantity_'+element.id+'" class="input-text qty text" step="1" min="0" max="" name="cart'+element.id+'qty" value="'+element.quantity+'" title="Qty" size="4" placeholder="" inputmode="numeric">\
+                                </div>\
+                            </td>';
 
                     temp += '<td class="product-subtotal" data-title="Subtotal">\
                                     <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#x20B9; </span><span class="cost_input">'+cost.toFixed(2)+'</span></bdi></span> </td>\

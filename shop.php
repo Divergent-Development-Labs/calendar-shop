@@ -4,6 +4,8 @@
 
 <head>
     <?php include 'head.php'; ?>
+	<style>
+	</style>
 </head>
 
 <?php 
@@ -64,15 +66,36 @@
 					</div>
 					
 					<div class="col-md-8 tyche-has-sidebar">
-
-						<!-- <div class="row"> -->
-							<h4 class="col-sm-8 col-6 pl-0 font-weight-bold text-dark "><span>Products</span></h4>						
-							<input type="text" placeholder="Search By Design" name="designSearchText" id="designSearchText" class="woocommerce-ordering col-sm-4 col-6 designSearchText form-control" />								
-						<!-- </div> -->
-
-							<ul class="columns-3 products pt-4" id="designsList">
+						<div class="row">
+							<ul class="nav nav-tabs col-8" >
+								<li class=""><a href="#designs" data="default" data-toggle="tab" aria-expanded="false" class="nav-link active font-weight-bold design-tab">Designs</a></li>
+								<li class="" <?php echo ($userId != null) ? $userId : 'hidden'; ?>><a href="#customDesigns" data="custom" data-toggle="tab" aria-expanded="false" class="nav-link font-weight-bold design-tab">Custom</a></li>
 							</ul>
+							<p class="woocommerce-result-count">Showing <span id="custom-counts" class="d-none"></span><span id="design-counts"></span> of <span id="total-counts"></span> results</p>
+							<input type="text" placeholder="Search By Design" name="designSearchText" id="designSearchText" class="woocommerce-ordering col-sm-4 col-6 designSearchText form-control" />								
+						</div>
 
+
+						<div class="tab-content">
+	                        <div class="tab-pane active " id="designs">                        
+								<ul class="columns-3 products pt-4" id="designsList">
+								</ul>
+							</div>
+							
+	                        <div class="tab-pane fade" id="customDesigns">         
+							        
+								<form action="upload.php" method="post" enctype="multipart/form-data">
+									<!-- <h6 for="fileToUpload">Custom Image Upload:</h6> -->
+									<div class="row border p-2">
+											<input type="file" class="col-sm-8 my-auto btn" size="60" style="width: 200px !important;" name="fileToUpload" id="fileToUpload">
+											<input type="text" hidden name="userId" id="userId" value="<?php echo $userId; ?>" />
+											<input type="submit"  class="col-sm-4" value="Upload Image" name="submit">
+									</div>	
+								</form>
+								<ul class="columns-3 products pt-4" id="customDesignsList">
+								</ul>
+							</div>
+						</div>
 						<!-- <div class="row text-center">
 							<ul class="tyche-pager">
 								<li class="active"><a href="shop.php">1</a></li>

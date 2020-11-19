@@ -1,14 +1,16 @@
-<?php 
-    session_start();
-    if(($_SESSION["userId"]) == null){
-        header('Location: my-account.php');    
-    }
-?>
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
 	<?php include 'head.php'; ?>
+
+	<?php 
+		// session_start();
+		if(($_SESSION["userId"]) == null){
+			header('Location: my-account.php');    
+		}
+	?>
+
 </head>
 
 <body class="page-template-default page page-id-5 wp-custom-logo theme-tyche woocommerce-cart woocommerce-page woocommerce-no-js elementor-default elementor-kit-1236">
@@ -21,7 +23,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs">
-							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://demo.colorlib.com/tyche"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="shop.php"><span itemprop="title">Shop</span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Cart</span>
+							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="index.php"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="shop.php"><span itemprop="title">Shop</span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Cart</span>
 						</div>
 					</div>
 				</div>

@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <nav class="woocommerce-breadcrumb"><a href="https://demo.colorlib.com/tyche">Home</a>&nbsp;&#47;&nbsp;<a href="shop.php">Shop</a>&nbsp;&#47;&nbsp;Page 2</nav>
+                        <nav class="woocommerce-breadcrumb"><a href="index.php">Home</a>&nbsp;&#47;&nbsp;<a href="shop.php">Shop</a>&nbsp;&#47;&nbsp;Page 2</nav>
                     </div>
                 </div>
                 <div class="row">
