@@ -29,9 +29,10 @@
                           <?php if($userId && $userId != null){ ?>
                           <!-- Account -->
                           <li class="top-account">
-                              <a href="my-account.php" id="accountLink" data="<?php echo $userId;?>"><i class="fa fa-user"></i> <?php echo $userName; ?>
+                              <a href="orders.php" id="accountLink" data="<?php echo $userId;?>"><i class="fa fa-user"></i> <?php echo $userName; ?>
                               </a>
                           </li>
+                          
                           <!-- / Account -->
                           <?php } else { ?>
                           <!-- New user -->
