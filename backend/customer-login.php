@@ -25,8 +25,8 @@
                 
                 $_SESSION["userId"] = $row['id'];
             }
-            header('Location: ' . $_SERVER['HTTP_REFERER']);                        
-            // header('location: ../shop.php');
+            // header('Location: ' . $_SERVER['HTTP_REFERER']);                        
+            header('location: ../shop.php');
         }
         else{
             echo $_SESSION["msg"] = "Invalid Credentials";  

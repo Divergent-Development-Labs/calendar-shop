@@ -68,8 +68,8 @@
 					
 					<div class="col-md-9 tyche-has-sidebar">
 						<div class="row">
-							<ul class="nav nav-tabs col-sm-5" >
-								<li class=""><a href="#designs" data="default" data-toggle="tab" aria-expanded="false" class="nav-link active font-weight-bold design-tab">Designs</a></li>
+							<ul class="nav nav-tabs col-sm-5 border-0" >
+								<li class=""><a href="#designs" data="default" data-toggle="tab" aria-expanded="false" class="nav-link  font-weight-bold design-tab">Designs</a></li>
 								<li class="" <?php echo ($userId != null) ? $userId : 'hidden'; ?>><a href="#customDesigns" data="custom" data-toggle="tab" aria-expanded="false" class="nav-link font-weight-bold design-tab">Custom</a></li>
 							</ul>
 							<p class="woocommerce-result-count col-sm-4">Showing <span id="custom-counts" class="d-none"></span><span id="design-counts"></span> of <span id="total-counts"></span> results</p>

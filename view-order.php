@@ -1,7 +1,7 @@
 <?php 
         session_start();
-        if(isset($_SESSION["userId"]) || ($_SESSION["userId"]) == null){
-            exit(header('Location: my-account.php'));    
+        if(!isset($_SESSION["userId"]) || ($_SESSION["userId"]) == null){
+            header('Location: my-account.php');    
         }
 ?>
 
