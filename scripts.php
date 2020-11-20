@@ -82,6 +82,8 @@
     /* ]]> */
 </script>
 <script type='text/javascript' src='wp-contents/pluginss/woocommerce/assets/js/frontend/add-to-cart.min.js' id='wc-add-to-cart-js'></script>
+<script type="text/javascript" src="wp-contents/themess/tyche/assets/js/functions.js" id="tyche-scripts-js"></script>
+
 <script type='text/javascript' src='wp-contents/pluginss/woocommerce/assets/js/js-cookie/js.cookie.min.js' id='js-cookie-js'></script>
 <script type='text/javascript' id='woocommerce-js-extra'>
     /* <![CDATA[ */

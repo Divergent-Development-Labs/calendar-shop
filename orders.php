@@ -1,15 +1,15 @@
+<?php
+	session_start();
+	if (!isset($_SESSION["userId"])) {
+		exit(header('Location: my-account.php'));
+	}
+?>	
 
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
 	<?php include 'head.php'; ?>
-	<?php 
-    // session_start();
-    if(($_SESSION["userId"]) == null){
-        header('Location: my-account.php');    
-    }
-?>
 </head>
 
 <body class="page-template-default page page-id-5 wp-custom-logo theme-tyche woocommerce-cart woocommerce-page woocommerce-no-js elementor-default elementor-kit-1236">
@@ -28,6 +28,42 @@
 				</div>
 			</div>
 			<div class="container">
+				<div class="d-md-flex justify-content-start">
+							<?php
+							$customerId = intval($_SESSION["userId"]);
+
+							$sql1 = "SELECT * FROM `customer` WHERE `id`='$customerId'";
+							$customer = $conn->prepare($sql1);
+
+							$customer->execute();
+
+							$result1 = $customer->get_result();
+
+							if ($result1->num_rows > 0) {
+								while ($row = $result1->fetch_assoc()) { ?>
+
+					<div class="card p-0 col-md-4">
+						<div class="card-header bg-dark">
+							<header>
+								<h5 class="info-field-title"><?php echo $row['name']; ?></h5>
+							</header>
+						</div>
+						<div class="border card-body p-0">
+							<table class="info-field-text mb-1 border-0">
+								<tr><td><?php echo $row['address_line']; ?>,</td></tr>
+								<tr><td><?php echo $row['area']; ?>,</td></tr>
+								<tr><td><?php echo $row['district']; ?>,</td></tr>
+								<tr><td><?php echo $row['state']; ?>,</td></tr>
+								<tr><td><?php echo $row['pincode']; ?>,</td></tr>
+								<tr><td><i class="fa fa-phone mr-2 text-danger"></i><?php echo $row['mobile_number']; ?>,</td></tr>
+								<tr><td><i class="fa fa-envelope mr-2 text-danger"></i><?php echo $row['email']; ?></td></tr>
+							</table>
+						</div>
+					</div>
+							<?php
+								}
+							} ?>
+				</div> <!-- end row -->
 				<div class="row">
 					<div id="primary" class="content-area col-md-12">
 						<main id="main" class="site-main" role="main">

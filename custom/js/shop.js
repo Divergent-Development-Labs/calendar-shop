@@ -129,8 +129,12 @@ function retrieveDesignRecords(txt, type, size, rate){
                 console.log(count1, count2);   
             }
             else{
-                $(listDiv).html('<span class="font-weight-bold mx-auto text-center">No Data Available</span>');
-                $(customListDiv).html('<span class="font-weight-bold mx-auto text-center">No Data Available</span>');
+                if(count2 == 0){
+                    $(listDiv).html('<span class="font-weight-bold mx-auto text-center">No Data Available</span>');
+                }
+                if(count1 == 0){
+                    $(customListDiv).html('<span class="font-weight-bold mx-auto text-center">No Data Available</span>');
+                }
             }
         }
     });

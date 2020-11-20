@@ -74,6 +74,81 @@ function designSelect(){
 
 function retrieveRecords(txt, designId){
     listDiv = $('#designsList');
+    customListDiv = $('#customDesignsList');
+
+    designCounts = $('#design-counts');
+    customCounts = $('#custom-counts');
+    totalCounts = $('#total-counts');
+
+    $(listDiv).html('');
+    $(customListDiv).html('');
+
+    let count1 = 0, count2 = 0;
+
+    $.ajax({
+        url:"ajax/retrieveRecords.php",
+        method:"post",
+        data:{
+        retriveTxt:txt,
+        table: 'design',
+        field: 'name',
+        retrieveFields: 'all'
+        },
+        dataType:"json",
+        success:function(data)
+        {
+            console.log(data);
+            if(data[0]){                
+                data.forEach(element => {
+                    let temp = '<li class="col-md-4 col-sm-6 col-xl-3">\
+                                    <div class="card">';
+                    
+                    if(element.is_custom_design == 'true'){                    
+                            temp +='<a href="../'+element.design_link+'" target="_blank"><img style="height: 200px;" class="card-img-top img-fluid" src="../'+element.design_link+'" alt="'+element.name+'"></a>\
+                                        <p class="card-text" hidden id="link-p-'+element.id+'" >'+element.design_link+'</p>';
+                        count1++;
+                    }
+                    else{
+                            temp +='<a href="https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing" target="_blank"><img style="height: 200px;" class="card-img-top img-fluid" src="https://drive.google.com/thumbnail?id='+element.design_link+'" alt="'+element.name+'"></a>\
+                                        <p class="card-text" hidden id="link-p-'+element.id+'" >https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing</p>';
+                        count2++;                        
+                    }
+
+                        temp += '</div>\
+                                <div class="card-body">\
+                                    <h4 class="card-title text-capitalize">'+element.name+'</h4>\
+                                    <button type="button" onclick="selectDesign(\''+element.is_custom_design+'\', \''+element.design_link+'\', \''+element.name+'\', \''+designId+'\')" class="font-weight-bold btn btn-outline-primary waves-effect waves-light">Pick</button>\
+                                </div>\
+                            </div>\
+                        </li>';
+
+                    if(element.is_custom_design == 'true'){
+                        $(customListDiv).append(temp);                        
+                    }
+                    else{
+                        $(listDiv).append(temp);                        
+                    }        
+                });
+
+                $(customCounts).html(count1);   
+                $(designCounts).html(count2);
+                $(totalCounts).html(count2+count1);
+                console.log(count1, count2);   
+            }
+            else{
+                if(count2 == 0){
+                    $(listDiv).html('<span class="font-weight-bold mx-auto text-center">No Data Available</span>');
+                }
+                if(count1 == 0){
+                    $(customListDiv).html('<span class="font-weight-bold mx-auto text-center">No Data Available</span>');
+                }
+            }
+        }
+    });
+}
+
+function retrieveRecordsz(txt, designId){
+    listDiv = $('#designsList');
     $(listDiv).html('');
 
     $.ajax({
@@ -99,7 +174,7 @@ function retrieveRecords(txt, designId){
                                 <div class="card-body">\
                                     <div class="d-flex justify-content-between mt-3">\
                                         <h4 class="card-title text-capitalize">'+element.name+'</h4>\
-                                        <button type="button" onclick="selectDesign(\''+element.design_link+'\', \''+element.name+'\', \''+designId+'\')" class="font-weight-bold btn btn-outline-primary waves-effect waves-light">Pick</button>\
+                                        <button type="button" onclick="selectDesign(\''+element.is_custom_design+'\', \''+element.design_link+'\', \''+element.name+'\', \''+designId+'\')" class="font-weight-bold btn btn-outline-primary waves-effect waves-light">Pick</button>\
                                     </div>\
                                 </div>\
                             </div>\
@@ -114,13 +189,14 @@ function retrieveRecords(txt, designId){
     });
 }
 
-function selectDesign(design_link, name, designId){
+function selectDesign(is_custom_design, design_link, name, designId){
     console.log(design_link);
-    // console.log($('#'+designId));
+    console.log($('#'+designId));
     if(designId){
         $('#'+designId).prev().find('input').val(name);
         console.log($('#'+designId).prev().prev());
         $('#'+designId).prev().prev().val(design_link);
+        $('#'+designId).prev().prev().prev().val(is_custom_design);
         $('#designCard').addClass('d-none');        
     }
     else{

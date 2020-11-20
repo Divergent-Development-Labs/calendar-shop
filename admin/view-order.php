@@ -182,7 +182,12 @@
                                                                 echo '<tr>';
                                                                 echo '<td>'.$sno.'</td>';
                                                                 echo '<td><span>'.$rowProduct['calendar_type'].'</span></td>';
-                                                                echo '<td><img src="https://drive.google.com/thumbnail?id=' . $rowProduct['design'] . '" alt="product-img" title="product-img" class="avatar-md" /></td>';
+                                                                if($rowProduct['is_custom_design'] == 'true'){
+                                                                    echo '<td><img src="../' . $rowProduct['design'] . '" alt="product-img" title="product-img" class="avatar-md" /></td>';
+                                                                }
+                                                                else{
+                                                                    echo '<td><img src="https://drive.google.com/thumbnail?id=' . $rowProduct['design'] . '" alt="product-img" title="product-img" class="avatar-md" /></td>';
+                                                                }
                                                                 echo '<td><span>'.$rowProduct['size'].'</span></td>';
                                                                 echo '<td><span>&#x20B9; '.number_format($rowProduct['rate'], 2).'</span></td>';
                                                                 echo '<td class="text-center"><span>'.$rowProduct['quantity'].'</span></td>';

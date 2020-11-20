@@ -1,14 +1,15 @@
+<?php 
+        session_start();
+        if(isset($_SESSION["userId"]) || ($_SESSION["userId"]) == null){
+            exit(header('Location: my-account.php'));    
+        }
+?>
+
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
 	<?php include 'head.php'; ?>
-    <?php 
-        // session_start();
-        if(($_SESSION["userId"]) == null){
-            header('Location: my-account.php');    
-        }
-    ?>
     <?php 
         include './admin/db/connection.php';
         if(isset($_GET['id'])){
@@ -95,7 +96,6 @@
 
 									<div class="cart-collaterals">
 										<div class="cart_totals ">
-
 
 											<h2>Order totals</h2>
 

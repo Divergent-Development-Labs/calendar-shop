@@ -41,7 +41,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class=" col-sm-2 align-self-end">
+                                                    <div class="col-sm-2 align-self-end">
                                                         <div class="mt-3">
                                                             <button type="submit" id="newDesignSaveBtn" name="saveBtn" class="btn btn-primary font-weight-bold">Save Design</button>
                                                         </div>
@@ -49,17 +49,31 @@
                                                 </div>
                                             </form>
                                             <div class="mt-5">
-                                                <div>
-                                                    <!-- <select id="designCount" class="form-control">
-                                                        <option value="10">10</option>
-                                                        <option value="25">25</option>
-                                                        <option value="50">50</option>
-                                                        <option value="all">All</option>
-                                                    </select> -->
-                                                    <input type="text" placeholder="Search" name="designSearchText" id="designSearchText" class="col-4 designSearchText form-control" />
+                                                <div class="row">                                                            
+                                                    <!-- Nav tabs -->
+                                                    <ul class="nav nav-tabs col-6"  role="tablist">
+                                                        <li class="nav-item">
+                                                            <a href="#designs" data="default" data-toggle="tab" aria-expanded="false" class="nav-link active font-weight-bold design-tab">Designs</a>
+                                                        </li>
+                                                        <li class="" >
+                                                            <a href="#customDesigns" data="custom" data-toggle="tab" aria-expanded="false" class="nav-link font-weight-bold design-tab">Custom</a>
+                                                        </li>
+                                                    </ul>
+                                                    <p class="woocommerce-result-count col-3 my-auto text-right">Showing <span id="custom-counts" class="d-none"></span><span id="design-counts"></span> of <span id="total-counts"></span> results</p>
+                                                    <input type="text" placeholder="Search" name="designSearchText" id="designSearchText" class="col-3 designSearchText form-control" />
                                                 </div>
-                                                <div id="designsList" class="row mt-3">
 
+                                                <!-- Tab panes -->
+                                                <div class="tab-content text-muted mt-3">
+                                                    <div class="tab-pane active" id="designs">
+                                                        <ul class="row" id="designsList">
+                                                        </ul>                        
+                                                    </div>
+                                                    
+                                                    <div class="tab-pane mt-3" id="customDesigns">   
+                                                        <ul class="row" id="customDesignsList">
+                                                        </ul>      
+                                                    </div>                                            
                                                 </div>
                                             </div>        
                                         </div>

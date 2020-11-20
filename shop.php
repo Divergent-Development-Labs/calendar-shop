@@ -3,6 +3,7 @@
 <html lang="en-US">
 
 <head>
+	<?php session_start(); ?>
     <?php include 'head.php'; ?>
 	<style>
 	</style>
@@ -28,7 +29,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4 col-12">
+					<div class="col-md-3 col-12">
 						<h4 class="font-weight-bold text-dark"><span>Calendar Type</span></h4>
 						<div class="woocommerce-ordering float-none" style="width: 100% !important;">
 							<div class="styled-select">
@@ -44,7 +45,7 @@
 					
 						<div id="woocommerce_products-3" class="widget woocommerce widget_products mt-sm-3">						
 							<h4 class="font-weight-bold text-dark"><span>Sizes</span></h4>
-							<select multiple  id="size_menu" class="border dropdown-menu-left w-100 overflow-auto" style="height: 375px !important; font-size: initial;">
+							<select multiple  id="size_menu" class="border dropdown-menu-left w-100 overflow-auto" style="min-height: 200px !important; height: 100%; font-size: initial;">
 								<?php 
 									if ($sizeArray->num_rows > 0) {           
 										$c = 0;                     
@@ -65,14 +66,14 @@
 						</div>
 					</div>
 					
-					<div class="col-md-8 tyche-has-sidebar">
+					<div class="col-md-9 tyche-has-sidebar">
 						<div class="row">
-							<ul class="nav nav-tabs col-8" >
+							<ul class="nav nav-tabs col-sm-5" >
 								<li class=""><a href="#designs" data="default" data-toggle="tab" aria-expanded="false" class="nav-link active font-weight-bold design-tab">Designs</a></li>
 								<li class="" <?php echo ($userId != null) ? $userId : 'hidden'; ?>><a href="#customDesigns" data="custom" data-toggle="tab" aria-expanded="false" class="nav-link font-weight-bold design-tab">Custom</a></li>
 							</ul>
-							<p class="woocommerce-result-count">Showing <span id="custom-counts" class="d-none"></span><span id="design-counts"></span> of <span id="total-counts"></span> results</p>
-							<input type="text" placeholder="Search By Design" name="designSearchText" id="designSearchText" class="woocommerce-ordering col-sm-4 col-6 designSearchText form-control" />								
+							<p class="woocommerce-result-count col-sm-4">Showing <span id="custom-counts" class="d-none"></span><span id="design-counts"></span> of <span id="total-counts"></span> results</p>
+							<input type="text" placeholder="Search By Design" name="designSearchText" id="designSearchText" class="woocommerce-ordering col-sm-3 designSearchText form-control" />								
 						</div>
 
 

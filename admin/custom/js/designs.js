@@ -12,8 +12,6 @@ $(document).ready(function() {
         retrieveRecords(txt);
     });
 
-    
-
     $("#newDesignName").keyup(function(){
         console.log('design.js record checking calling');
         var txt = $(this).val();
@@ -51,11 +49,37 @@ $(document).ready(function() {
         }
     });
 
+    $(".design-tab").off('click').on('click', designTabSelection);    
+
 });
+
+function designTabSelection(){
+    console.log($(this));
+    var designTab = $(this).attr('data');
+    if(designTab == 'custom'){
+        $('#custom-counts').removeClass('d-none');
+        $('#design-counts').addClass('d-none');
+    }
+    else{
+        $('#design-counts').removeClass('d-none');
+        $('#custom-counts').addClass('d-none');
+    }
+    console.log($(this).attr('data'));
+    console.log(designTab);
+}
 
 function retrieveRecords(txt){
     listDiv = $('#designsList');
+    customListDiv = $('#customDesignsList');
+
+    designCounts = $('#design-counts');
+    customCounts = $('#custom-counts');
+    totalCounts = $('#total-counts');
+
     $(listDiv).html('');
+    $(customListDiv).html('');
+
+    let count1 = 0, count2 = 0;
 
     $.ajax({
         url:"ajax/retrieveRecords.php",
@@ -70,13 +94,23 @@ function retrieveRecords(txt){
         success:function(data)
         {
             console.log(data);
-            if(data[0]){
+            if(data[0]){                
                 data.forEach(element => {
-                    $(listDiv).append(
-                        '<div class="col-md-4 col-sm-6 col-xl-3">\
-                            <div class="card">\
-                                <a href="https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing" target="_blank"><img style="height: 200px;" class="card-img-top img-fluid" src="https://drive.google.com/thumbnail?id='+element.design_link+'" alt="'+element.name+'"></a>\
-                                <p class="card-text" hidden id="link-p-'+element.id+'" >https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing</p>\
+                    let temp = '<li class="col-md-4 col-sm-6 col-xl-3">\
+                                    <div class="card">';
+                    
+                    if(element.is_custom_design == 'true'){                    
+                            temp +='<a href="../'+element.design_link+'" target="_blank"><img style="height: 200px;" class="card-img-top img-fluid" src="../'+element.design_link+'" alt="'+element.name+'"></a>\
+                                        <p class="card-text" hidden id="link-p-'+element.id+'" >'+element.design_link+'</p>';
+                        count1++;
+                    }
+                    else{
+                            temp +='<a href="https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing" target="_blank"><img style="height: 200px;" class="card-img-top img-fluid" src="https://drive.google.com/thumbnail?id='+element.design_link+'" alt="'+element.name+'"></a>\
+                                        <p class="card-text" hidden id="link-p-'+element.id+'" >https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing</p>';
+                        count2++;                        
+                    }
+
+                        temp += '</div>\
                                 <div class="card-body">\
                                     <h4 class="card-title text-capitalize">'+element.name+'</h4>\
                                     <div class="d-flex justify-content-between mt-3">\
@@ -85,12 +119,28 @@ function retrieveRecords(txt){
                                     </div>\
                                 </div>\
                             </div>\
-                        </div>'
-                    );                        
+                        </li>';
+
+                    if(element.is_custom_design == 'true'){
+                        $(customListDiv).append(temp);                        
+                    }
+                    else{
+                        $(listDiv).append(temp);                        
+                    }        
                 });
+
+                $(customCounts).html(count1);   
+                $(designCounts).html(count2);
+                $(totalCounts).html(count2+count1);
+                console.log(count1, count2);   
             }
             else{
-                $(listDiv).html('<span class="font-weight-bold mx-auto text-center">No Data Available</span>');
+                if(count2 == 0){
+                    $(listDiv).html('<span class="font-weight-bold mx-auto text-center">No Data Available</span>');
+                }
+                if(count1 == 0){
+                    $(customListDiv).html('<span class="font-weight-bold mx-auto text-center">No Data Available</span>');
+                }
             }
         }
     });

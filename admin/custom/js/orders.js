@@ -148,6 +148,7 @@
      var inputs = {
        calendar_type:  ele.children().eq(1).find('select').val() ,
        size:  ele.children().eq(2).find('select').val() ,
+       is_custom_design:  ele.children().eq(3).find('input.is_custom_design').val() ,
        design:  ele.children().eq(3).find('input.design').val() ,
        rate:  ele.children().eq(4).find('input').val() ,
        quantity:  ele.children().eq(5).find('input').val() ,
@@ -162,10 +163,10 @@
        }
      }
  
-     var returnInput = {setOutput: inputs.setOutput, calendar_type: inputs.calendar_type, size: inputs.size, design: inputs.design};
+     var returnInput = {setOutput: inputs.setOutput, calendar_type: inputs.calendar_type, size: inputs.size,is_custom_design: inputs.is_custom_design, design: inputs.design};
    
      Object.keys(inputs).forEach(key => {
-       if(['setOutput','calendar_type','size','design'].indexOf(key) == -1) { 
+       if(['setOutput','calendar_type','size','is_custom_design','design'].indexOf(key) == -1) { 
          returnInput[key] = inputs[key] == "" ? 0 : parseFloat( inputs[key] ).toFixed(2);
        }
      });

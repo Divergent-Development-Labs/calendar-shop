@@ -1,16 +1,15 @@
+<?php 
+		session_start();
+		if(!isset($_SESSION["userId"]) || ($_SESSION["userId"]) == null){
+			header('Location: my-account.php');    
+		}
+?>
+
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
 	<?php include 'head.php'; ?>
-
-	<?php 
-		// session_start();
-		if(($_SESSION["userId"]) == null){
-			header('Location: my-account.php');    
-		}
-	?>
-
 </head>
 
 <body class="page-template-default page page-id-5 wp-custom-logo theme-tyche woocommerce-cart woocommerce-page woocommerce-no-js elementor-default elementor-kit-1236">

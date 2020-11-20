@@ -60,12 +60,12 @@
                                                     <table class="table table-bordered table-sm ledgerTable" id="pTable">
                                                         <thead class="text-center">
                                                             <th class="serialNo">S.No</th>
-                                                            <th class="supplierDropDown">Calendar Type</th>
-                                                            <th class="supplierDropDown">Size</th>
-                                                            <th >Design</th>
-                                                            <th class="rupees">Rate</th>
-                                                            <th class="rupees">Quantity</th>
-                                                            <th class="serialNo">Total Cost</th>
+                                                            <th class="supplierDropDown w-xl">Calendar Type</th>
+                                                            <th class="supplierDropDown w-xl">Size</th>
+                                                            <th class="w-xl">Design</th>
+                                                            <th class="rupees w-lg">Rate</th>
+                                                            <th class="rupees w-sm " >Quantity</th>
+                                                            <th class="rupees w-lg">Total Cost</th>
                                                             <th>Action</th>
                                                         </thead>
                                                         <tbody id="pTBody" class="pTBody ">
@@ -130,22 +130,44 @@
                                 </div>
 
                                 <div class="card col-12 p-2 d-none " id="designCard">
-                                    <div>
-                                        <input type="text" placeholder="Search" name="designSearchText" id="designSearchText" class="col-4 designSearchText form-control" />
+
+                                    <div class="row">                                                            
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs col-6"  role="tablist">
+                                            <li class="nav-item">
+                                                <a href="#designs" data="default" data-toggle="tab" aria-expanded="false" class="nav-link active font-weight-bold design-tab">Designs</a>
+                                            </li>
+                                            <li class="" >
+                                                <a href="#customDesigns" data="custom" data-toggle="tab" aria-expanded="false" class="nav-link font-weight-bold design-tab">Custom</a>
+                                            </li>
+                                        </ul>
+                                        <p class="woocommerce-result-count col-3 my-auto text-right">Showing <span id="custom-counts" class="d-none"></span><span id="design-counts"></span> of <span id="total-counts"></span> results</p>
+                                        <input type="text" placeholder="Search" name="designSearchText" id="designSearchText" class="col-3 designSearchText form-control" />
                                     </div>
-                                    <div id="designsList" class="row mt-3">
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content text-muted mt-3">
+                                        <div class="tab-pane active" id="designs">
+                                            <ul class="row" id="designsList">
+                                            </ul>                        
+                                        </div>
+                                        
+                                        <div class="tab-pane mt-3" id="customDesigns">   
+                                            <ul class="row" id="customDesignsList">
+                                            </ul>      
+                                        </div>                                            
                                     </div>
                                 </div>
                             </div> <!-- end col -->
                         </div> <!-- end row -->
 
                         <script id="pRow" type="text/html">
-                                <tr class="">            
-                                    <td class="serialNo">
+                                 <tr>
+                                    <td class="w-auto">
                                         <span class="sno" aria-describedby="sno"></span>
                                     </td>
-                                    <td>
-                                        <select id="calendar_type" class="form-control form-control-sm" required>
+                                    <td class="w-xl">
+                                        <select id="calendar_type" class="form-control form-control-sm w-xl" required>
                                             <option value="" selected disabled>Select Type</option>                                            
                                             <option value="Monthly - 6 Sheet">Monthly - 6 Sheet</option>
                                             <option value="Monthly - 12 Sheet">Monthly - 12 Sheet</option>
@@ -153,9 +175,9 @@
                                             <option value="Table">Table</option>
                                         </select>
                                     </td>
-                                    <td class="supplierDropDown">
+                                    <td class="w-xl">
                                         <div id="myDropdown" class="dropdown-content">
-                                            <select id="size" class="form-control form-control-sm sizeChange" required>
+                                            <select id="size" class="form-control form-control-sm sizeChange w-xl" required>
                                                 <option value="" selected disabled>Select Size</option>
                                                     <?php 
                                                         if ($sizeArray->num_rows > 0) {                                
@@ -167,27 +189,28 @@
                                                 </select>
                                         </div>
                                     </td>
-                                    <td class="d-flex justify-content-center">
+                                    <td class="d-flex justify-content-center w-xl">
+                                        <input disbaled hidden class="is_custom_design" />
                                         <input type="text" style="width:0px !important;" class="border-0 form-control form-control-sm design"  aria-describedby="design" disabled >
                                         <div class="d-block">
-                                            <input type="text" class="border form-control form-control-sm designName h-auto"  aria-describedby="designName" disabled required>
+                                            <input type="text" class="border form-control form-control-sm designName h-auto w-md"  aria-describedby="designName" disabled required>
                                         </div>
                                         <a type="button" class="designSelect text-center text-primary" ><i class="fa fa-search p-2"></i></a>
                                     </td>
-                                    <td class="">
-                                        <input type="number" min="0" class="form-control form-control-sm rate toOCalc w-sm" disabled aria-describedby="rate" required>
+                                    <td class="w-lg">
+                                        <input type="number" min="0" class="form-control form-control-sm rate toOCalc w-lg" disabled aria-describedby="rate" required>
                                     </td>
-                                    <td class="">
-                                        <input type="number" min="0" class="form-control form-control-sm quantity toOCalc" aria-describedby="Quantity" disabled required>
+                                    <td class="w-sm">
+                                        <input type="number" min="0" class="form-control form-control-sm quantity toOCalc w-sm" aria-describedby="Quantity" disabled required>
                                     </td>
-                                    <td class="rupees">
-                                        <input type="number" min="0" class="form-control form-control-sm cost"  aria-describedby="cost" placeholder="" step="any" disabled>
+                                    <td class="w-lg">
+                                        <input type="number" min="0" class="form-control form-control-sm cost w-lg"  aria-describedby="cost" placeholder="" step="any" disabled>
                                     </td>
-                                    <td class="text-center w-sm ">
+                                    <td class="text-right w-sm ">
                                         <button class="btn btn-sm btn-outline-danger" type="button" onClick="delRow(this)"><i class="fa fa-close"></i></button>
                                         <button class="addRow btn btn-outline-primary btn-sm" type="button" onClick="addRow()"><i class="fa fa-plus"></i></button>
-                                    </td>   
-                                </tr>
+                                    </td>
+                                 </tr>                       
                         </script>
 
                     <?php include 'footer.php'; ?>
