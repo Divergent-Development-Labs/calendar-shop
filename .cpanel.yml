@@ -1,5 +1,5 @@
 ---
 deployment:
       tasks:
-        - export DEPLOYPATH=/home/eakmartc/
+        - export DEPLOYPATH=/home/eakmartc/public_html
         - /bin/cp -R * $DEPLOYPATH
