@@ -43,7 +43,7 @@
 
                           <!-- Account -->
                           <li class="top-account">
-                              <a href="my-account.php"><i class="fa fa-sign-in"></i> Login
+                              <a href="login.php"><i class="fa fa-sign-in"></i> Login
                               </a>
                           </li>
                           <!-- / Account -->

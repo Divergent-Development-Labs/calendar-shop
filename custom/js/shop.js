@@ -221,7 +221,7 @@ function addToCart(design_id, design_name, is_custom_design, design_link, type, 
     else{
         var con = confirm('Kindly Login into your accout');
         if(con == true){
-            window.open('my-account.php', '_blank');
+            window.open('login.php', '_blank');
         }
         else{
             return false;

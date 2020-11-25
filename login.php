@@ -60,7 +60,7 @@
 										</label> -->
 										<!-- <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="0d78ba4afa" />
 										<input type="hidden" name="_wp_http_referer" value="/tyche/my-account/" />  -->
-										<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="loginBtn" value="Log in">Log in</button>
+										<button type="submit" class="mx-auto woocommerce-button button woocommerce-form-login__submit" name="loginBtn" value="Log in">Log in</button>
 									</p>
 									<p class="woocommerce-LostPassword lost_password">
 										<a href="new-user-register.php">New Customer Registration <i class="fa fa-caret-right"></i></a>

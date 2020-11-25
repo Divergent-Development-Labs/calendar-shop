@@ -16,7 +16,7 @@ if(isset($_POST["register_btn"])) {
     $sql = "INSERT INTO `customer` (`name`, `mobile_number`, `email`, `address_line`, `area`, `district`, `state`, `pincode`) VALUES ('$name', '$mobile_number', '$email', '$address_line', '$area', '$district', '$state', '$pincode')";
     if ($conn->query($sql) === TRUE) {
         $last_id = $conn->insert_id;
-        header('Location: ../my-account.php');
+        header('Location: ../login.php');
         $_SESSION["msg"] = 'New User Details registered Successfully!!';
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
