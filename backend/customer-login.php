@@ -7,7 +7,7 @@
     if(isset($_POST["loginBtn"])) {
         $username = filter_var($_POST["username"], FILTER_SANITIZE_STRING);
         $password = filter_var(($_POST['password']), FILTER_SANITIZE_STRING);
-        echo $username, $password;
+        // echo $username, $password;
 
         $sql="SELECT * FROM `customer` WHERE `name`='$username' AND `mobile_number`='$password'";
     

@@ -2,7 +2,10 @@
 <html lang="en-US">
 
 <head>
-    <?php include 'head.php'; ?>
+	<?php 
+		session_start();
+		include 'head.php'; 
+	?>
 </head>
 
 <body class="page-template-default page page-id-7 wp-custom-logo theme-tyche woocommerce-account woocommerce-page woocommerce-no-js elementor-default elementor-kit-1236">
@@ -32,7 +35,7 @@
 							<div class="woocommerce card mx-auto">
 								<div class="woocommerce-notices-wrapper"></div>
 
-								<form class="woocommerce-form woocommerce-form-login login card-body" method="post" action="backend/customer-login.php">
+								<form class="woocommerce-form woocommerce-form-login card-body" method="post" action="backend/customer-login.php">
 
 									<?php 
 										if(isset($_SESSION["msg"])) {

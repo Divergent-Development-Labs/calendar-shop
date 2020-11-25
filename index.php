@@ -37,10 +37,10 @@ $designArray = $conn->query($sql3);
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<nav class="woocommerce-breadcrumb"><a href="index.php">Home</a>&nbsp;&#47;&nbsp;Shop</nav>
+						<!-- <nav class="woocommerce-breadcrumb">Home -->
 					</div>
 				</div>
-				<div class="row">
+				<div class="row mt-4">
 					<div class="col-md-3 col-12">
 						<h5 class="font-weight-bold text-dark"><span>Calendar Type</span></h5>
 						<div class="woocommerce-ordering float-none" style="width: 100% !important;">
