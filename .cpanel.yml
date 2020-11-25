@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/eakmartc/calendar.ddl.link
+    - /bin/cp -R images $DEPLOYPATH
