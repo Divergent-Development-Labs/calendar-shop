@@ -43,7 +43,7 @@
 
                           <!-- Account -->
                           <li class="top-account">
-                              <a href="my-account.php"><i class="fa fa-user"></i> Account
+                              <a href="my-account.php"><i class="fa fa-sign-in"></i> Login
                               </a>
                           </li>
                           <!-- / Account -->
@@ -97,10 +97,6 @@
                               <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
                                   <a title="Home" href="index.php">Home</a>
                               </li>
-                              <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
-                                  <a title="Shop" href="shop.php">Shop</a>
-                              </li>
-
                               <?php if($userId && $userId != null){ ?>
                               <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
                                   <a title="Orders" href="orders.php">Orders</a>

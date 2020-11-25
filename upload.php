@@ -74,7 +74,7 @@ if($isUploaded){
     $sql = "INSERT INTO `design` (`name`, `design_link`, `is_custom_design`, `user_id`) VALUES ('$name', '$design_link', '$is_custom_design', '$user_id')";
     if ($conn->query($sql) === TRUE) {
         $last_id = $conn->insert_id;
-        header('Location: shop.php');
+        header('Location: index.php');
         echo "New record created successfully";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

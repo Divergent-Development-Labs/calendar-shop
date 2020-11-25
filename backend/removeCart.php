@@ -11,7 +11,7 @@ if(isset($_POST["removeItem"])) {
     $sql2 = "DELETE FROM `carts` WHERE `carts`.`id` = $cart_id";
 
     if ($conn->query($sql2) === TRUE) {        
-        header('Location: ../shop.php');
+        header('Location: ../index.php');
         echo "1";
     } else {
         echo "Error: " . $sql2 . "<br>" . $conn->error;

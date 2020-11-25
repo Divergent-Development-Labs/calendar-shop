@@ -175,8 +175,8 @@
 										Your cart is currently empty.
 									</p>
 									<p class="return-to-shop">
-										<a class="button wc-backward" href="shop.php">
-											Return to shop
+										<a class="button wc-backward" href="index.php">
+											Return to Home
 										</a>
 									</p>
 								</div>

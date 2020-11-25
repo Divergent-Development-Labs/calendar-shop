@@ -2916,7 +2916,9 @@ a {
   padding: 0 15px 15px !important ; }
 
 .hentry {
-  margin: 0 0 1.5em !important ; }
+  margin: 0 0 1.5em !important ; 
+  border-radius: 5px;
+}
 
 .byline,
 .updated:not(.published) {
@@ -3922,7 +3924,7 @@ a {
     text-decoration: underline !important ;
     margin-right: 15px !important ; }
   .woocommerce form.login input {
-    max-width: 350px !important ; }
+    max-width: 430px !important ; }
   .woocommerce form.login .tyche-label {
     display: inline-block !important ;
     width: 100% !important ;
@@ -4332,7 +4334,7 @@ a {
   clear: both !important ; }
 
 .woocommerce form .form-row input.input-text {
-  height: 32px !important ;
+  /* height: 32px !important ; */
   padding: 5px !important ; }
 
 .woocommerce form .form-row textarea.input-text {

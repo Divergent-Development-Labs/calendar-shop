@@ -22,7 +22,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs">
-							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="index.php"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="shop.php"><span itemprop="title">Shop</span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Cart</span>
+							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="index.php"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Cart</span>
 						</div>
 					</div>
 				</div>
@@ -134,8 +134,8 @@
 										Your cart is currently empty.
 									</p>
 									<p class="return-to-shop">
-										<a class="button wc-backward" href="shop.php">
-											Return to shop
+										<a class="button wc-backward" href="index.php">
+											Return to Home
 										</a>
 									</p>
 								</div>

@@ -82,7 +82,7 @@
     /* ]]> */
 </script>
 <script type='text/javascript' src='wp-contents/pluginss/woocommerce/assets/js/frontend/add-to-cart.min.js' id='wc-add-to-cart-js'></script>
-<script type="text/javascript" src="wp-contents/themess/tyche/assets/js/functions.js" id="tyche-scripts-js"></script>
+<!-- <script type="text/javascript" src="wp-contents/themess/tyche/assets/js/functions.js" id="tyche-scripts-js"></script> -->
 
 <script type='text/javascript' src='wp-contents/pluginss/woocommerce/assets/js/js-cookie/js.cookie.min.js' id='js-cookie-js'></script>
 <script type='text/javascript' id='woocommerce-js-extra'>
@@ -93,9 +93,9 @@
     };
     /* ]]> */
 </script>
-<script type='text/javascript' src='https://demo.colorlib.com/tyche/wp-content/plugins/woocommerce/assets/js/frontend/checkout.min.js' id='wc-checkout-js'></script>
+<!-- <script type='text/javascript' src='https://demo.colorlib.com/tyche/wp-content/plugins/woocommerce/assets/js/frontend/checkout.min.js' id='wc-checkout-js'></script> -->
 <script type='text/javascript' src='wp-contents/pluginss/woocommerce/assets/js/frontend/woocommerce.min.js' id='woocommerce-js'></script>
-<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+<!-- <script type='text/javascript' id='wc-cart-fragments-js-extra'>
     /* <![CDATA[ */
     var wc_cart_fragments_params = {
         "ajax_url": "\/tyche\/wp-admin\/admin-ajax.php",
@@ -105,7 +105,7 @@
         "request_timeout": "5000"
     };
     /* ]]> */
-</script>
+</script> -->
 <script type='text/javascript' src='wp-contents/pluginss/woocommerce/assets/js/frontend/cart-fragments.min.js' id='wc-cart-fragments-js'></script>
 <script type='text/javascript' src='wp-contents/themess/tyche/assets/js/skip-link-focus-fix.js' id='tyche-skip-link-focus-fix-js'></script>
 <script type='text/javascript' src='wp-contents/themess/tyche/assets/vendors/menu/menu.min.js' id='tyche-multilang-menu-js'></script>
