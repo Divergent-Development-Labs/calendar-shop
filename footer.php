@@ -48,7 +48,7 @@
                     </div>
                     <div class="copyright-text pull-right">
                         Copyright &copy; 2020 <span class="sep">|</span> 
-                        <a href="https://kvncloud.com/" style="color: #74788d;" >Developed by KVN Cloud</a>                            
+                        <a href="https://kvncloud.com/" target="_blank" style="color: #74788d;" >Developed by KVN Cloud</a>                            
                      </div>
                 </div>
             </div>
