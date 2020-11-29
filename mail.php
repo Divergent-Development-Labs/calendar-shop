@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['sendMail'])){
+    // $to = "sgrkranjithkumar@gmail.com"; // this is your Email address
     $to = "ranjithjikumarji@gmail.com"; // this is your Email address
-    // $to = "ranjithjikumarji@gmail.com"; // this is your Email address
     $from = $_POST['your-email']; // this is the sender's Email address
 
     $name = $_POST['your-name'];

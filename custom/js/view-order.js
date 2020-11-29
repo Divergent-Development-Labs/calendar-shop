@@ -120,7 +120,7 @@ function retrieveRecords(id){
                 $(cartFooter).append(temp2);       
                 
                 let cart_price = parseFloat(subtotal);
-                $('#cart_price').html(cart_price.toFixed(2));
+                // $('#cart_price').html(cart_price.toFixed(2));
 
                 $(".toCCalc").off('click').on('click', doCalc);    
 

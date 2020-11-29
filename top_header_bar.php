@@ -6,7 +6,9 @@
                       <ul class="top-header-bar">
                           <!-- Email -->
                           <li class="top-email">
-                              <i class="fa fa-envelope-o"></i> dummy@gmail.com
+                                <a href="mailto:dummy@gmail.com" class="ybtn  text-white">
+                                    <i class="fa fa-envelope-o"></i> dummy@gmail.com
+                                </a>
                           </li>
                           <!-- / Email -->
                           <!-- Cart -->
@@ -95,7 +97,10 @@
                             
                           <ul id="desktop-menu" class="sf-menu">
                               <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
-                                  <a title="Home" href="index.php">Home</a>
+                                  <a title="Home" href="home.php">Home</a>
+                              </li>
+                              <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
+                                  <a title="Home" href="index.php">Shop</a>
                               </li>
                               <?php if($userId && $userId != null){ ?>
                               <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">

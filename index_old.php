@@ -3,6 +3,7 @@
 
 <head>
   <?php session_start(); ?>
+  <title>Home_Old - Tyche Demo</title>
   <?php include 'head.php'; ?>
 </head>
 

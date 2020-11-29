@@ -6,7 +6,6 @@
 <meta charset="UTF-8" />
 
 <!-- This site is optimized with the Yoast SEO Premium plugin v15.1.2 - https://yoast.com/wordpress/pluginss/seo/ -->
-<title>Home - Tyche Demo</title>
 
 <!-- / Yoast SEO Premium plugin. -->
 <script>

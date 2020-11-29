@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer id="colophon" class="site-footer" role="contentinfo">
+<!-- <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="widgets-area">
         <div class="container">
             <div class="row">
@@ -26,10 +26,10 @@
                     </div>
                 </div>
             </div>
-            <!--.row-->
         </div>
     </div>
-</footer><!-- / Footer -->
+</footer> -->
+<!-- / Footer -->
 
 <!-- Copyright -->
 <footer class="site-copyright">
@@ -176,7 +176,7 @@
 									</p>
 									<p class="return-to-shop">
 										<a class="button wc-backward" href="index.php">
-											Return to Home
+											Return to Shop
 										</a>
 									</p>
 								</div>

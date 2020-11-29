@@ -9,6 +9,7 @@
 <html lang="en-US">
 
 <head>
+	<title>Cart - Tyche Demo</title>
 	<?php include 'head.php'; ?>
 </head>
 
@@ -22,7 +23,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs">
-							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="index.php"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Cart</span>
+							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="index.php"><span itemprop="title">Shop </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Cart</span>
 						</div>
 					</div>
 				</div>
@@ -135,7 +136,7 @@
 									</p>
 									<p class="return-to-shop">
 										<a class="button wc-backward" href="index.php">
-											Return to Home
+											Return to Shop
 										</a>
 									</p>
 								</div>
@@ -152,6 +153,21 @@
 
 		<?php include 'footer.php'; ?>
 		<?php include 'scripts.php'; ?>
+		<!-- <script type="text/javascript">
+			$('#make_order_form').submit(function(event) {
+				$.confirm({
+					//confirm dialog options...
+					confirm: function() {
+					console.log('Submit the form');
+					},
+					cancel: function() {
+					//Cancel submission
+					console.log('Cancel submission');
+					event.preventDefault();
+					}
+				});
+			});
+		</script> -->
 		<script type="text/javascript" src="custom/js/cart.js"></script>
 </body>
 

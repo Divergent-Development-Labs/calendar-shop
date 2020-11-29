@@ -9,6 +9,7 @@
 <html lang="en-US">
 
 <head>
+	<title>Orders - Tyche Demo</title>
 	<?php include 'head.php'; ?>
 </head>
 
@@ -22,7 +23,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs">
-							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="index.php"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Orders</span>
+							<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="index.php"><span itemprop="title">Shop </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Orders</span>
 						</div>
 					</div>
 				</div>
@@ -169,7 +170,7 @@
 									</p>
 									<p class="return-to-shop">
 										<a class="button wc-backward" href="index.php">
-											Return to Home
+											Return to Shop
 										</a>
 									</p>
 								</div>

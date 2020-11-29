@@ -30,7 +30,7 @@
                             <h1 class="display-2 font-weight-medium">5<i class="bx bx-buoy bx-spin text-danger display-3"></i>0</h1>
                             <h4 class="text-uppercase">Internal Server Error</h4>
                             <div class="mt-5 text-center">
-                                <a class="btn btn-danger waves-effect waves-light" href="index.php">Back to Home</a>
+                                <a class="btn btn-danger waves-effect waves-light" href="index.php">Back to Shop</a>
                             </div>
                         </div>
                     </div>
