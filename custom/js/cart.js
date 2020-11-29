@@ -84,12 +84,12 @@ function retrieveRecords(id){
                     if(element.is_custom_design == 'true'){
                         temp += '<td class="product-thumbnail">\
                                     <input disbaled hidden class="is_custom_design" value='+element.is_custom_design+' />\
-                                    <a href="'+element.design+'"><img width="255" style="height: 620px !impotant;" src="'+element.design+'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" data='+element.design+' loading="lazy"></a> </td>';
+                                    <a target="_blank" href="'+element.design+'"><img width="255" style="height: 620px !impotant;" src="'+element.design+'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" data='+element.design+' loading="lazy"></a> </td>';
                     }
                     else{
                         temp += '<td class="product-thumbnail">\
                                     <input disbaled hidden class="is_custom_design" value='+element.is_custom_design+' />\
-                                    <a href="https://drive.google.com/file/d/'+element.design+'/view?usp=sharing"><img width="255" style="height: 620px !impotant;" src="https://drive.google.com/thumbnail?id='+element.design+'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" data='+element.design+' loading="lazy"></a> </td>';
+                                    <a target="_blank" href="https://drive.google.com/file/d/'+element.design+'/view?usp=sharing"><img width="255" style="height: 620px !impotant;" src="https://drive.google.com/thumbnail?id='+element.design+'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" data='+element.design+' loading="lazy"></a> </td>';
                     }
                                     
                     temp +='<td class="product-name" data-title="Product">\

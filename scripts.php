@@ -1,7 +1,7 @@
 
 <!-- JAVASCRIPT -->
 <script src="admin/assets/libs/jquery/jquery.min.js"></script>
-<script src="admin/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="admin/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 <!-- <script src="assets/libs/metismenu/metisMenu.min.js"></script>
 <script src="assets/libs/simplebar/simplebar.min.js"></script>
 <script src="assets/libs/node-waves/waves.min.js"></script>
@@ -13,10 +13,10 @@
 <script src="assets/js/app.js"></script> -->
 
 <!-- Instagram Feed JS -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     var sbiajaxurl = "wp-admin/admin-ajax.php";
-</script>
-<script type="application/ld+json">
+</script> -->
+<!-- <script type="application/ld+json">
     {
         "@context": "https:\/\/schema.org\/",
         "@type": "BreadcrumbList",
@@ -36,7 +36,7 @@
             }
         }]
     }
-</script>
+</script> -->
 <script type="text/javascript">
     (function() {
         var c = document.body.className;
@@ -48,7 +48,7 @@
 <!-- <link rel="stylesheet" href="custom/css/style.css"> -->
 <?php include "custom/css/style.php"; ?>
 
-<script type='text/javascript' id='contact-form-7-js-extra'>
+<!-- <script type='text/javascript' id='contact-form-7-js-extra'>
     /* <![CDATA[ */
     var wpcf7 = {
         "apiSettings": {
@@ -57,19 +57,19 @@
         }
     };
     /* ]]> */
-</script>
+</script> -->
 <script type='text/javascript' src='wp-contents/pluginss/contact-form-7/includes/js/scripts.js' id='contact-form-7-js'></script>
-<script type='text/javascript' id='wpzerospam-js-extra'>
+<!-- <script type='text/javascript' id='wpzerospam-js-extra'>
     /* <![CDATA[ */
     var wpzerospam = {
         "key": "5e)V3PN9UquoxJAQ5VExL$psIdWxQYT3dlemrLcUjLZqSFi@Zass$9b^XNhQ@5JJ"
     };
     /* ]]> */
-</script>
+</script> -->
 <script type='text/javascript' src='wp-contents/pluginss/zero-spam/assets/js/wpzerospam.js' id='wpzerospam-js'></script>
 <script type='text/javascript' src='wp-contents/pluginss/zero-spam/integrations/contact-form-7/js/cf7.js' id='wpzerospam-integration-cf7-js'></script>
 <script type='text/javascript' src='wp-contents/pluginss/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js' id='jquery-blockui-js'></script>
-<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+<!-- <script type='text/javascript' id='wc-add-to-cart-js-extra'>
     /* <![CDATA[ */
     var wc_add_to_cart_params = {
         "ajax_url": "\/tyche\/wp-admin\/admin-ajax.php",
@@ -80,19 +80,19 @@
         "cart_redirect_after_add": "no"
     };
     /* ]]> */
-</script>
+</script> -->
 <script type='text/javascript' src='wp-contents/pluginss/woocommerce/assets/js/frontend/add-to-cart.min.js' id='wc-add-to-cart-js'></script>
 <!-- <script type="text/javascript" src="wp-contents/themess/tyche/assets/js/functions.js" id="tyche-scripts-js"></script> -->
 
 <script type='text/javascript' src='wp-contents/pluginss/woocommerce/assets/js/js-cookie/js.cookie.min.js' id='js-cookie-js'></script>
-<script type='text/javascript' id='woocommerce-js-extra'>
+<!-- <script type='text/javascript' id='woocommerce-js-extra'>
     /* <![CDATA[ */
     var woocommerce_params = {
         "ajax_url": "\/tyche\/wp-admin\/admin-ajax.php",
         "wc_ajax_url": "\/tyche\/?wc-ajax=%%endpoint%%"
     };
     /* ]]> */
-</script>
+</script> -->
 <!-- <script type='text/javascript' src='https://demo.colorlib.com/tyche/wp-content/plugins/woocommerce/assets/js/frontend/checkout.min.js' id='wc-checkout-js'></script> -->
 <script type='text/javascript' src='wp-contents/pluginss/woocommerce/assets/js/frontend/woocommerce.min.js' id='woocommerce-js'></script>
 <!-- <script type='text/javascript' id='wc-cart-fragments-js-extra'>
@@ -132,3 +132,9 @@
     window.GA_ID = '';
 </script>
 <script src='wp-contents/pluginss/flying-analytics/js/minimal-analytics.js' defer></script>
+<script type="text/javascript">
+    function slideMenu() {
+        var dm = $('#desktop-menu');
+        $(dm).toggleClass('d-block'); 
+    }
+</script>

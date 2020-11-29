@@ -94,7 +94,12 @@
               <div class="container">
                   <div class="row">
                       <div class="col-md-12">
-                            
+                        <!-- /// Mobile Menu Trigger //////// -->
+                          <button href="#" id="mobile-menu-trigger" class="" onclick="slideMenu()">
+                              <i class="fa fa-bars"></i>
+                          </button>
+                          <!-- end #mobile-menu-trigger -->
+
                           <ul id="desktop-menu" class="sf-menu">
                               <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
                                   <a title="Home" href="home.php">Home</a>
@@ -112,11 +117,6 @@
                                   <a title="Contact" href="contact.php">Contact</a>
                               </li>
                           </ul>
-                          <!-- /// Mobile Menu Trigger //////// -->
-                          <button href="#" id="mobile-menu-trigger">
-                              <i class="fa fa-bars"></i>
-                          </button>
-                          <!-- end #mobile-menu-trigger -->
                       </div>
                   </div>
               </div>

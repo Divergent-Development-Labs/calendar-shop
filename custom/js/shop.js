@@ -86,20 +86,20 @@ function retrieveDesignRecords(txt, type, size, rate){
             if(data[0]){
                 data.forEach(element => {
                     if(element.user_id == 0 || element.user_id == userId){
-                    let temp = '<li class="col-sm-6 col-12 col-md-6 col-lg-5 col-xl-5 mr-md-2 product type-product post-62 status-publish instock product_cat-shirts product_cat-trends product_tag-amari product_tag-shirt has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">';
+                    let temp = '<li class="zoom border p-0 mx-md-2 mx-lg-3 shadow-sm col-sm-6 col-12 col-md-6 col-lg-5 col-xl-5 mr-md-2 product type-product post-62 status-publish instock product_cat-shirts product_cat-trends product_tag-amari product_tag-shirt has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">';
 
                         if(element.is_custom_design == 'true'){
                             temp +='<a href="'+element.design_link+'" target="_blank" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">\
                                     <!-- <span class="onsale">Sale!</span> -->\
                                     <img style="width:100% !important; height:289.875px !important;" src="'+element.design_link+'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">\
-                                    <h4 class="my-custom-wrap woocommerce-loop-product__title text-capitalize product_name">'+element.name+'</h4></a>';
+                                    <h4 class="mx-2 my-custom-wrap woocommerce-loop-product__title text-capitalize product_name">'+element.name+'</h4></a>';
                             count1++;
                         }
                         else{
                             temp +='<a href="https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing" target="_blank" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">\
                                     <!-- <span class="onsale">Sale!</span> -->\
-                                    <img style="width:100% !important; height:289.875px !important;" src="https://drive.google.com/thumbnail?id='+element.design_link+'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">\
-                                    <h4 class="my-custom-wrap woocommerce-loop-product__title text-capitalize product_name">'+element.name+'</h4></a>';
+                                    <img style="width:100% !important; height:289.875px !important;" src="https://drive.google.com/thumbnail?id='+element.design_link+'" class=" attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">\
+                                    <h4 class="mx-2 my-custom-wrap woocommerce-loop-product__title text-capitalize product_name">'+element.name+'</h4></a>';
                             count2++;
                         }                    
                         if(type){
