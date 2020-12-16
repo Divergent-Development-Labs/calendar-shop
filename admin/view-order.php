@@ -186,7 +186,7 @@
                                                                     echo '<td><img src="../' . $rowProduct['design'] . '" alt="product-img" title="product-img" class="avatar-md" /></td>';
                                                                 }
                                                                 else{
-                                                                    echo '<td><img src="https://drive.google.com/thumbnail?id=' . $rowProduct['design'] . '" alt="product-img" title="product-img" class="avatar-md" /></td>';
+                                                                    echo '<td><img src="https://drive.google.com/uc?export=view&id=' . $rowProduct['design'] . '" alt="product-img" title="product-img" class="avatar-md" /></td>';
                                                                 }
                                                                 echo '<td><span>'.$rowProduct['size'].'</span></td>';
                                                                 echo '<td><span>&#x20B9; '.number_format($rowProduct['rate'], 2).'</span></td>';

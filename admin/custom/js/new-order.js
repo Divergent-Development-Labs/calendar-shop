@@ -109,7 +109,7 @@ function retrieveRecords(txt, designId){
                         count1++;
                     }
                     else{
-                            temp +='<a href="https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing" target="_blank"><img style="height: 200px;" class="card-img-top img-fluid" src="https://drive.google.com/thumbnail?id='+element.design_link+'" alt="'+element.name+'"></a>\
+                            temp +='<a href="https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing" target="_blank"><img style="height: 200px;" class="card-img-top img-fluid" src="https://drive.google.com/uc?export=view&id='+element.design_link+'" alt="'+element.name+'"></a>\
                                         <p class="card-text" hidden id="link-p-'+element.id+'" >https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing</p>';
                         count2++;                        
                     }
@@ -169,7 +169,7 @@ function retrieveRecordsz(txt, designId){
                     $(listDiv).append(
                         '<div class="col-md-4 col-sm-6 col-xl-3">\
                             <div class="card">\
-                                <a href="https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing" target="_blank"><img style="height: 200px;" class="card-img-top img-fluid" src="https://drive.google.com/thumbnail?id='+element.design_link+'" alt="'+element.name+'"></a>\
+                                <a href="https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing" target="_blank"><img style="height: 200px;" class="card-img-top img-fluid" src="https://drive.google.com/uc?export=view&id='+element.design_link+'" alt="'+element.name+'"></a>\
                                 <p class="card-text" hidden id="link-p-'+element.id+'" >https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing</p>\
                                 <div class="card-body">\
                                     <div class="d-flex justify-content-between mt-3">\

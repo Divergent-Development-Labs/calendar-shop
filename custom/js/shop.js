@@ -98,7 +98,7 @@ function retrieveDesignRecords(txt, type, size, rate){
                         else{
                             temp +='<a href="https://drive.google.com/file/d/'+element.design_link+'/view?usp=sharing" target="_blank" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">\
                                     <!-- <span class="onsale">Sale!</span> -->\
-                                    <img style="width:100% !important; height:289.875px !important;" src="https://drive.google.com/thumbnail?id='+element.design_link+'" class=" attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">\
+                                    <img style="width:100% !important; height:289.875px !important;" src="https://drive.google.com/uc?export=view&id='+element.design_link+'" class=" attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">\
                                     <h4 class="mx-2 my-custom-wrap woocommerce-loop-product__title text-capitalize product_name">'+element.name+'</h4></a>';
                             count2++;
                         }                    
