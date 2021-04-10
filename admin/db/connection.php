@@ -1,18 +1,20 @@
 <?php
 
 //Local
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $dbname = "calendar_db";
-
-//Production
 $servername = "localhost";
-$username = "eakmartc_cal_proj";
-$password = "@Calproj2020";
+$username = "root";
+$password = "";
 $dbname = "eakmartc_cal_proj";
 
+//Production
+// $servername = "localhost";
+// $username = "eakmartc_cal_proj";
+// $password = "@Calproj2020";
+// $dbname = "eakmartc_cal_proj";
+
 // Create connection
+
+// var_dump(mysqli_connect($servername, $username, $password, $dbname));
 $conn =mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {

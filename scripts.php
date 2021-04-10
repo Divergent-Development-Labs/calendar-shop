@@ -45,8 +45,7 @@
     })()
 </script>
 
-<!-- <link rel="stylesheet" href="custom/css/style.css"> -->
-<?php include "custom/css/style.php"; ?>
+<link rel="stylesheet" href="custom/css/style.css">
 
 <!-- <script type='text/javascript' id='contact-form-7-js-extra'>
     /* <![CDATA[ */

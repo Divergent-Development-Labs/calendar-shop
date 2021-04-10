@@ -186,19 +186,30 @@ Key Feature
 						</div>
 					</div>
                     <div class="col-sm-6">
-						<p>Daily Calenda:-
+						<p>Daily Calendar:-
 
-THE POWER OF Calendar is TO GROW YOUR BRAND AND REACH YOUR AUDIENCES.
+						Daily calendar is great way to find good timing on day-to-day activities. Daily calendar sheets are auspicious events reference for your all events. It gives way to choose right timing for all festivals.
 
-Showcase your brand with custom Calendar printing services that will make your client smile all year long. One gift, twelve surprises. Personalized Calendar with Your Photos, Company Logos, Brand Quotes. Our various Monthly calendars, Religious Calendars, Daily Calendars, Desk Calendars with variety of designs, shapes, & sizes as per your requirement and budget.</p>
+· Sizes 10*15, 12*18
+
+· Customize your individual calendar.</p>
 					</div>
 				</div>
-
-                <div class="row">
+				<div class="row">
 					<div class="col-sm-6">
-						<p>Books:-
+						<p>Die-Cut Calendar:-
 
-The world today may be shifting to a more web driven one but still the paper industry has its own significance. Books are very important part of everyone's life. A book can be a window to the world the child has imagined. We are there for your service in need of notebook and text book printing for your educational institutions and Corporate organization.</p>
+						Being an outstanding enterprise, we are engaged in exporting and supplying superior quality Die-Cut Calendars. Offered calendars are printed under the proper guidance of making use of superior quality Board with the help of sophisticated techniques.
+
+· Size 12*18 , 15*25, 20*30
+
+· Tamil Panjagam Backside
+
+· Customized advertisement.
+
+· Perfect finish
+
+· Durable printing</p>
 					</div>
 					<div class="col-sm-6">
 						<div class="row">
@@ -252,9 +263,89 @@ The world today may be shifting to a more web driven one but still the paper ind
 						</div>
 					</div>
                     <div class="col-sm-6">
-						<p>Packaging and labeling.
+						<p>Table Calendar
 
-Packaging is the face of your product, technology of enclosing or protecting products for distribution, storage, sale, and use. We PadmaavathyArtCrafts are expert in manufacturing of Cosmetic Box, Pharmaceutical box, Sweet Box and printed carton box</p>
+						Owing to our rich domain experience, we export and supply superior quality Desk Calendar. The provided calendar is highly used in offices and workspace to point out daily activities.
+
+						· Smooth finish
+
+						· Strong binding
+
+						· Durability
+
+						· Light weight</p>
+					</div>
+				</div>
+				
+                <div class="row">
+					<div class="col-sm-6">
+						<p>Note Books:-
+
+						We provide excellent exercise NoteBook printing services, With the assistance of advanced technology.
+
+We offer readymade as well as completely customizable Notebooks with your logo and Instauration name.
+
+· Ruled , Un-ruled, 5Subject NoteBooks
+
+· High Print Clarity
+
+· Premium Quality Paper</p>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6">
+								<div class="tyche-icon-box">
+									<div class="icon">
+										<span class="fa fa-mobile"></span>
+									</div>
+									<div class="text">
+										GIVE US A CALL <span><a href="tel:+9100000 00001" class="text-dark">+91-00000 00001</a></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="tyche-icon-box">
+									<div class="icon">
+										<span class="fa fa-map-marker"></span>
+									</div>
+									<div class="text">
+										OUR LOCATION <span><a href="https://goo.gl/maps/CLT2AtRYdGBDG7nN8" target="_blank" class="text-dark">Meenakshi temple</a></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6">
+								<div class="tyche-icon-box">
+									<div class="icon">
+										<span class="fa fa-mobile"></span>
+									</div>
+									<div class="text">
+										GIVE US A CALL <span><a href="tel:+9100000 00001" class="text-dark">+91-00000 00001</a></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="tyche-icon-box">
+									<div class="icon">
+										<span class="fa fa-map-marker"></span>
+									</div>
+									<div class="text">
+										OUR LOCATION <span><a href="https://goo.gl/maps/CLT2AtRYdGBDG7nN8" target="_blank" class="text-dark">Meenakshi temple</a></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <div class="col-sm-6">
+						<p>CUSTOMIZED PRINTING
+
+						We offer cost-effective and efficient customized printing solutions to meet your multi-colour as well as single-color printing requirements. We provide customized offset printing services in Book printing, Brochure printing, Catalog printing, Sweet box Printing, Cosmetic, Pharmaceutical . box</p>
 					</div>
 				</div>
 			</div>

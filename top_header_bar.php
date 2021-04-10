@@ -107,12 +107,20 @@
                               <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
                                   <a title="Home" href="index.php">Shop</a>
                               </li>
+                              <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
+                                  <a title="Home" href="our-products.php">Our Products</a>
+                              </li>
+                              <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
+                                  <a title="Home" href="our-services.php">Our Services</a>
+                              </li>
                               <?php if($userId && $userId != null){ ?>
                               <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
                                   <a title="Orders" href="orders.php">Orders</a>
                               </li>
                               <?php } ?>
-                              
+                              <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
+                                  <a title="Home" href="about.php">About Us</a>
+                              </li>                              
                               <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85">
                                   <a title="Contact" href="contact.php">Contact</a>
                               </li>
