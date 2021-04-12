@@ -13,7 +13,7 @@
 		<?php include 'top_header_bar.php'; ?>
 
 		<div class="site-content">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="index.php"><span itemprop="title">Shop </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Contact</span></div>
@@ -21,7 +21,7 @@
 				</div>
 			</div>
 
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12">
 						<h2 class="custom-page-title">Contact</h2>
@@ -82,7 +82,7 @@
 										<span class="wpcf7-form-control-wrap your-subject"><input required type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text w-100" aria-invalid="false" /></span> </label></p>
 								<p class="mb-3"><label class="w-100"> Your Message<br />
 										<span class="wpcf7-form-control-wrap your-message"><textarea required name="your-message" cols="40" rows="5" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label></p>
-								<p class="mb-3"><input type="submit" name="sendMail" class="wpcf7-form-control wpcf7-submit" /></p>
+								<p class="mb-3"><input type="submit" name="sendMail" class="wpcf7-form-control wpcf7-submit btn-my-primary" /></p>
 								<div class="wpcf7-response-output" aria-hidden="true"></div>
 							</form>
 						</div>

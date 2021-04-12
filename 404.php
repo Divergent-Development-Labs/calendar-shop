@@ -23,7 +23,7 @@
     <body>
 
         <div class="account-pages my-5 pt-5">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-center mb-5">

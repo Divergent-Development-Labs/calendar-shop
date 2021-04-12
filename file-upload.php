@@ -18,7 +18,7 @@
   <input type="submit" value="Upload Image" name="submit">
 </form>
 
-<div class="container">
+<div class="container-fluid">
   <h3>Tabs</h3>
   <ul class="nav nav-tabs">
     <li class="active"><a href="#">Home</a></li>

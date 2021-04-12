@@ -1,6 +1,6 @@
       <!-- Top Header Bar -->
       <header class="top-header-bar-container">
-          <div class="container">
+          <div class="container-fluid">
               <div class="row">
                   <div class="col-md-12">
                       <ul class="top-header-bar">
@@ -81,23 +81,25 @@
       </header>
       <!-- /Top Header Bar -->
       <header id="masthead" class="site-header" role="banner">
-          <div class="site-branding container">
+          <div class="site-branding container-fluid">
               <div class="row">
                   <div class="col-sm-4 header-logo">
-                      <a href="" class="custom-logo-link" rel="home" aria-current="page"><img width="150" height="70" src="wp-contents/uploads/sites/64/2017/06/logo.png" class="custom-logo" alt="Tyche Demo" /></a>
+                      <a href="home.php" class="custom-logo-link" rel="home" aria-current="page"><img width="150" height="70" src="wp-contents/uploads/sites/64/2017/06/logo.png" class="custom-logo" alt="Tyche Demo" /></a>
+                  </div>
+                  <div class="col-sm-8 text-right">                      
+                    <button href="#" id="mobile-menu-trigger" class="" onclick="slideMenu()">
+                        <i class="fa fa-bars"></i>
+                    </button>
                   </div>
               </div>
           </div>
           <!-- .site-branding -->
         
           <nav id="site-navigation" class="main-navigation" role="navigation">
-              <div class="container">
+              <div class="container-fluid">
                   <div class="row">
                       <div class="col-md-12">
                         <!-- /// Mobile Menu Trigger //////// -->
-                          <button href="#" id="mobile-menu-trigger" class="" onclick="slideMenu()">
-                              <i class="fa fa-bars"></i>
-                          </button>
                           <!-- end #mobile-menu-trigger -->
 
                           <ul id="desktop-menu" class="sf-menu">

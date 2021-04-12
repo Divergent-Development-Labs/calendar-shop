@@ -3,7 +3,7 @@
 
 <head>
 	<?php session_start(); ?>	
-	<title>Contact - Tyche Demo</title>
+	<title>Our Products - Tyche Demo</title>
 	<?php include 'head.php'; ?>
 </head>
 
@@ -13,7 +13,7 @@
 		<?php include 'top_header_bar.php'; ?>
 
 		<div class="site-content">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="index.php"><span itemprop="title">Shop </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Contact</span></div>
@@ -21,337 +21,143 @@
 				</div>
 			</div>
 
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="custom-page-title">Contact</h2>
+						<h2 class="custom-page-title">Our Products</h2>
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row mb-4 our-products-div">
 					<div class="col-sm-6">
-						<p>PVC Laminatation Flim:-
-                        Leading manufacturers of various grades of PVC Lamination Films in India in range from 4 to 10 micron. With high skills R&D and efforts of our highly experienced technocrats.
-
-· Nil Core Wastage
-
-· Excellent Transparency
-
-· Proper Thickness
-
-· Proper Size
-
-· Wrinkle & Joint Free
-
-· Good Tensile Strength</p>
+						<h4>PVC Laminatation Flim:</h4>
+						<p>Leading manufacturers of various grades of PVC Lamination Films in India in range from 4 to 10 micron. With high skills R&D and efforts of our highly experienced technocrats.</p>							
+						<ul class="">
+							<li>Nil Core Wastage</li>
+							<li>Excellent Transparency</li>
+							<li>Proper Thickness</li>
+							<li>Proper Size</li>
+							<li>Wrinkle & Joint Free</li>
+							<li>Good Tensile Strength</li>
+						</ul>
 					</div>
 					<div class="col-sm-6">
-						<div class="row">
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-mobile"></span>
-									</div>
-									<div class="text">
-										GIVE US A CALL <span><a href="tel:+9100000 00001" class="text-dark">+91-00000 00001</a></span>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-map-marker"></span>
-									</div>
-									<div class="text">
-										OUR LOCATION <span><a href="https://goo.gl/maps/CLT2AtRYdGBDG7nN8" target="_blank" class="text-dark">Meenakshi temple</a></span>
-									</div>
-								</div>
-							</div>
-						</div>
+						<img src="custom/images/dummyHd.png" style="width: 100%; height: 100%; object-fit:cover;">
 					</div>
 				</div>
-                           
-                <div class="row">
-                    <div class="col-sm-6">
-						<div class="row">
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-mobile"></span>
-									</div>
-									<div class="text">
-										GIVE US A CALL <span><a href="tel:+9100000 00001" class="text-dark">+91-00000 00001</a></span>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-map-marker"></span>
-									</div>
-									<div class="text">
-										OUR LOCATION <span><a href="https://goo.gl/maps/CLT2AtRYdGBDG7nN8" target="_blank" class="text-dark">Meenakshi temple</a></span>
-									</div>
-								</div>
-							</div>
-						</div>
+				<div class="row mb-4 our-products-div">
+					<div class="col-sm-6">
+						<img src="custom/images/dummyHd.png" style="width: 100%; height: 100%; object-fit:cover;">
 					</div>
 					<div class="col-sm-6">
-						<p>Monthly Calendar:-
-
-                        We are specialist in monthly Calendar sheets with creative designs and various size of Calendars. Unique gifts that stand the test of time. We undertake customized orders also.
-
-· 70 GSM Maplitho Paper -
-
-· 90 GSM RealArt Paper
-
-· Sizes 11*18, 15*20, 17*27, 20*30
-
-· We provide 3sheeter, 4sheeter, 6sheeter, 12sheeter monthly calendar
-
-· We have Religious monthly Calendar Hindu, Christian, Muslim Calendar.</p>
-					</div>
-					
-				</div>
-
-                <div class="row">
-					<div class="col-sm-6">
-						<p>Daily Calendar Slip:-
-
-                        In service to Tamil people all around the world, we bring you the Tamil daily calendar sheets for your auspicious events reference. Calendars Slip we provide is for Indian timings.
-
-Key Feature
-
-· Daily RasiPalan
-
-· Nalla neran
-
-· Rahu Kaalam
-
-· Yemagandam
-
-· Kuligai
-
-· Soolam</p>
-					</div>
-					<div class="col-sm-6">
-						<div class="row">
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-mobile"></span>
-									</div>
-									<div class="text">
-										GIVE US A CALL <span><a href="tel:+9100000 00001" class="text-dark">+91-00000 00001</a></span>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-map-marker"></span>
-									</div>
-									<div class="text">
-										OUR LOCATION <span><a href="https://goo.gl/maps/CLT2AtRYdGBDG7nN8" target="_blank" class="text-dark">Meenakshi temple</a></span>
-									</div>
-								</div>
-							</div>
-						</div>
+						<h4>Monthly Calendar:</h4>
+						<p>We are specialist in monthly Calendar sheets with creative designs and various size of Calendars. Unique gifts that stand the test of time. We undertake customized orders also.</p>
+						<ul>
+							<li>70 GSM Maplitho Paper</li>
+							<li>90 GSM RealArt Paper</li>
+							<li>Sizes 11*18, 15*20, 17*27, 20*30</li>
+							<li>We provide 3sheeter, 4sheeter, 6sheeter, 12sheeter monthly calendar</li>
+							<li>We have Religious monthly Calendar Hindu, Christian, Muslim Calendar</li>
+						</ul>
 					</div>
 				</div>
-
-                <div class="row">
+				<div class="row mb-4 our-products-div">
 					<div class="col-sm-6">
-						<div class="row">
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-mobile"></span>
-									</div>
-									<div class="text">
-										GIVE US A CALL <span><a href="tel:+9100000 00001" class="text-dark">+91-00000 00001</a></span>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-map-marker"></span>
-									</div>
-									<div class="text">
-										OUR LOCATION <span><a href="https://goo.gl/maps/CLT2AtRYdGBDG7nN8" target="_blank" class="text-dark">Meenakshi temple</a></span>
-									</div>
-								</div>
-							</div>
-						</div>
+						<h4>Daily Calendar Slip:</h4>
+						<p>In service to Tamil people all around the world, we bring you the Tamil daily calendar sheets for your auspicious events reference. Calendars Slip we provide is for Indian timings.</p>
+						<h5>Key Feature</h5>
+						<ul>
+							<li>Daily RasiPalan</li>
+							<li>Nalla neran</li>
+							<li>Rahu Kaalam</li>
+							<li>Yemagandam</li>
+							<li>Kuligai</li>
+							<li>Soolam</li>
+						</ul>
 					</div>
-                    <div class="col-sm-6">
-						<p>Daily Calendar:-
-
-						Daily calendar is great way to find good timing on day-to-day activities. Daily calendar sheets are auspicious events reference for your all events. It gives way to choose right timing for all festivals.
-
-· Sizes 10*15, 12*18
-
-· Customize your individual calendar.</p>
+					<div class="col-sm-6">
+						<img src="custom/images/dummyHd.png" style="width: 100%; height: 100%; object-fit:cover;">
 					</div>
 				</div>
-				<div class="row">
+				<div class="row mb-4 our-products-div">
 					<div class="col-sm-6">
-						<p>Die-Cut Calendar:-
-
-						Being an outstanding enterprise, we are engaged in exporting and supplying superior quality Die-Cut Calendars. Offered calendars are printed under the proper guidance of making use of superior quality Board with the help of sophisticated techniques.
-
-· Size 12*18 , 15*25, 20*30
-
-· Tamil Panjagam Backside
-
-· Customized advertisement.
-
-· Perfect finish
-
-· Durable printing</p>
+						<img src="custom/images/dummyHd.png" style="width: 100%; height: 100%; object-fit:cover;">
 					</div>
 					<div class="col-sm-6">
-						<div class="row">
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-mobile"></span>
-									</div>
-									<div class="text">
-										GIVE US A CALL <span><a href="tel:+9100000 00001" class="text-dark">+91-00000 00001</a></span>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-map-marker"></span>
-									</div>
-									<div class="text">
-										OUR LOCATION <span><a href="https://goo.gl/maps/CLT2AtRYdGBDG7nN8" target="_blank" class="text-dark">Meenakshi temple</a></span>
-									</div>
-								</div>
-							</div>
-						</div>
+						<h4>Daily Calendar:</h4>
+						<p>Daily calendar is great way to find good timing on day-to-day activities. Daily calendar sheets are auspicious events reference for your all events. It gives way to choose right timing for all festivals</p>
+						<ul>
+							<li>Sizes 10*15, 12*18</li>
+							<li>Customize your individual calendar.</li>
+						</ul>
 					</div>
 				</div>
-
-                <div class="row">
+				<div class="row mb-4 our-products-div">
 					<div class="col-sm-6">
-						<div class="row">
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-mobile"></span>
-									</div>
-									<div class="text">
-										GIVE US A CALL <span><a href="tel:+9100000 00001" class="text-dark">+91-00000 00001</a></span>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-map-marker"></span>
-									</div>
-									<div class="text">
-										OUR LOCATION <span><a href="https://goo.gl/maps/CLT2AtRYdGBDG7nN8" target="_blank" class="text-dark">Meenakshi temple</a></span>
-									</div>
-								</div>
-							</div>
-						</div>
+						<h4>Die-Cut Calendar:</h4>
+						<p>Being an outstanding enterprise, we are engaged in exporting and supplying superior quality Die-Cut Calendars. Offered calendars are printed under the proper guidance of making use of superior quality Board with the help of sophisticated techniques.</p>
+						<ul>
+							<li>Size 12*18 , 15*25, 20*30</li>
+							<li>Tamil Panjagam Backside</li>
+							<li>Customized advertisement</li>
+							<li>Perfect finish</li>
+							<li>Durable printing</li>
+						</ul>
 					</div>
-                    <div class="col-sm-6">
-						<p>Table Calendar
-
-						Owing to our rich domain experience, we export and supply superior quality Desk Calendar. The provided calendar is highly used in offices and workspace to point out daily activities.
-
-						· Smooth finish
-
-						· Strong binding
-
-						· Durability
-
-						· Light weight</p>
+					<div class="col-sm-6">
+						<img src="custom/images/dummyHd.png" style="width: 100%; height: 100%; object-fit:cover;">
 					</div>
 				</div>
-				
-                <div class="row">
+				<div class="row mb-4 our-products-div">
 					<div class="col-sm-6">
-						<p>Note Books:-
-
-						We provide excellent exercise NoteBook printing services, With the assistance of advanced technology.
-
-We offer readymade as well as completely customizable Notebooks with your logo and Instauration name.
-
-· Ruled , Un-ruled, 5Subject NoteBooks
-
-· High Print Clarity
-
-· Premium Quality Paper</p>
+						<img src="custom/images/dummyHd.png" style="width: 100%; height: 100%; object-fit:cover;">
 					</div>
 					<div class="col-sm-6">
-						<div class="row">
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-mobile"></span>
-									</div>
-									<div class="text">
-										GIVE US A CALL <span><a href="tel:+9100000 00001" class="text-dark">+91-00000 00001</a></span>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-map-marker"></span>
-									</div>
-									<div class="text">
-										OUR LOCATION <span><a href="https://goo.gl/maps/CLT2AtRYdGBDG7nN8" target="_blank" class="text-dark">Meenakshi temple</a></span>
-									</div>
-								</div>
-							</div>
-						</div>
+						<h4>Table Calendar:</h4>
+						<p>Owing to our rich domain experience, we export and supply superior quality Desk Calendar. The provided calendar is highly used in offices and workspace to point out daily activities.</p>
+						<ul>
+							<li>Smooth finish</li>
+							<li>Strong binding</li>
+							<li>Durability</li>
+							<li>Light weight</li>
+						</ul>
 					</div>
-				</div>
-
-                <div class="row">
+				</div> 
+				<div class="row mb-4 our-products-div">
 					<div class="col-sm-6">
-						<div class="row">
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-mobile"></span>
-									</div>
-									<div class="text">
-										GIVE US A CALL <span><a href="tel:+9100000 00001" class="text-dark">+91-00000 00001</a></span>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-6">
-								<div class="tyche-icon-box">
-									<div class="icon">
-										<span class="fa fa-map-marker"></span>
-									</div>
-									<div class="text">
-										OUR LOCATION <span><a href="https://goo.gl/maps/CLT2AtRYdGBDG7nN8" target="_blank" class="text-dark">Meenakshi temple</a></span>
-									</div>
-								</div>
-							</div>
-						</div>
+						<h4>Note Books:</h4>
+						<p>We provide excellent exercise NoteBook printing services, With the assistance of advanced technology.<br>
+							We offer readymade as well as completely customizable Notebooks with your logo and Instauration name.</p>
+						<ul>
+							<li>Ruled , Un-ruled, 5Subject NoteBooks</li>
+							<li>High Print Clarity</li>
+							<li>Premium Quality Paper</li>
+						</ul>
 					</div>
-                    <div class="col-sm-6">
-						<p>CUSTOMIZED PRINTING
-
-						We offer cost-effective and efficient customized printing solutions to meet your multi-colour as well as single-color printing requirements. We provide customized offset printing services in Book printing, Brochure printing, Catalog printing, Sweet box Printing, Cosmetic, Pharmaceutical . box</p>
+					<div class="col-sm-6">
+						<img src="custom/images/dummyHd.png" style="width: 100%; height: 100%; object-fit:cover;">
 					</div>
-				</div>
+				</div> 
+				<div class="row mb-4 our-products-div">
+					<div class="col-sm-6">
+						<img src="custom/images/dummyHd.png" style="width: 100%; height: 100%; object-fit:cover;">
+					</div>
+					<div class="col-sm-6">					
+						<h4>CUSTOMIZED PRINTING:</h4>
+						<p>We offer cost-effective and efficient customized printing solutions to meet your multi-colour as well as single-color printing requirements. We provide customized offset printing services in </p>
+						<ul>
+							<li>Book printing</li>
+							<li>Brochure printing</li>
+							<li>Catalog printing</li>
+							<li>Sweet box Printing</li>
+							<li>Cosmetic</li>
+							<li>Pharmaceutical . box</li>
+						</ul>
+					</div>
+				</div> 
 			</div>
 		</div><!-- #content -->
-
-		
+	
 		<?php include 'footer.php'; ?>
     	<?php include 'scripts.php'; ?>
 	

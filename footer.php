@@ -1,7 +1,7 @@
 <!-- Footer -->
 <!-- <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="widgets-area">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div id="meta-4" class="widget widget_meta">
@@ -32,9 +32,9 @@
 <!-- / Footer -->
 
 <!-- Copyright -->
-<footer class="site-copyright">
+<footer class="site-copyright mt-4">
     <div class="site-info ">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div id="menu-social" class="menu pull-left">
@@ -47,7 +47,7 @@
                         </ul>
                     </div>
                     <div class="copyright-text pull-right">
-                        Copyright &copy; 2020 <span class="sep">|</span> 
+                        Copyright &copy; 2021 <span class="sep">|</span> 
                         <a href="https://kvncloud.com/" target="_blank" style="color: #74788d;" >Developed by KVN Cloud</a>                            
                      </div>
                 </div>
@@ -68,7 +68,7 @@
             </div>
             <div class="modal-body">
                 <h5>Are you sure to Delete the Record</h5>
-                <div class="container">
+                <div class="container-fluid">
 				<div class="row">
 					<div id="primary" class="content-area col-md-12">
 						<main id="main" class="site-main" role="main">

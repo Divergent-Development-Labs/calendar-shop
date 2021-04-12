@@ -11,7 +11,7 @@
         <?php include 'top_header_bar.php'; ?>
 
         <div class="site-content">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <nav class="woocommerce-breadcrumb"><a href="index.php">Home</a>&nbsp;&#47;&nbsp;<a href="shop.php">Shop</a>&nbsp;&#47;&nbsp;Page 2</nav>

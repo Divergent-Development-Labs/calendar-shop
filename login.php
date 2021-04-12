@@ -15,7 +15,7 @@
 		<?php include 'top_header_bar.php'; ?>
 
 		<div class="site-content">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="home.php"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Login</span></div>
@@ -23,17 +23,17 @@
 				</div>
 			</div>
 
-			<div class="container">
+			<div class="container-fluid">
 				<div id="primary" class="content-area ">
 					<main id="main" class="d-flex justify-content-center site-main col-12" role="main">
 
-						<article id="post-7" class="shadow-lg col-md-10 col-lg-8 col-11 mx-auto border post-7 page type-page status-publish hentry mx-auto">
+						<article id="post-7" class=" col-md-10 col-lg-8 col-11 mx-auto border post-7 page type-page status-publish hentry mx-auto">
 							<div class="">
 								<header>
 									<h3 class="page-title margin-top text-center">Login</h3>
 								</header>
 							</div>
-							<div class="woocommerce card mx-auto">
+							<div class="woocommerce cardz mx-auto">
 								<div class="woocommerce-notices-wrapper"></div>
 
 								<form class="woocommerce-form woocommerce-form-login card-body" method="post" action="backend/customer-login.php">

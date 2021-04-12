@@ -3,7 +3,7 @@
 
 <head>
 	<?php session_start(); ?>	
-	<title>Contact - Tyche Demo</title>
+	<title>About - Tyche Demo</title>
 	<?php include 'head.php'; ?>
 </head>
 
@@ -13,7 +13,7 @@
 		<?php include 'top_header_bar.php'; ?>
 
 		<div class="site-content">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
@@ -22,11 +22,10 @@
 				</div>
 			</div>
 
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row mb-4">
 					<div class="col-sm-6">
 						<h4>About Us:</h4>
-
 						<p>PadmaavathyArtCrafts came into existence in the year 2008. The firm has won accolades all over the domain by offering high grade PVC Films also offering a wide range of printing solution in INDIA. It includes commercial printed products, stationary Products .Our firm Located at Sivakasi , the firm is managed under the proficient headship of its founder, Mr. V.Jeganathan .</p>
 					</div>
 					<div class="col-sm-6">
@@ -41,10 +40,8 @@
 					<div class="col-sm-6">
 						<h4>Our Mission:</h4>
 						<p>
-                        To provide end -to- end printing solutions to our clients by developing qualitative, innovative and defect-free solutions at the most competitive prices.
-
-                        To be the preferred global partners for every printing needs and strive to set a bench mark with our qualitative, precise, functional, flexible and customized solutions.
-
+                        To provide end -to- end printing solutions to our clients by developing qualitative, innovative and defect-free solutions at the most competitive prices.<br>
+                        To be the preferred global partners for every printing needs and strive to set a bench mark with our qualitative, precise, functional, flexible and customized solutions.<br>
                         Customer satisfaction is our ultimate motto</p>
 					</div>
 					
@@ -141,7 +138,6 @@
 					</div>
                     <div class="col-sm-6">
 						<h4>Our Team:</h4>
-
 						<p>Our team is our biggest strength. All work as a family and every member in our family is special .Each one in the team has their own specialist background to be able to add value to the job.</p>
 					</div>
 				</div>

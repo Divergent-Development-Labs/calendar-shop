@@ -12,7 +12,7 @@
         <?php include 'top_header_bar.php'; ?>
 
         <div class="site-content">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="tyche-breadcrumbs">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div id="primary" class="border card col-md-8 content-area mx-auto">
                         <main id="main" class="site-main" role="main">
