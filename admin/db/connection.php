@@ -1,16 +1,16 @@
 <?php
 
 //Local
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "eakmartc_cal_proj";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "eakmartc_cal_proj";
 
 //Production
-// $servername = "localhost";
-// $username = "eakmartc_cal_proj";
-// $password = "@Calproj2020";
-// $dbname = "eakmartc_cal_proj";
+$servername = "localhost";
+$username = "eakmartc_cal_proj";
+$password = "@Calproj2020";
+$dbname = "eakmartc_cal_proj";
 
 // Create connection
 

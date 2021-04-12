@@ -77,12 +77,12 @@
 					</div>
 				</div>
 
-				<div class="row mb-4">
-					<div class="col-sm-12">
+				<div class=" my-5 bg-light p-2 infrastructure-div">
+					<div class="">
 						<h4>Infrastructure:</h4>
-						<p>We are currently situated in a factory space of XX,XXX square feet across 2 locations in the printing city of Sivakasi.</p>
+						<p class="text-center text-dark font-weight-bold">We are currently situated in a factory space of XX,XXX square feet across 2 locations in the printing city of Sivakasi.</p>
 						
-						<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+						<ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
 							<li class="nav-item" role="presentation">
 								<button class="nav-link active" id="pills-lamination-tab" data-bs-toggle="pill" data-bs-target="#pills-lamination" type="button" role="tab" aria-controls="pills-lamination" aria-selected="true">Lamination</button>
 							</li>
