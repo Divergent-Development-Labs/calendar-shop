@@ -689,6 +689,6 @@ td {
 }
 
 .infrastructure-div p {
-    font-size: 15px !important;
-    line-height: 2.4rem !important;
+    /* font-size: 15px !important;
+    line-height: 2.4rem !important; */
 }

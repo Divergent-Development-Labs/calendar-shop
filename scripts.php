@@ -1,6 +1,17 @@
 
-<!-- JAVASCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
 <script src="admin/assets/libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="wp-includes/js/jquery/jquery.js" id="jquery-core-js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+
+<!-- <script type="text/javascript" src="wp-contents/themess/tyche/assets/js/functions.js" id="tyche-scripts-js"></script> -->
+
+<!-- JAVASCRIPT -->
 <!-- <script src="admin/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 <!-- <script src="assets/libs/metismenu/metisMenu.min.js"></script>
 <script src="assets/libs/simplebar/simplebar.min.js"></script>
@@ -45,7 +56,7 @@
     })()
 </script>
 
-<link rel="stylesheet" href="custom/css/style.css">
+<!-- <link rel="stylesheet" href="custom/css/style.css"> -->
 
 <!-- <script type='text/javascript' id='contact-form-7-js-extra'>
     /* <![CDATA[ */
@@ -65,8 +76,8 @@
     };
     /* ]]> */
 </script> -->
-<script type='text/javascript' src='wp-contents/pluginss/zero-spam/assets/js/wpzerospam.js' id='wpzerospam-js'></script>
-<script type='text/javascript' src='wp-contents/pluginss/zero-spam/integrations/contact-form-7/js/cf7.js' id='wpzerospam-integration-cf7-js'></script>
+<!-- <script type='text/javascript' src='wp-contents/pluginss/zero-spam/assets/js/wpzerospam.js' id='wpzerospam-js'></script> -->
+<!-- <script type='text/javascript' src='wp-contents/pluginss/zero-spam/integrations/contact-form-7/js/cf7.js' id='wpzerospam-integration-cf7-js'></script> -->
 <script type='text/javascript' src='wp-contents/pluginss/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js' id='jquery-blockui-js'></script>
 <!-- <script type='text/javascript' id='wc-add-to-cart-js-extra'>
     /* <![CDATA[ */

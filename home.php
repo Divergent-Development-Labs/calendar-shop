@@ -15,53 +15,32 @@
     <!-- Main Slider -->
     <section class="main-slider">
       <div class="containerz" height="100px">
-        <div id="myCarousel" class="carousel slide owl-caurosel" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active mx-1 indicator-btn" style="padding: 2px 10px !important;" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="mx-1 indicator-btn" style="padding: 2px 10px !important;" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="mx-1 indicator-btn" style="padding: 2px 10px !important;" aria-label="Slide 3"></button>
+          </div>
           <div class="carousel-inner">
-            <div class="item active">
-              <img  src="custom/images/banner.jpg" alt="Los Angeles" style="width:100%; height: 460.172px !important;">
+            <div class="carousel-item active">
+              <img src="custom/images/banner-4.jpg" class="d-block w-100 mx-auto" style="height: 500px !important" alt="...">
             </div>
-
-            <div class="item">
-              <img src="custom/images/banner-2.jpg" alt="Chicago" style="width:100%; height: 460.172px !important;">
+            <div class="carousel-item">
+              <img src="custom/images/banner-5.jpg" class="d-block w-100 mx-auto" style="height: 500px !important" alt="...">
             </div>
-
-            <div class="item">
-              <img src="custom/images/banner-3.jpg" alt="New york" style="width:100%; height: 460.172px !important;">
+            <div class="carousel-item">
+              <img src="custom/images/banner-6.jpg" class="d-block w-100 mx-auto" style="height: 500px !important" alt="...">
             </div>
           </div>
-
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-      <div class="owl-carousel owl-theme" id="main-slider">
-        <div class="item">
-          <img src="custom/images/banner.jpg">
-          <!-- <img src="/custom/images/banner.jpg" class="attachment-tyche-slider-image size-tyche-slider-image" alt="" loading="lazy" sizes="(max-width: 1600px) 100vw, 1600px" /> -->
-          <div class="hero-caption left hidden-xs hidden-sm">
-            <span class="year">2021</span>
-            <span class="caption">Autumn Collection</span>
-            <div class="btn-group">
-              <a href="https://colorlib.com">Shop Now</a>
-              <a href="https://colorlib.com">Learn More</a>
-            </div>
-          </div>
-        </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>   
       </div>
       <div class="main-slider-bar bg-light our-manthra " style="display: flex !important;">
         <div class="container-fluid">
