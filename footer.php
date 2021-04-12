@@ -32,7 +32,7 @@
 <!-- / Footer -->
 
 <!-- Copyright -->
-<footer class="site-copyright mt-4">
+<footer class="site-copyright">
     <div class="site-info ">
         <div class="container-fluid">
             <div class="row">

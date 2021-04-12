@@ -549,10 +549,16 @@ td {
     margin-top: 5px !important;
     width: 100% !important;
     color: var(--my-primary);
-    border: 2px solid darkgray !important;
+    /* border: 2px solid darkgray !important; */
+}
+
+.main-slider-info-cell {
+    display: flex!important;
+    justify-content: center!important;
 }
 
 .our-manthra .main-slider-info-cell {
+    display: block !important;
     text-align: center!important;
 }
 
@@ -652,6 +658,7 @@ td {
 
 .reasons-div li {
     padding-left: 1.3em;
+    font-size: 20px !important;
 }
 
 .reasons-div li:before {
@@ -674,4 +681,14 @@ td {
 .nav-pills .show>.nav-link {
     color: #FFF !important;
     background-color: var(--my-primary) !important;
+}
+
+.infrastructure-div .tab-content {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.infrastructure-div p {
+    font-size: 15px !important;
+    line-height: 2.4rem !important;
 }

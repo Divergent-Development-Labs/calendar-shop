@@ -7,7 +7,7 @@
   <?php include 'head.php'; ?>
 </head>
 
-<body class="home page-template-default page page-id-2 wp-custom-logo theme-tyche woocommerce-no-js elementor-default elementor-kit-1236">
+<body class="bg-white home page-template-default page page-id-2 wp-custom-logo theme-tyche woocommerce-no-js elementor-default elementor-kit-1236">
   <div id="page" class="site">
 
     <?php include 'top_header_bar.php'; ?>
@@ -15,7 +15,7 @@
     <!-- Main Slider -->
     <section class="main-slider">
       <div class="containerz" height="100px">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide owl-caurosel" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -63,47 +63,61 @@
           </div>
         </div>
       </div>
-      <div class="main-slider-bar hidden-xs">
+      <div class="main-slider-bar bg-light our-manthra " style="display: flex !important;">
         <div class="container-fluid">
-          <ul class="main-slider-info">
-            <li class="col-sm-4 col-xs-12">
+          <!-- <h4 class="text-dark pt-4">OUR MANTHRAS</h4> -->
+          <div class="main-slider-info">
+            <div class="flex-fill mx-1 px-1">
               <div class="main-slider-info-cell">
-                <div class="cell-icon">
-                  <i class="dashicons dashicons-admin-site"></i>
+                <div class="cell-iconz float-none">
+                  <i class="fas fa-shipping-fast"></i>
                 </div>
-                <div class="cell-content">
-                  <span class="cell-caption"> FREE SHIPPING </span>
-                  <span class="cell-subcaption">
-                    On all orders over 90$
-                  </span>
+                <div class="cell-contentz">
+                  <span class="cell-caption"> Reliability </span>
                 </div>
               </div>
-            </li>
-            <li class="col-sm-4 col-xs-12">
+            </div>
+            <div class="flex-fill mx-1 px-1">
               <div class="main-slider-info-cell">
-                <div class="cell-icon">
-                  <i class="dashicons dashicons-smartphone"></i>
+                <div class="cell-iconz float-none">
+                  <i class="fas fa-handshake-o"></i>
                 </div>
-                <div class="cell-content">
-                  <span class="cell-caption"> CALL US ANYTIME </span>
-                  <span class="cell-subcaption"> +000000000 </span>
+                <div class="cell-contentz">
+                  <span class="cell-caption"> Fast Service </span>
                 </div>
               </div>
-            </li>
-            <li class="col-sm-4 col-xs-12">
+            </div> 
+            <div class="flex-fill mx-1 px-1">
               <div class="main-slider-info-cell">
-                <div class="cell-icon">
-                  <i class="dashicons dashicons-location-alt"></i>
+                <div class="cell-iconz float-none">
+                  <i class="fas fa-check-circle"></i>
                 </div>
-                <div class="cell-content">
-                  <span class="cell-caption"> OUR LOCATION </span>
-                  <span class="cell-subcaption">
-                    000000 fdjsljl jrl. SDTR
-                  </span>
+                <div class="cell-contentz">
+                  <span class="cell-caption"> Quality Assured </span>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>                 
+            <div class="flex-fill mx-1 px-1">
+              <div class="main-slider-info-cell">
+                <div class="cell-iconz float-none">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="cell-contentz">
+                  <span class="cell-caption"> Customer Assistant </span>
+                </div>
+              </div>
+            </div>
+            <div class="flex-fill mx-1 px-1">
+              <div class="main-slider-info-cell">
+                <div class="cell-iconz float-none">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="cell-contentz">
+                  <span class="cell-caption"> Satisfied coustomer </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -111,86 +125,31 @@
 
     <div class="site-content">
       <!-- Content Area #1 -->
-      <section class="content-area-1">
+      <section class="content-area-1z">
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
-              <h4 class="">Leading Daily Calendar and Monthly Calendar Manufacturers in Madurai.</h4>
+              <h4 class="mt-5">Leading Daily Calendar and Monthly Calendar Manufacturers in Madurai.</h4>
               <p>Manish Packaging Pvt. Ltd., came into existence in the year 1970. The firm has won accolades all over the domain by offering high grade PVC Films to the clients. Located at Surat (Gujarat), the firm is managed under the proficient headship of its mentor,Â Mr. K. B. Patel who is having a vast experience in the domain. The firm has carved a niche in the Packaging Industry as a trusted PVC Films Manufacturer and Exporter.
                   <!-- We ABC Calendars is an most reputed printing company in Madurai. ABC Calendars founded in the year 2010 by XYZ as small printing company in sivakasi. Now ABC Calendars is grown as a big tree with the help of its Customers due to its quality service.
                   We always provide quality printing service to our reputed Customers at an affordable price. Also we provide dedicated customer support to get their Printing needs fulfilled. Now we are making our step towards global printing service through Website. -->
               </p>
             </div>
             <div class="col-xs-12">
-              <h5 class=" ">Quality Policy</h4>
+              <h5 class="mt-4">Quality Policy</h4>
               <p>Our up-to-the-minute equipment, which run parallel with state-of-the-art technology, assure the most advantageous quality of product. We have a panel of experts who have vast experience in manufacturing of packing products. Manish Packaging aims to provide quality at the most competitive price. Our experts perform stringent quality tests on the product thus ensuring superlative product to our honored clients.</p>
             </div>
             <div class="col-xs-12">
-              <h5 class=" ">Management Setup</h4>
+              <h5 class="mt-4">Management Setup</h4>
               <p>Manish Packaging is a professionally managed organization who has impeccable record of transparency. We have considerable expertise in dealing with various packaging products. Our target-oriented professionals are the milestone behind our grand success. We have a visionary team of professionals who have vast experience in the field of packaging.</p>
-            </div>            <div class="col-xs-12">
-              <h5 class=" ">Network</h4>
+            </div>            
+            <div class="col-xs-12">
+              <h5 class="mt-4">Network</h4>
               <p>By maintaining transparency in its business dealings, the firm established a wide network chain across the globe. Backed by this wide network, the firm has become proficient in providing prompt deliveries of the PVC films to every nook and corner of the globe.</p>
             </div>
 
-            <div class="main-slider-bar hidden-xs our-manthra mt-5">
-              <div class="container-fluid">
-                <div class="main-slider-info">
-                  <div class="flex-fill mx-1">
-                    <div class="main-slider-info-cell">
-                      <div class="cell-icon float-none">
-                        <i class="fas fa-shipping-fast"></i>
-                      </div>
-                      <div class="cell-content">
-                        <span class="cell-caption"> Reliability </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex-fill mx-1">
-                    <div class="main-slider-info-cell">
-                      <div class="cell-icon float-none">
-                        <i class="fas fa-handshake-o"></i>
-                      </div>
-                      <div class="cell-content">
-                        <span class="cell-caption"> Fast Service </span>
-                      </div>
-                    </div>
-                  </div> 
-                  <div class="flex-fill mx-1">
-                    <div class="main-slider-info-cell">
-                      <div class="cell-icon float-none">
-                        <i class="fas fa-check-circle"></i>
-                      </div>
-                      <div class="cell-content">
-                        <span class="cell-caption"> Quality Assured </span>
-                      </div>
-                    </div>
-                  </div>                 
-                  <div class="flex-fill mx-1">
-                    <div class="main-slider-info-cell">
-                      <div class="cell-icon float-none">
-                        <i class="fas fa-phone-alt"></i>
-                      </div>
-                      <div class="cell-content">
-                        <span class="cell-caption"> Customer Assistant </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex-fill mx-1">
-                    <div class="main-slider-info-cell">
-                      <div class="cell-icon float-none">
-                        <i class="fas fa-users"></i>
-                      </div>
-                      <div class="cell-content">
-                        <span class="cell-caption"> Satisfied coustomer </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="solutions-div px-4">
+            <div class="solutions-div px-4 mb-3 mt-5">
               <div>
                 <h2 class="">SOLUTIONS</h2>
               </div>
@@ -221,18 +180,26 @@
               </div>
             </div>
 
-            <div class=" mb-4">
+
+            <div class="text-center my-4 p-5 bg-dark">
               <div class="">
-                <h4>Need a reason to stay with Us:</h4>
-                <p class="text-center font-weight-bold text-dark">Some of our strengths that make us a reliable and the most preferred partner to many of our customers are:</p>
-                <div class="d-md-flex justify-content-center reasons-div mt-2">
-                  <ul class="w-50">
+                <h4 style="margin-bottom: 30px !important">Interested in us?</h4>
+                <span onclick="location.href = 'contact.php';" class="btn btn-my-primary font-weight-bold">CONTACT NOW</span>
+              </div>
+            </div>
+
+            <div class="my-4">
+              <div class="">
+                <h2 class="text-my-primary text-center">Need a reason to stay with Us:</h2>
+                <h6 class="text-center font-weight-bold text-dark">Some of our strengths that make us a reliable and the most preferred partner to many of our customers are:</h6>
+                <div class="row justify-content-center reasons-div mt-2">
+                  <ul class="col-md-4">
                     <li>Some of our strengths that make us a reliable and the most preferred partner to many of our customers are:</li>
                     <li>Latest print technology</li>
                     <li>Competitive prices</li>
                     <li>Proven ability in successful execution of bulk as well as small orders</li>
                   </ul>
-                  <ul>
+                  <ul class="col-md-4">
                     <li>Customer focused approach</li>
                     <li>Superior client services</li>
                     <li>Deliver innovative solution</li>
@@ -242,14 +209,49 @@
               </div>
             </div>
 
-            <div class="text-center mb-4 p-5 bg-body">
-              <div class="">
-                <h4 style="margin-bottom: 30px !important">Interested in us?</h4>
-                <span onclick="location.href = 'contact.php';" class="btn btn-my-primary ">CONTACT US</span>
+          </div>
+
+      </section>
+      <section class="counts-section main-slider">
+        <div class="main-slider-bar p-5">
+          <div class="container-fluid">
+            <div class="main-slider-info">
+              <div class="flex-fill mx-1 px-3">
+                <div class="main-slider-info-cell">
+                  <div class="cell-icon">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <div class="cell-content">
+                    <span class="cell-caption"> 450 </span>
+                    <span class="cell-subcaption"> + Happy Clients</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-fill mx-1 px-3">
+                <div class="main-slider-info-cell">
+                  <div class="cell-icon">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div class="cell-content">
+                    <span class="cell-caption"> 35 </span>
+                    <span class="cell-subcaption"> + Countries </span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-fill mx-1 px-3">
+                <div class="main-slider-info-cell">
+                  <div class="cell-icon">
+                    <i class="fas fa-copy"></i>
+                  </div>
+                  <div class="cell-content">
+                    <span class="cell-caption"> 100 </span>
+                    <span class="cell-subcaption">+ Tons Papers</span>
+                  </div>
+                </div>
               </div>
             </div>
-
           </div>
+        </div>
 
       </section>
       <!-- / Content Area #1 -->
