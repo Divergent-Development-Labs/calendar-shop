@@ -152,23 +152,25 @@
 						</div>
 					</a>
 				</div> 
-				<div class="row d-block mb-4 our-products-div">
-					<div class="col-lg-6 col-12 float-right">					
-						<h4>Customized Printing:</h4>
-						<p>We offer cost-effective and efficient customized printing solutions to meet your multi-colour as well as single-color printing requirements. We provide customized offset printing services in </p>
-						<ul>
-							<li>Book printing</li>
-							<li>Brochure printing</li>
-							<li>Catalog printing</li>
-							<li>Sweet box Printing</li>
-							<li>Cosmetic</li>
-							<li>Pharmaceutical . box</li>
-						</ul>
-					</div>
+				<div class="mb-4 our-products-div">
+					<a class="row d-block ">
+						<div class="col-lg-6 col-12 float-right">					
+							<h4>Customized Printing:</h4>
+							<p>We offer cost-effective and efficient customized printing solutions to meet your multi-colour as well as single-color printing requirements. We provide customized offset printing services in </p>
+							<ul>
+								<li>Book printing</li>
+								<li>Brochure printing</li>
+								<li>Catalog printing</li>
+								<li>Sweet box Printing</li>
+								<li>Cosmetic</li>
+								<li>Pharmaceutical . box</li>
+							</ul>
+						</div>
 
-					<div class="col-lg-6 col-12">
-						<img src="custom/images/dummyHd.png" style="width: 100%; height: 100%; object-fit:cover;">
-					</div>
+						<div class="col-lg-6 col-12">
+							<img src="custom/images/dummyHd.png" style="width: 100%; height: 100%; object-fit:cover;">
+						</div>
+					</a>
 				</div> 
 			</div>
 		</div><!-- #content -->

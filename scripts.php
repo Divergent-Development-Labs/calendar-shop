@@ -145,6 +145,6 @@
 <script type="text/javascript">
     function slideMenu() {
         var dm = $('#desktop-menu');
-        $(dm).toggleClass('d-none'); 
+        $(dm).toggleClass('d-block'); 
     }
 </script>

@@ -82,7 +82,7 @@
                   <div class="header-logo">
                       <a href="home.php" class="custom-logo-link" rel="home" aria-current="page"><img width="150" height="70" src="wp-contents/uploads/sites/64/2017/06/logo.png" class="custom-logo" alt="Tyche Demo" /></a>
                   </div>
-                  <div class="align-self-center hidden-sm mb-2 mx-4">
+                  <!-- <div class="align-self-center hidden-sm mb-2 mx-4">
                     <nav class="navbar">
                         <ul id="desktop-menuz" class="sf-menu navbar-nav">
                             <li itemscope="itemscope" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
@@ -130,7 +130,7 @@
                             </li>
                         </ul>                  
                     </nav>
-                  </div>  
+                  </div>   -->
                   <div class="flex-fill text-right">  
                         <button href="#" id="mobile-menu-trigger" class="" onclick="slideMenu()">
                             <i class="fa fa-bars"></i>
@@ -139,7 +139,7 @@
               </div>
               <nav class="navbar">
                 <div class="text-right align-self-center">
-                        <ul id="desktop-menu" class=" border-top sf-menu d-block d-none text-center">
+                        <ul id="desktop-menu" class=" border-top sf-menu d-lg-block text-center">
                             <li itemscope="itemscope" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
                                 <a title="Home" href="home.php">Home</a>
                             </li>
