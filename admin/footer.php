@@ -1,7 +1,7 @@
             </div><!-- end container-fluid -->
         <div><!-- end page-content -->
         <footer class="footer">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
                         <script>document.write(new Date().getFullYear())</script> © Calendar Shop.

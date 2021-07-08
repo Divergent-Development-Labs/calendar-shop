@@ -15,7 +15,7 @@
 		<?php include 'top_header_bar.php'; ?>
 
 		<div class="site-content">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="home.php"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Login</span></div>
@@ -23,7 +23,7 @@
 				</div>
 			</div>
 
-			<div class="container-fluid">
+			<div class="container">
 				<div id="primary" class="content-area ">
 					<main id="main" class="d-flex justify-content-center site-main col-12" role="main">
 

@@ -1,5 +1,21 @@
 <?php
 if(isset($_POST['sendMail'])){
+    $to = "ranjithjikumarji@gmailc.com";
+    $subject = "My subject";
+    $txt = "Hello world!";
+    $headers = "From: sgrkranjithkumar@gmail.com";
+
+    mail($to,$subject,$txt,$headers);
+
+    try {
+        //code...
+        mail("sgrkranjithkumar@gmail.com","My subject",$msg);
+    } catch (\Throwable $th) {
+        //throw $th;
+        echo $th;
+    }
+    // send email
+
     // $to = "sgrkranjithkumar@gmail.com"; // this is your Email address
     $to = "ranjithjikumarji@gmail.com"; // this is your Email address
     $from = $_POST['your-email']; // this is the sender's Email address
@@ -20,15 +36,13 @@ if(isset($_POST['sendMail'])){
     echo $to;
     echo $_POST['your-message'];
 
-    if(mail($to,$subject,$message,$headers)){
-        // sends a copy of the message to the sender
-        echo '<script language="javascript">';
-        echo 'alert("Mail Sent. Thank you ' . $name . ', we will contact you shortly.")';
-        echo '</script>';
-        // header('Location: ./contact-us.php');        
-    }
-    else{
+    try {
+        //code...
+        mail($to,$subject,$message,$headers);
+    } catch (\Throwable $th) {
+        //throw $th;
         echo 'alert("Failed: Mail Cannot Sent. Try again!!.")';
+        echo $th;
     }
-    }
+}
 ?>

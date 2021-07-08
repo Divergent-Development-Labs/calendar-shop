@@ -73,5 +73,5 @@
 <!-- ============================================================== -->
 <div class="main-content">
     <div class="page-content mt-3">
-        <div class="container-fluid">
+        <div class="container">
             <!-- start page title -->

@@ -12,7 +12,7 @@
         <?php include 'top_header_bar.php'; ?>
 
         <div class="site-content">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="tyche-breadcrumbs">
@@ -21,13 +21,13 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div id="primary" class="border col-md-8 content-area mx-auto p-5">
                         <main id="main" class="site-main" role="main">
                             <div class="woocommerce-billing-fields">
 
-                                <h3 class="mt-4 text-center">USER DETAILS</h3>
+                                <h3 class="mt-4 text-center">Your Details</h3>
 
                                 <div class="woocommerce-billing-fields__field-wrapper">
                                     <form action="backend/insert-new-user.php" method="post">

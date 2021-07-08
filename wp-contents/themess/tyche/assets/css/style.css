@@ -399,8 +399,8 @@ hr {
 .container-fluid {
     margin-right: auto !important;
     margin-left: auto !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 .row {
@@ -1516,7 +1516,8 @@ h4,
 h5,
 h6 {
     clear: both !important;
-    font-family: "Karla", sans-serif !important;
+    /* font-family: "Karla", sans-serif !important; */
+    font-family: inherit !important;
     font-weight: 700 !important;
     color: #2a313e !important;
 }
@@ -2598,7 +2599,8 @@ a {
 }
 
 a:visited {
-    color: #f88c7a !important;
+    /* color: #f88c7a !important; */
+    color: #0070ba !important;
 }
 
 a:hover,
@@ -2724,26 +2726,27 @@ a:active {
 
 .sf-menu>li>a,
 .sf-menu>li.dropdown>a {
-    padding: 15px 30px 15px 0 !important;
+    /* padding: 15px 30px 15px 0 !important; */
+    padding: 15px !important;
     color: #ffffff !important;
 }
 
 .sf-menu>li a i {
     margin-right: 2px !important;
     margin-right: 0.13333333em !important;
-    color: var(--my-primary) !important;
+    color: var(--my-secondary) !important;
 }
 
 .sf-menu>li.current-menu-item>a,
 .sf-menu>li.current>a {
-    color: var(--my-primary) !important;
+    color: var(--my-secondary) !important;
 }
 
 .sf-menu>li.sfHover>a:hover,
 .sf-menu>li.sfHover>a:focus,
 .sf-menu>li>a:hover,
 .sf-menu>li>a:focus {
-    color: var(--my-primary) !important;
+    color: var(--my-secondary) !important;
 }
 
 
@@ -4499,10 +4502,6 @@ a:active {
     font-weight: 400 !important;
 }
 
-.custom-page-title {
-    margin-top: 0 !important;
-}
-
 .error404 .page-title {
     margin-top: 30px !important;
 }
@@ -4815,7 +4814,7 @@ a:active {
 
 .top-header-bar-container {
     width: 100% !important;
-    background: #2b2e34 !important;
+    background: var(--my-secondary) !important;
     color: #FFF !important;
     vertical-align: middle !important;
 }
@@ -4875,7 +4874,7 @@ a:active {
 .top-header-bar-container .top-header-bar li.top-cart {
     padding-left: 40px !important;
     padding-right: 40px !important;
-    background: var(--my-primary) !important;
+    background: inherit;
 }
 
 .top-header-bar-container .top-header-bar li.top-cart:hover,
@@ -4925,7 +4924,9 @@ a:active {
 }
 
 .top-header-bar-container .top-header-bar li.top-account a:hover,
-.top-header-bar-container .top-header-bar li.top-account a:focus {
+.top-header-bar-container .top-header-bar li.top-new-user a:hover,
+.top-header-bar-container .top-header-bar li.top-account a:focus,
+.top-header-bar-container .top-header-bar li.top-new-user a:focus {
     color: var(--my-primary) !important;
 }
 
@@ -5054,7 +5055,7 @@ a:active {
 --------------------------------------------------------------*/
 
 .site-header {
-    background: #25262B !important;
+    background: #00a6e4 !important;
     padding-top: 15px !important;
 }
 

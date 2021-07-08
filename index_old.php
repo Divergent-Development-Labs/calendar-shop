@@ -64,7 +64,7 @@
         </div>
       </div>
       <div class="main-slider-bar hidden-xs">
-        <div class="container-fluid">
+        <div class="container">
           <ul class="main-slider-info">
             <li class="col-sm-4 col-xs-12">
               <div class="main-slider-info-cell">
@@ -112,7 +112,7 @@
     <div class="site-content">
       <!-- Content Area #1 -->
       <section class="content-area-1">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <div class="col-xs-12">
               <div id="tyche_products-3" class="tyche-products primary widget widget_tyche_products">
@@ -281,7 +281,7 @@
 
       <!-- Content Area #2 -->
       <section class="content-area-2">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12">
               <div id="tyche_products-5" class="tyche-products green widget widget_tyche_products">
@@ -514,7 +514,7 @@
 
       <!-- Content Area #3 -->
       <section class="content-area-3">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <div class="col-xs-12">
               <div id="tyche_products-9" class="tyche-products orange widget widget_tyche_products">
@@ -628,7 +628,7 @@
 
       <!-- Content Area #4 -->
       <section class="content-area-4">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <div class="col-md-6 col-xs-12">
               <div id="tyche_recent-3" class="tyche-recent-posts widget widget_tyche_recent">
@@ -769,7 +769,7 @@
 
       <!-- Content Area #5 -->
       <section class="content-area-5">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <div class="col-xs-12">
               <div id="tyche_products-10" class="tyche-products light_blue widget widget_tyche_products">

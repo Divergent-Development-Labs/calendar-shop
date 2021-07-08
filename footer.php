@@ -1,7 +1,7 @@
 <!-- Footer -->
 <!-- <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="widgets-area">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div id="meta-4" class="widget widget_meta">
@@ -34,7 +34,7 @@
 <!-- Copyright -->
 <footer class="site-copyright">
     <div class="site-info ">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div id="menu-social" class="menu pull-left">
@@ -68,7 +68,7 @@
             </div>
             <div class="modal-body">
                 <h5>Are you sure to Delete the Record</h5>
-                <div class="container-fluid">
+                <div class="container">
 				<div class="row">
 					<div id="primary" class="content-area col-md-12">
 						<main id="main" class="site-main" role="main">

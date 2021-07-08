@@ -501,20 +501,14 @@ td {
 
 .expertise-icon {
     color: white !important;
-    font-size: xxx-large !important;
+    font-size: xx-large !important;
 }
 
 :root {
-    --my-primary: #F66249 !important;
-}
-
-.our-products-div ul {
-    list-style-type: disc !important;
-    margin-left: 35px !important;
-}
-
-.our-products-div p {
-    margin-bottom: 10px !important;
+    /* --my-primary: #F66249 !important; */
+    --my-primary: #00A8EA !important;
+    --my-secondary: #02387b !important;
+    --my-primary-transparent: #f5f7fa !important;
 }
 
 .solutions-div h2 {
@@ -649,11 +643,55 @@ td {
     }
 }
 
+
+/* .nav-tabs .nav-link,
+.nav-tabs .nav-link {
+    border: 0px !important;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .show>.nav-link {
+    color: var(--my-primary) !important; 
+} */
+
+.top-header-bar__white-border-btn {
+    border: 1px solid white !important;
+    padding: 0.8rem !important;
+    border-radius: 0.4rem !important;
+}
+
+.top-header-bar__mail-btn:hover {
+    color: var(--my-primary) !important;
+}
+
+.top-header-bar__cart-btn:hover,
+.top-header-bar__white-border-btn:hover {
+    background-color: #fff !important;
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+.site-header {
+    background-image: linear-gradient( 180deg, var(--my-secondary), var(--my-primary)) !important;
+}
+
+#mobile-menu-trigger i {
+    color: #fff !important;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-color: var(--my-primary);
+    border-bottom: none !important;
+    color: var(--my-primary);
+}
+
 .reasons-div ul {
     margin-left: 35px !important;
     margin-right: 35px !important;
     list-style: none;
     padding: 0;
+    color: var(--my-secondary) !important;
 }
 
 .reasons-div li {
@@ -672,15 +710,9 @@ td {
     /* same as padding-left set on li */
 }
 
-.nav-pills .nav-link,
-.nav-pills .nav-link {
-    border: 0px !important;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    color: #FFF !important;
-    background-color: var(--my-primary) !important;
+.custom-sidebar-filter {
+    background: var(--my-primary-transparent);
+    padding: 1.5rem !important;
 }
 
 .infrastructure-div .tab-content {
@@ -688,7 +720,96 @@ td {
     padding-right: 10px !important;
 }
 
-.infrastructure-div p {
-    /* font-size: 15px !important;
-    line-height: 2.4rem !important; */
+.custom-home-page-title {
+    margin: 4rem 2rem !important;
+    font-size: 2.5em !important;
+    color: var(--my-secondary) !important;
+    text-align: center !important;
+}
+
+.custom-page-title {
+    margin-top: 0 !important;
+    font-size: 4em !important;
+    color: var(--my-secondary) !important;
+    text-align: center !important;
+}
+
+.aboutus-sections {
+    background-color: #fff;
+    padding: 2em 6em !important;
+    min-height: 20rem !important;
+}
+
+.aboutus-sections-expertise {
+    background-color: var(--my-primary);
+}
+
+.home-section {
+    padding: 2em 7em !important;
+}
+
+.home-section-intro {
+    background-color: var(--my-primary-transparent) !important;
+}
+
+.solutions-card {
+    background-color: var(--my-secondary) !important;
+    border-radius: 0.5rem !important;
+}
+
+.solutions-card-text {
+    color: white !important;
+}
+
+.our-service-section,
+.our-product-section {
+    background-color: var(--my-primary-transparent) !important;
+    padding: 2em 6em !important;
+    min-height: 45rem !important;
+}
+
+.our-service-section__default,
+.our-product-section__default {
+    background-color: #fff !important;
+}
+
+.our-product-section__h2,
+.our-service-section__h2,
+.aboutus-sections-expertise__h2 {
+    font-size: 3.5rem !important;
+    line-height: 3rem !important;
+    margin-bottom: 3rem !important;
+    color: var(--my-primary) !important;
+    text-align: center !important;
+}
+
+.our-service-content,
+.our-product-content {
+    align-self: center !important;
+}
+
+.our-service-section__img,
+.our-product-section__img {
+    width: 75rem;
+    padding: 4rem 1rem;
+    height: 100%;
+    object-fit: cover;
+    clear: both !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.our-product-section__ul {
+    list-style-type: disc !important;
+    margin-left: 35px !important;
+}
+
+
+/* .our-product-section p {
+    margin-bottom: 10px !important;
+} */
+
+p {
+    color: #242627 !important;
 }

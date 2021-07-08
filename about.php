@@ -13,7 +13,7 @@
 		<?php include 'top_header_bar.php'; ?>
 
 		<div class="site-content">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
@@ -22,67 +22,67 @@
 				</div>
 			</div>
 
-			<div class="container-fluid">
-				<div class="row mb-4">
-					<div class="col-sm-6">
-						<h4>About Us:</h4>
+			<div class="container-fluidz ">
+				<section class="row mb-4 aboutus-sections">
+					<div class="col-sm-12">
+						<h2 class="aboutus-sections-expertise__h2">About Us:</h2>
 						<p>PadmaavathyArtCrafts came into existence in the year 2008. The firm has won accolades all over the domain by offering high grade PVC Films also offering a wide range of printing solution in INDIA. It includes commercial printed products, stationary Products .Our firm Located at Sivakasi , the firm is managed under the proficient headship of its founder, Mr. V.Jeganathan .</p>
 					</div>
-					<div class="col-sm-6">
+					<!-- <div class="col-sm-6">
 						<img src="custom/images/dummyHd.png" style="width: 100%; height: 100%; object-fit:cover;">
-					</div>
-				</div>
+					</div> -->
+				</section>
                            
-                <div class="row mb-4">
-                    <div class="col-sm-6">
+                <section class="row mb-4 aboutus-sections">
+                    <!-- <div class="col-sm-6">
 						<img src="custom/images/dummyHd.png" style="width: 100%; height: 100%; object-fit:cover;">					
-					</div>
-					<div class="col-sm-6">
-						<h4>Our Mission:</h4>
+					</div> -->
+					<div class="col-sm-12">
+						<h2 class="aboutus-sections-expertise__h2">Our Mission:</h2>
 						<p>
                         To provide end -to- end printing solutions to our clients by developing qualitative, innovative and defect-free solutions at the most competitive prices.<br>
                         To be the preferred global partners for every printing needs and strive to set a bench mark with our qualitative, precise, functional, flexible and customized solutions.<br>
                         Customer satisfaction is our ultimate motto</p>
 					</div>
 					
-				</div>
+				</section>
 
-				<div class="mb-4 expertise-div">
-					<h4>We Expertise in</h4>
+				<section class="mb-4 expertise-div aboutus-sections aboutus-sections-expertise">
+					<h2 class="aboutus-sections-expertise__h2">We Expertise in</h2>
 					<div class="row">
-						<div class="col-sm-3">
-							<i class="expertise-icon fa fa-question-circle-o"></i> 
+						<div class="col-sm-3 expertise-section">
+							<i class="expertise-icon fas fa-print"></i> 
 							<p>
 							Lamination is the process of applying a thin layer of plastic to paper or card sheets to enhance and protect the printed matter.
 							</p>
 						</div>
-						<div class="col-sm-3">
-							<i class="expertise-icon fa fa-question-circle-o"></i> 
+						<div class="col-sm-3 expertise-section">
+							<i class="expertise-icon fas fa-box"></i> 
 							<p>
 							Packaging is more than just your product's pretty face. We are expertise in medical box, Paper and board Packaging boxes.
 							</p>
 						</div>
-						<div class="col-sm-3">
-							<i class="expertise-icon fa fa-question-circle-o"></i> 
+						<div class="col-sm-3 expertise-section">
+							<i class="expertise-icon fas fa-calendar"></i> 
 							<p>
 							Calendar is the easiest way to get attached with end customers. We are expertice in Office, Daily, Die-Cut, Table, Wall calendars.
 							</p>
 						</div>
-						<div class="col-sm-3">
-							<i class="expertise-icon fa fa-question-circle-o"></i> 
+						<div class="col-sm-3 expertise-section">
+							<i class="expertise-icon fas fa-book-open"></i> 
 							<p>
 							Textbook are produced to meet the needs of educators, usually at educational institutions like schools and colleges. We are expertise in ruled, Un-ruled, record-books.
 							</p>
 						</div>
 					</div>
-				</div>
+				</section>
 
-				<div class=" my-5 bg-light p-2 infrastructure-div">
+				<section class=" my-5 bg-light p-2 infrastructure-div aboutus-sections">
 					<div class="">
-						<h4>Infrastructure:</h4>
+						<h2 class="aboutus-sections-expertise__h2">Infrastructure:</h2>
 						<p class="text-center text-dark font-weight-bold">We are currently situated in a factory space of XX,XXX square feet across 2 locations in the printing city of Sivakasi.</p>
 						
-						<ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
+						<ul class="nav nav-tabs my-3" id="pills-tab" role="tablist">
 							<li class="nav-item" role="presentation">
 								<button class="nav-link active" id="pills-lamination-tab" data-bs-toggle="pill" data-bs-target="#pills-lamination" type="button" role="tab" aria-controls="pills-lamination" aria-selected="true">Lamination</button>
 							</li>
@@ -130,17 +130,17 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 
-                <div class="row mb-4">
-					<div class="col-sm-6">
+                <section class="row mb-4 aboutus-sections">
+					<!-- <div class="col-sm-6">
 						<img src="custom/images/dummyHd.png" style="width: 100%; height: 100%; object-fit:cover;">						
-					</div>
-                    <div class="col-sm-6">
-						<h4>Our Team:</h4>
+					</div> -->
+                    <div class="col-sm-12">
+						<h2 class="aboutus-sections-expertise__h2">Our Team:</h2>
 						<p>Our team is our biggest strength. All work as a family and every member in our family is special .Each one in the team has their own specialist background to be able to add value to the job.</p>
 					</div>
-				</div>
+				</section>
 
 			</div>
 		</div><!-- #content -->

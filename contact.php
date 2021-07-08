@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-	<?php session_start(); ?>	
+	<?php session_start(); ?>
 	<title>Contact - Tyche Demo</title>
 	<?php include 'head.php'; ?>
 </head>
@@ -13,7 +13,7 @@
 		<?php include 'top_header_bar.php'; ?>
 
 		<div class="site-content">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="home.php"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Contact</span></div>
@@ -21,10 +21,10 @@
 				</div>
 			</div>
 
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="custom-page-title">Contact</h2>
+						<h2 class="custom-page-title mb-5">Contact</h2>
 					</div>
 				</div>
 
@@ -40,7 +40,7 @@
 										<span class="fa fa-mobile"></span>
 									</div>
 									<div class="text">
-										GIVE US A CALL <span><a href="tel:+9100000 00001" class="text-dark">+91-00000 00001</a></span>
+										GIVE US A CALL <span><a href="tel:+9195661 30131" class="text-dark">+91-95661 30131</a></span>
 									</div>
 								</div>
 							</div>
@@ -50,7 +50,7 @@
 										<span class="fa fa-map-marker"></span>
 									</div>
 									<div class="text">
-										OUR LOCATION <span><a href="https://goo.gl/maps/CLT2AtRYdGBDG7nN8" target="_blank" class="text-dark">Meenakshi temple</a></span>
+										OUR LOCATION <span><a href="https://goo.gl/maps/1EQFuhB4JeuZsEz2A" target="_blank" class="text-dark">Hussain Colony, Sivakasi-189</a></span>
 									</div>
 								</div>
 							</div>
@@ -65,7 +65,7 @@
 								<p role="status" aria-live="polite" aria-atomic="true"></p>
 								<ul></ul>
 							</div> -->
-							<form action="#" method="post" class="card-body wpcf7-form init" novalidate="novalidate" data-status="init">
+							<form action="backend/mail.php" method="post" class="card-body wpcf7-form init" >
 								<div style="display: none;">
 									<input type="hidden" name="_wpcf7" value="98" />
 									<input type="hidden" name="_wpcf7_version" value="5.3" />
@@ -88,7 +88,8 @@
 						</div>
 					</div>
 					<div class="col-md-6 col12 mx-auto">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62890.510322673385!2d78.0545858986495!3d9.879125341062089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c58461e46987%3A0xf134621ce5286703!2sMeenakshi%20Amman%20Temple!5e0!3m2!1sen!2sin!4v1606630291118!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62890.510322673385!2d78.0545858986495!3d9.879125341062089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c58461e46987%3A0xf134621ce5286703!2sMeenakshi%20Amman%20Temple!5e0!3m2!1sen!2sin!4v1606630291118!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.6077852294593!2d77.8052654147899!3d9.455747893225563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06cef184b6e093%3A0xa7dd7cf0a83ab193!2sPadmaavathy%20Art%20Crafts!5e0!3m2!1sen!2sin!4v1623587475389!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
 					<!-- <div class="col-md-6 col-12">
 						<div id="tyche-map">
@@ -109,10 +110,10 @@
 			</div>
 		</div><!-- #content -->
 
-		
+
 		<?php include 'footer.php'; ?>
-    	<?php include 'scripts.php'; ?>
-	
+		<?php include 'scripts.php'; ?>
+
 </body>
 
 </html>

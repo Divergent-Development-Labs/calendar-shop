@@ -15,7 +15,8 @@
 		}
 
 		.zoom:hover {
-		transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+			background-color: var(--my-primary-transparent) !important;
+			transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 		}
 	</style>
 	<style>
@@ -48,14 +49,14 @@ $designArray = $conn->query($sql3);
 		<?php include 'top_header_bar.php'; ?>
 
 		<div class="site-content bg-white">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<!-- <nav class="woocommerce-breadcrumb">Home -->
 					</div>
 				</div>
 				<div class="row mt-4">
-					<div class="col-md-3 col-12">
+					<div class="col-md-3 col-12 custom-sidebar-filter">
 						<h5 class="font-weight-bold text-dark"><span>Calendar Type</span></h5>
 						<div class="woocommerce-ordering float-none" style="width: 100% !important;">
 							<div class="styled-select">

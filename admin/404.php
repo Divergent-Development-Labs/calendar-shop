@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="utf-8" />
-        <title>404 Error Page | Skote - Responsive Bootstrap 4 Admin Dashboard</title>
+        <title>404 Error Page | Calendar Shop Admin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="author" />
@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-center mb-5">
-                            <h1 class="display-2 font-weight-medium">4<i class="bx bx-buoy bx-spin text-danger display-3"></i>4</h1>
+                            <h1 class="display-2 font-weight-medium">4<i class="bx bx-buoy bx-spin text-my-primary display-3"></i>4</h1>
                             <h4 class="text-uppercase">Sorry, page not found</h4>
                             <div class="mt-5 text-center">
                                 <a class="btn btn-danger waves-effect waves-light" href="dashboard.php">Back to Home</a>

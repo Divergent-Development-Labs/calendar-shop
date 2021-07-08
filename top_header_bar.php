@@ -1,18 +1,18 @@
       <!-- Top Header Bar -->
       <header class="top-header-bar-container">
-          <div class="container-fluid">
+          <div class="container-fluid px-3">
                 <ul class="top-header-bar">
                     <!-- Email -->
-                    <li class="top-email">
-                        <a href="mailto:dummy@gmail.com" class="ybtn  text-white">
+                    <li class="top-email ">
+                        <a href="mailto:dummy@gmail.com" class="ybtn text-white top-header-bar__mail-btn">
                             <i class="fa fa-envelope-o"></i> dummy@gmail.com
                         </a>
                     </li>
                     <!-- / Email -->
                     <!-- Cart -->
-                    <li class="top-cart" <?php echo ($userId != null) ? $userId : 'hidden'; ?>>
+                    <li class="top-cartz" <?php echo ($userId != null) ? $userId : 'hidden'; ?>>
                         <!-- <button type="button" data-toggle="modal" data-target="#cartModal" >Cart</button> -->
-                        <a href="cart.php"><i class="fa fa-shopping-cart"></i> My Cart - &#x20B9;
+                        <a href="cart.php" class="top-header-bar__cart-btn"><i class="fa fa-shopping-cart"></i> My Cart - &#x20B9;
                         <span class="price" id="cart_price">
                             <?php 
                                 $sql = "SELECT SUM(cost) as totalcost FROM `carts` WHERE `carts`.`customer`='$userId'";
@@ -29,21 +29,21 @@
                     <?php if($userId && $userId != null){ ?>
                     <!-- Account -->
                     <li class="top-account">
-                        <a href="orders.php" id="accountLink" data="<?php echo $userId;?>"><i class="fa fa-user"></i> <?php echo $userName; ?>
+                        <a href="orders.php" class=" top-header-bar__white-border-btn" id="accountLink" data="<?php echo $userId;?>"><i class="fa fa-user"></i> <?php echo $userName; ?>
                         </a>
                     </li>
                     
                     <!-- / Account -->
                     <?php } else { ?>
                     <!-- New user -->
-                    <li class="top-cart">
-                        <a href="new-user-register.php"><i class="fa fa-file-text"></i> New User</a>
+                    <li class="top-new-user ">
+                        <a href="new-user-register.php"  class=" top-header-bar__white-border-btn"><i class="fa fa-file-text"></i> New User</a>
                     </li>
                     <!-- / New user -->
 
                     <!-- Account -->
                     <li class="top-account">
-                        <a href="login.php"><i class="fa fa-sign-in"></i> Login
+                        <a href="login.php" class=" top-header-bar__white-border-btn"><i class="fa fa-sign-in"></i> Login
                         </a>
                     </li>
                     <!-- / Account -->
@@ -51,8 +51,8 @@
 
                     <?php if($userId && $userId != null){ ?>
                     <!-- Logout -->
-                    <li class="top-account">
-                        <a href="logout.php"><i class="fa fa-sign-out"></i> Logout
+                    <li class="top-account top-header-bar__white-border-btn">
+                        <a href="logout.php" class="white-border-btn"><i class="fa fa-sign-out"></i> Logout
                         </a>
                     </li>
                     <!-- / Logout -->
