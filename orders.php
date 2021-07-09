@@ -103,53 +103,6 @@
 
 									</form>
 
-									<!-- <div class="cart-collaterals">
-										<div class="cart_totals ">
-
-
-											<h2>Order totals</h2>
-
-											<table cellspacing="0" class="shop_table shop_table_responsive">
-
-												<tbody>
-													<tr class="cart-subtotal">
-														<th>Subtotal</th>
-														<td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#x20B9; </span><span id="subtotalCost"></span></bdi></span></td>
-													</tr>
-
-													<tr class="tax-rate tax-rate-us-ny-state-tax-1">
-														<th>CGST</th>
-														<td data-title="State Tax"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#x20B9; </span><span id="cgstCost"></span></span></td>
-													</tr>
-
-													<tr class="tax-rate tax-rate-us-ny-state-tax-1">
-														<th>SGST</th>
-														<td data-title="State Tax"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#x20B9; </span><span id="sgstCost"></span></span></td>
-													</tr>
-
-													<tr class="order-total">
-														<th>Total</th>
-														<td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#x20B9; </span><span  id="totalCost"></span></bdi></span></strong> </td>
-													</tr>
-
-
-												</tbody>
-											</table>
-
-											<div class="wc-proceed-to-checkout text-right">
-												<form method="post" id="make_order_form" action="backend/insert-order-backend.php">
-													<input hidden type="text" name="customer_id" id="customer_id" value="<?php echo $userId; ?>">
-													<input hidden type="text" name="orderData" id="orderData">
-													<input hidden type="text" name="totalOrderData" id="totalOrderData">
-
-													<button type="submit" name="saveBtn" class="checkout-button button alt wc-forward make_order" <?php echo $userId; ?> >Make Order</button>
-												</form>
-											</div>
-
-
-										</div>
-									</div> -->
-
 								</div>
 							</article><!-- #post-## -->
 

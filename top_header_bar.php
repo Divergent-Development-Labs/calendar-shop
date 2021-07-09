@@ -60,20 +60,6 @@
                     <!-- / Logout -->
                     <?php } ?>
 
-                    <!-- Top Search -->
-                    <!-- <li class="top-search"> -->
-                        <!-- Search Form -->
-                        <!-- <form role="search" method="get" class="pull-right" id="searchform_topbar" action="">
-                            <label>
-                                <span class="screen-reader-text"></span>
-                                <input class="search-field-top-bar" id="search-field-top-bar" placeholder="Search ..." value="" name="s" type="search" />
-                            </label>
-                            <button id="search-top-bar-submit" type="submit" class="search-top-bar-submit">
-                                <span class="fa fa-search"></span>
-                            </button>
-                        </form> -->
-                    <!-- </li> -->
-                    <!-- / Top Search -->
                 </ul>
           </div>
       </header>
@@ -83,42 +69,7 @@
               <div class="d-flex justify-content-start">
                   <div class="header-logo">
                       <a href="home.php" class="custom-logo-link" rel="home" aria-current="page"><img width="150" height="70" src="wp-contents/uploads/sites/64/2017/06/logo.png" class="custom-logo" alt="Tyche Demo" /></a>
-                  </div>
-                  <!-- <div class="align-self-center hidden-sm mb-2 mx-4">
-                    <nav class="navbar">
-                        <ul id="desktop-menuz" class="sf-menu navbar-nav">
-                            <li itemscope="itemscope" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
-                                <a title="Home" href="home.php">Home</a>
-                            </li>
-                            <li itemscope="itemscope" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
-                                <a title="Home" href="index.php">Shop</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-togglez" href="javascript:void(0)" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Our Services
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="our-services.php#PVC-Manufacturing">PVC Manufacturing</a></li>
-                                    <li><a class="dropdown-item" href="our-services.php#WEB-Printing">WEB Printing</a></li>
-                                    <li><a class="dropdown-item" href="our-services.php#Offset-Printing">Offset Printing</a></li>
-                                    <li><a class="dropdown-item" href="our-services.php#Calendar">Calendar</a></li>
-                                    <li><a class="dropdown-item" href="our-services.php#NoteBooks">NoteBooks</a></li>
-                                </ul>
-                            </li>         
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-togglez" href="javascript:void(0)" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Our Products
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="our-products.php#PVC-Laminatation-Flim">PVC Laminatation Flim</a></li>
-                                    <li><a class="dropdown-item" href="our-products.php#Monthly-Calendar">Monthly Calendar</a></li>
-                                    <li><a class="dropdown-item" href="our-products.php#Daily-Calendar-Slip">Daily Calendar Slip</a></li>
-                                    <li><a class="dropdown-item" href="our-products.php#Daily-Calendar">Daily Calendar</a></li>
-                                    <li><a class="dropdown-item" href="our-products.php#Die-Cut-Calendar">Die-Cut Calendar</a></li>
-                                    <li><a class="dropdown-item" href="our-products.php#Table-Calendar">Table Calendar</a></li>
-                                    <li><a class="dropdown-item" href="our-products.php#Note-Books">Note Books</a></li>
-                                </ul>
-                            </li>                  
+                  </div>          
                             <?php if($userId && $userId != null){ ?>
                             <li itemscope="itemscope" id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
                                 <a title="Orders" href="orders.php">Orders</a>

@@ -91,20 +91,6 @@
 						<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62890.510322673385!2d78.0545858986495!3d9.879125341062089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c58461e46987%3A0xf134621ce5286703!2sMeenakshi%20Amman%20Temple!5e0!3m2!1sen!2sin!4v1606630291118!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.6077852294593!2d77.8052654147899!3d9.455747893225563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06cef184b6e093%3A0xa7dd7cf0a83ab193!2sPadmaavathy%20Art%20Crafts!5e0!3m2!1sen!2sin!4v1623587475389!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
-					<!-- <div class="col-md-6 col-12">
-						<div id="tyche-map">
-							<div class="clear-float" style=" width:100%; margin:0px auto;">
-							</div>
-							<div class="huge_it_google_map_container">
-								<div id="huge_it_google_map_4528" data-map_id="1" class="huge_it_google_map" style="
-									position:relative !important;
-									height:300px;
-									width:100%;
-									border-radius:0px;
-									margin:0px auto;" data-name="ColorlibMap" data-type="ROADMAP" data-zoom="18" data-min-zoom="0" data-max-zoom="22" data-locator-enabled="0" data-img-url="https://demo.colorlib.com/tyche/wp-contents/plugins/google-maps/assets/images/" data-border-radius="0" data-center-lat="40.7127837" data-center-lng="-74.0059413" data-pan-controller="1" data-zoom-controller="1" data-type-controller="1" data-scale-controller="1" data-street-view-controller="1" data-overview-map-controller="1" data-width="100" data-height="300" data-align="center" data-info-type="click" data-open-infowindows-onload="0" data-animation="none" data-language="location based" data-draggable="1" data-wheel-scroll="1" data-traffic-layer="0" data-bike-layer="0" data-transit-layer="0" data-styling-hue="" data-styling-lightness="0" data-styling-gamma="1" data-styling-saturation="0"></div>
-							</div>
-						</div>
-					</div> -->
 				</div>
 
 			</div>

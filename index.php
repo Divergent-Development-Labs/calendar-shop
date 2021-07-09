@@ -136,14 +136,6 @@ $designArray = $conn->query($sql3);
 								</ul>
 							</div>
 						</div>
-						<!-- <div class="row text-center">
-							<ul class="tyche-pager">
-								<li class="active"><a href="index.php">1</a></li>
-								<li><a href="shop-page-2.php">2</a></li>
-								<li><a href="shop-page-2.php"><span class="pager-text right">NEXT</span> <span class="fa fa-long-arrow-right"></span></a></li>
-							</ul>
-						</div> -->
-
 					</div>
 				</div>
 			</div>

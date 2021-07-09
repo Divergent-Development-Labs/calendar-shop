@@ -56,11 +56,6 @@
 
 
 									<p class="form-row">
-										<!-- <label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
-											<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span>Remember me</span>
-										</label> -->
-										<!-- <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="0d78ba4afa" />
-										<input type="hidden" name="_wp_http_referer" value="/tyche/my-account/" />  -->
 										<button type="submit" class="mx-auto woocommerce-button button woocommerce-form-login__submit" name="loginBtn" value="Log in">Log in</button>
 									</p>
 									<p class="woocommerce-LostPassword lost_password">

@@ -1,36 +1,3 @@
-<!-- Footer -->
-<!-- <footer id="colophon" class="site-footer" role="contentinfo">
-    <div class="widgets-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div id="meta-4" class="widget widget_meta">
-                        <h5 class="widget-title"><span>Meta</span></h5>
-                        <ul>
-                            <li><a rel="nofollow" href="wp-login.php">Log in</a></li>
-                            <li><a href="feed/">Entries feed</a></li>
-                            <li><a href="comments/feed/">Comments feed</a></li>
-
-                            <li><a href="https://wordpress.org/">WordPress.org</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div id="text-3" class="widget widget_text">
-                        <h5 class="widget-title"><span>About</span></h5>
-                        <div class="textwidget">
-                            <p>Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam.</p>
-                            <p>Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu, id illud principes has. Nam tempor utamur gubergren no.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer> -->
-<!-- / Footer -->
-
 <!-- Copyright -->
 <footer class="site-copyright">
     <div class="site-info ">

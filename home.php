@@ -110,8 +110,6 @@
               <div class="col-xs-12">
                 <h2 class="mt-5 custom-home-page-title">Leading Daily Calendar and Monthly Calendar Manufacturers in Madurai.</h2>
                 <p class="mx-5 text-center">Manish Packaging Pvt. Ltd., came into existence in the year 1970. The firm has won accolades all over the domain by offering high grade PVC Films to the clients. Located at Surat (Gujarat), the firm is managed under the proficient headship of its mentor,Â Mr. K. B. Patel who is having a vast experience in the domain. The firm has carved a niche in the Packaging Industry as a trusted PVC Films Manufacturer and Exporter.
-                    <!-- We ABC Calendars is an most reputed printing company in Madurai. ABC Calendars founded in the year 2010 by XYZ as small printing company in sivakasi. Now ABC Calendars is grown as a big tree with the help of its Customers due to its quality service.
-                    We always provide quality printing service to our reputed Customers at an affordable price. Also we provide dedicated customer support to get their Printing needs fulfilled. Now we are making our step towards global printing service through Website. -->
                 </p>
               </div>
             <div class="col-xs-12">
