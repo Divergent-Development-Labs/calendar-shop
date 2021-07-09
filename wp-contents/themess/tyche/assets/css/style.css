@@ -4931,7 +4931,7 @@ a:active {
 }
 
 @media (max-width: 767px) {
-    .top-header-bar-container .top-header-bar li {
+    /* .top-header-bar-container .top-header-bar li {
         width: 100% !important;
         display: inline-block !important;
         border: none !important;
@@ -4939,7 +4939,7 @@ a:active {
         margin: 0 !important;
         padding-left: 15px !important;
         padding-right: 15px !important;
-    }
+    } */
     .top-header-bar-container .top-header-bar li.top-account,
     .top-header-bar-container .top-header-bar li.top-multilang {
         border-left: none !important;

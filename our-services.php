@@ -14,7 +14,7 @@
 
 		<div class="site-content">
 			<div class="container">
-				<div class="row d-block">
+				<div class="row ">
 					<div class="col-xs-12">
 						<div class="tyche-breadcrumbs"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="home.php"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Our Services</span></div>
 					</div>
@@ -40,7 +40,7 @@
 					</a>
 				</section>
 				<section class=" our-service-section">
-					<a  id="WEB-Printing" class="row d-block">
+					<a  id="WEB-Printing" class="row ">
 						<div class="col-lg-6 col-12 our-service-content">
 							<h2 class="our-service-section__h2" >WEB Printing:</h2>
 							<p class="our-service-section__p">Web offset presses and Web offset machines are used to print on both sides of paper roll (web). Web presses are ideal for printing Daily Calendar Poster, newspapers, books and other both side printing jobs. Being high production machines, Web offset presses are known for their voluminous nature. Since, it is high speed and offer color on both sides, per copy cost of any printed product on these machines, is lowest in the world. Web offset presses also offer great advantage of integrated folding capability as in case of books. This helps in saving huge amount of money in bindery or other offline folding methods.</p>
@@ -62,7 +62,7 @@
 					</a>
 				</section>
 				<section class=" our-service-section">
-					<a  id="Calendar" class="row d-block">
+					<a  id="Calendar" class="row ">
 						<div class="col-lg-6 col-12 our-service-content">
 							<h2 class="our-service-section__h2" >Calendar:</h2>
 							<p class="our-service-section__p">THE POWER OF Calendar is TO GROW YOUR BRAND AND REACH YOUR AUDIENCES. Showcase your brand with custom Calendar printing services that will make your client smile all year long. One gift, twelve surprises. Personalized Calendar with Your Photos, Company Logos, Brand Quotes. Our various Monthly calendars, Religious Calendars, Daily Calendars, Desk Calendars with variety of designs, shapes, & sizes as per your requirement and budget.</p>
@@ -84,13 +84,15 @@
 					</a>
 				</section>
 				<section class=" our-service-section our-service-section">
-					<div class="col-lg-6 col-12 our-service-content">
-						<h2 class="our-service-section__h2" >Packaging and Labeling:</h2>
-						<p class="our-service-section__p">Packaging is the face of your product, technology of enclosing or protecting products for distribution, storage, sale, and use. We PadmaavathyArtCrafts are expert in manufacturing of Cosmetic Box, Pharmaceutical box, Sweet Box and printed carton box</p>
-					</div>
-					<div class="col-lg-6 col-12 ">
-						<img src="custom/images/dummyHd.png" class="our-service-section__img">
-					</div>
+					<a  id="Packaging" class="row">
+						<div class="col-lg-6 col-12 our-service-content">
+							<h2 class="our-service-section__h2" >Packaging and Labeling:</h2>
+							<p class="our-service-section__p">Packaging is the face of your product, technology of enclosing or protecting products for distribution, storage, sale, and use. We PadmaavathyArtCrafts are expert in manufacturing of Cosmetic Box, Pharmaceutical box, Sweet Box and printed carton box</p>
+						</div>
+						<div class="col-lg-6 col-12 ">
+							<img src="custom/images/dummyHd.png" class="our-service-section__img">
+						</div>
+					</a>
 				</section>                                                         
 			</div>
 		</div><!-- #content -->

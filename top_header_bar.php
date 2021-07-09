@@ -5,22 +5,24 @@
                     <!-- Email -->
                     <li class="top-email ">
                         <a href="mailto:dummy@gmail.com" class="ybtn text-white top-header-bar__mail-btn">
-                            <i class="fa fa-envelope-o"></i> dummy@gmail.com
+                            <i class="fa fa-envelope-o"></i> padmaavathyartcrafts@gmail.com
                         </a>
                     </li>
                     <!-- / Email -->
                     <!-- Cart -->
-                    <li class="top-cartz" <?php echo ($userId != null) ? $userId : 'hidden'; ?>>
+                    <li class="top-cartz <?php echo ($userId != null || $userId != '') ? $userId : 'd-none'; ?>" >
                         <!-- <button type="button" data-toggle="modal" data-target="#cartModal" >Cart</button> -->
-                        <a href="cart.php" class="top-header-bar__cart-btn"><i class="fa fa-shopping-cart"></i> My Cart - &#x20B9;
-                        <span class="price" id="cart_price">
-                            <?php 
-                                $sql = "SELECT SUM(cost) as totalcost FROM `carts` WHERE `carts`.`customer`='$userId'";
-                                $result = $conn->query($sql);
-                                $cart_price = $result->fetch_assoc()['totalcost'];
-                                echo number_format($cart_price, 2);
-                            ?>
-                        </span>
+                        <a href="cart.php" class=" top-header-bar__white-border-btn">
+                            <i class="fa fa-shopping-cart"></i> 
+                            My Cart - &#x20B9;
+                            <!-- <span class="price" id="cart_price"> -->
+                                <?php 
+                                    $sql = "SELECT SUM(cost) as totalcost FROM `carts` WHERE `carts`.`customer`='$userId'";
+                                    $result = $conn->query($sql);
+                                    $cart_price = $result->fetch_assoc()['totalcost'];
+                                    echo number_format($cart_price, 2);
+                                ?>
+                            <!-- </span> -->
                         </a>
                     </li>
                     <!-- / Cart -->
@@ -51,8 +53,8 @@
 
                     <?php if($userId && $userId != null){ ?>
                     <!-- Logout -->
-                    <li class="top-account top-header-bar__white-border-btn">
-                        <a href="logout.php" class="white-border-btn"><i class="fa fa-sign-out"></i> Logout
+                    <li class="top-account">
+                        <a href="logout.php" class="top-header-bar__white-border-btn"><i class="fa fa-sign-out"></i> Logout
                         </a>
                     </li>
                     <!-- / Logout -->

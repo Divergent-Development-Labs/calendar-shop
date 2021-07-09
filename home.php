@@ -42,7 +42,7 @@
           </button>
         </div>   
       </div>
-      <div class="main-slider-bar bg-light our-manthra " style="display: flex !important;">
+      <div class="main-slider-bar bg-light our-manthra w-100" style="display: flex !important;">
         <div class="container">
           <!-- <h4 class="text-dark pt-4">OUR MANTHRAS</h4> -->
           <div class="main-slider-info">
@@ -102,11 +102,11 @@
     </section>
     <!-- / Main Slider -->
 
-    <div class="site-content">
+    <div class="site-content home-page-content">
       <!-- Content Area #1 -->
       <section class="content-area-1z">
         <div class="container-fluidz ">
-          <div class="row home-section home-section-intro">
+          <div class=" home-section home-section-intro" style="width: 100% !important;">
               <div class="col-xs-12">
                 <h2 class="mt-5 custom-home-page-title">Leading Daily Calendar and Monthly Calendar Manufacturers in Madurai.</h2>
                 <p class="mx-5 text-center">Manish Packaging Pvt. Ltd., came into existence in the year 1970. The firm has won accolades all over the domain by offering high grade PVC Films to the clients. Located at Surat (Gujarat), the firm is managed under the proficient headship of its mentor,Â Mr. K. B. Patel who is having a vast experience in the domain. The firm has carved a niche in the Packaging Industry as a trusted PVC Films Manufacturer and Exporter.

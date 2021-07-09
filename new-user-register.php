@@ -16,13 +16,13 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="tyche-breadcrumbs">
-                            <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="home.php"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Cart</span>
+                            <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="home.php"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Register</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container">
-                <div class="row">
+                <div class="row mb-5">
                     <div id="primary" class="border col-md-8 content-area mx-auto p-5">
                         <main id="main" class="site-main" role="main">
                             <div class="woocommerce-billing-fields">

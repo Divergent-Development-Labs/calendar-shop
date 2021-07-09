@@ -8,7 +8,7 @@
 		.zoom {
 		/* padding: 50px; */
 		/* background-color: green; */
-		transition: transform .7s; /* Animation */
+		transition: transform .4s; /* Animation */
 		/* width: 200px; */
 		/* height: 200px; */
 		margin: 0 auto;
@@ -49,14 +49,14 @@ $designArray = $conn->query($sql3);
 		<?php include 'top_header_bar.php'; ?>
 
 		<div class="site-content bg-white">
-			<div class="container">
+			<div class="containerz shop-container">
 				<div class="row">
 					<div class="col-md-12">
-						<!-- <nav class="woocommerce-breadcrumb">Home -->
+						<div class="tyche-breadcrumbs"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="home.php"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Shop</span></div>
 					</div>
 				</div>
-				<div class="row mt-4">
-					<div class="col-md-3 col-12 custom-sidebar-filter">
+				<div class="row mt-1">
+					<div class="col-md-4 col-lg-3 col-12 custom-sidebar-filter">
 						<h5 class="font-weight-bold text-dark"><span>Calendar Type</span></h5>
 						<div class="woocommerce-ordering float-none" style="width: 100% !important;">
 							<div class="styled-select">
@@ -92,9 +92,9 @@ $designArray = $conn->query($sql3);
 						</div>
 					</div>
 
-					<div class="col-md-9 tyche-has-sidebar">
-						<div class="row">
-							<ul class="nav nav-tabs col-sm-5 border-0">
+					<div class="col-md-8 col-lg-9 tyche-has-sidebar">
+						<div class="d-sm-flex flex-wrap">
+							<ul class="nav nav-tabs col-sm-5 border-0 flex-fill">
 								<li class="">
 									<h5 class="">
 										<a href="#designs" data="default" data-toggle="tab" aria-expanded="false" class="nav-link design-tab text-dark">Default</a>
@@ -107,14 +107,18 @@ $designArray = $conn->query($sql3);
 									<h5>
 								</li>
 							</ul>
-							<p class="woocommerce-result-count col-sm-4">Showing <span id="custom-counts" class="d-none"></span><span id="design-counts"></span> of <span id="total-counts"></span> results</p>
-							<input type="text" placeholder="Search By Design" name="designSearchText" id="designSearchText" class="woocommerce-ordering col-sm-3 designSearchText form-control" />
+							<div class=" flex-fill">
+								<p class="woocommerce-result-countz">Showing <span id="custom-counts" class="d-none"></span><span id="design-counts"></span> of <span id="total-counts"></span> results</p>
+							</div>
+							<div class=" flex-fill">
+								<input type="text" placeholder="Search By Design" name="designSearchText" id="designSearchText" class="pl-2 woocommerce-ordering designSearchText search-by-design-input form-control" />
+							</div>
 						</div>
 
 
 						<div class="tab-content">
 							<div class="tab-pane active " id="designs">
-								<ul class="columns-3 products pt-4" id="designsList">
+								<ul class="d-flex flex-wrap products pt-4" id="designsList">
 								</ul>
 							</div>
 

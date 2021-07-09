@@ -507,8 +507,9 @@ td {
 :root {
     /* --my-primary: #F66249 !important; */
     --my-primary: #00A8EA !important;
-    --my-secondary: #02387b !important;
+    --my-primary-lite: #45ccff !important;
     --my-primary-transparent: #f5f7fa !important;
+    --my-secondary: #02387b !important;
 }
 
 .solutions-div h2 {
@@ -579,6 +580,22 @@ td {
 
 .text-my-primary {
     color: var(--my-primary) !important;
+}
+
+.bg-my-secondary {
+    background-color: var(--my-secondary) !important;
+}
+
+.text-my-secondary {
+    color: var(--my-secondary) !important;
+}
+
+.shop-container {
+    padding: 0em 4em !important;
+}
+
+.site-content {
+    min-height: calc(100vh - 60px) !important;
 }
 
 .site-content h4 {
@@ -654,6 +671,14 @@ td {
     color: var(--my-primary) !important; 
 } */
 
+.top-header-bar-container .top-header-bar li:first-child {
+    float: left !important;
+}
+
+.top-header-bar-container .top-header-bar li {
+    padding-left: 15px !important;
+}
+
 .top-header-bar__white-border-btn {
     border: 1px solid white !important;
     padding: 0.8rem !important;
@@ -666,13 +691,18 @@ td {
 
 .top-header-bar__cart-btn:hover,
 .top-header-bar__white-border-btn:hover {
-    background-color: #fff !important;
-    color: #fff !important;
-    border-color: #fff !important;
+    background-color: #FFF !important;
+    color: var(--my-primary) !important;
+    border-color: #FFF !important;
+}
+
+.top-header-bar__white-border-btn span:hover {
+    color: var(--my-primary) !important;
 }
 
 .site-header {
-    background-image: linear-gradient( 180deg, var(--my-secondary), var(--my-primary)) !important;
+    padding: 0rem 1rem !important;
+    background-image: linear-gradient( 180deg, var(--my-primary-lite), var(--my-primary)) !important;
 }
 
 #mobile-menu-trigger i {
@@ -684,6 +714,23 @@ td {
     border-color: var(--my-primary);
     border-bottom: none !important;
     color: var(--my-primary);
+}
+
+#designSearchText {
+    padding: 3px 5px !important;
+}
+
+.add_to_cart_button {
+    background-color: var(--my-primary) !important;
+    color: #fff !important;
+    margin: 1rem 0rem !important;
+    padding: 0.5rem 2rem !important;
+    font-size: 1.5rem !important;
+}
+
+.add_to_cart_button:hover {
+    color: #fff !important;
+    background-color: var(--my-secondary) !important;
 }
 
 .reasons-div ul {
@@ -711,8 +758,9 @@ td {
 }
 
 .custom-sidebar-filter {
-    background: var(--my-primary-transparent);
+    background: var(--my-primary-transparent) !important;
     padding: 1.5rem !important;
+    height: 100vh !important;
 }
 
 .infrastructure-div .tab-content {
