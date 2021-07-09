@@ -1,30 +1,28 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
     let profile_id = ($('#profileId').attr('value'));
-    if(!profile_id){
+    if (!profile_id) {
         profile_id = 'all';
     }
-    // console.log(profile_id);
 
-    $('#dz').DataTable( {
+    $('#dz').DataTable({
 
         "processing": true,
         "serverSide": true,
         "buttons": true,
         dom: 'Blfrtip',
-        buttons: [
-            {
+        buttons: [{
                 extend: 'copy',
                 footer: true,
                 exportOptions: {
-                    columns: [0,1,2,3,4,5,6]
+                    columns: [0, 1, 2, 3, 4, 5, 6]
                 }
             },
             {
                 extend: 'print',
                 footer: true,
                 exportOptions: {
-                    columns: [0,1,2,3,4,5,6]
+                    columns: [0, 1, 2, 3, 4, 5, 6]
                 }
             },
             {
@@ -35,15 +33,14 @@ $( document ).ready(function() {
 
         "searching": true,
         "ajax": ({
-            url:"ajax/loadOrderData.php",
-            method:"get",
-            data:{
+            url: "ajax/loadOrderData.php",
+            method: "get",
+            data: {
                 customer_id: profile_id
             },
-            dataType:"json",
+            dataType: "json",
         }),
-        columns: [            
-            {
+        columns: [{
                 data: 'id'
             },
             {
@@ -73,64 +70,49 @@ $( document ).ready(function() {
 
 });
 
-function doPayment(orderId){
+function doPayment(orderId) {
 
-    console.log(switchElement = $(event.target));
-    
+    switchElement = $(event.target);
     targetId = $(event.target).attr('id');
-    
-    console.log(state = $(switchElement).prop('checked'));
-
-    paymentElement = $('#span'+targetId);
-
-    console.log(orderId, $(paymentElement));
-
-    console.log('doPayment calling');
-
+    state = $(switchElement).prop('checked');
+    paymentElement = $('#span' + targetId);
     error = 2;
 
-    if(orderId!="")
-    {
+    if (orderId != "") {
 
         var r = confirm("Are you sure to change the Payment Status?");
 
         if (r != true) {
             $(switchElement).prop('checked', !state);
             return false;
-        }
-        else{
-            if(state == true){
-                    isPaid = true;
-            }
-            else{
+        } else {
+            if (state == true) {
+                isPaid = true;
+            } else {
                 isPaid = false;
-            }    
+            }
         }
 
 
         $.ajax({
-            url:"ajax/doPayment.php",
-            method:"post",
-            data:{
-                orderId:orderId,
+            url: "ajax/doPayment.php",
+            method: "post",
+            data: {
+                orderId: orderId,
                 isPaid: isPaid,
             },
-            dataType:"json",
-            success:function(data)
-            {
-                console.log((data));
-                if(data && data == 1){
+            dataType: "json",
+            success: function(data) {
+                if (data && data == 1) {
                     alert('Payment Status changed');
-                    if(state == true){
+                    if (state == true) {
                         $(paymentElement).html('Paid');
-                    }
-                    else{
+                    } else {
                         $(paymentElement).html('Unpaid');
                     }
-                
+
                     amtCalc();
-                }
-                else{
+                } else {
                     alert('Someting went wrong 1');
                     $(switchElement).prop('checked', !state);
                     error = 1;
@@ -138,9 +120,7 @@ function doPayment(orderId){
             }
         });
 
-    }   
-    else
-    {
+    } else {
         alert('Something went wrong..!');
         error = 1;
         $(switchElement).prop('checked', !state);

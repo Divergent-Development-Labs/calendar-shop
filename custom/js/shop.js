@@ -1,33 +1,22 @@
 $(window).on('load', function() {
     // code here
-    console.log('shop.js record retrieve calling');
     var txt = '';
     let size = $('#size_menu').find('option:selected').text();
     let type = $('#calendar_type_menu').val();
     let rate = $('#size_menu').find('option:selected').val();
-
-    console.log(txt, type, size, rate);
-
     retrieveDesignRecords(txt, type, size, rate);
-
 });
 
 $(document).ready(function() {
 
     let userId = $('#accountLink').attr('data');
-
-    console.log(userId);
-
     $("#designSearchText").keyup(function() {
-        console.log('shop.js record retrieve calling');
         var txt = $(this).val();
         let size = $('#size_menu').find('option:selected').text();
         let type = $('#calendar_type_menu').val();
         let rate = $('#size_menu').find('option:selected').val();
 
         recordError = $(this).next();
-        console.log(recordError, txt, type, size, rate);
-
         retrieveDesignRecords(txt, type, size, rate);
     });
 
@@ -36,7 +25,6 @@ $(document).ready(function() {
 });
 
 function designTabSelection() {
-    console.log($(this));
     var designTab = $(this).attr('data');
     if (designTab == 'custom') {
         $('#custom-counts').removeClass('d-none');
@@ -45,13 +33,9 @@ function designTabSelection() {
         $('#design-counts').removeClass('d-none');
         $('#custom-counts').addClass('d-none');
     }
-    console.log($(this).attr('data'));
-    console.log(designTab);
 }
 
 function retrieveDesignRecords(txt, type, size, rate) {
-    console.log('design.js record retrieve calling');
-
     listDiv = $('#designsList');
     designCounts = $('#design-counts');
     customCounts = $('#custom-counts');
@@ -77,11 +61,6 @@ function retrieveDesignRecords(txt, type, size, rate) {
         success: function(data) {
             let userId = $('#accountLink').attr('data');
 
-            console.log(userId);
-
-            console.log('userId : ' + userId);
-            console.log(data);
-            console.log(data.length);
             if (data[0]) {
                 data.forEach(element => {
                     if (element.user_id == 0 || element.user_id == userId) {
@@ -125,7 +104,6 @@ function retrieveDesignRecords(txt, type, size, rate) {
                 $(customCounts).html(count1);
                 $(designCounts).html(count2);
                 $(totalCounts).html(count2 + count1);
-                console.log(count1, count2);
             } else {
                 if (count2 == 0) {
                     $(listDiv).html('<span class="font-weight-bold mx-auto text-center">No Data Available</span>');
@@ -148,7 +126,6 @@ function selectSize(e, rate) {
         return;
     }
 
-    console.log(txt, type, size, rate);
     retrieveDesignRecords(txt, type, size, rate);
 }
 
@@ -164,7 +141,6 @@ function selectCalendarType(e) {
     } else {
         rate = $('#size_menu').find('option:selected').val();
     }
-    console.log(txt, type, size, rate);
     retrieveDesignRecords(txt, type, size, rate);
 }
 
@@ -178,10 +154,7 @@ function addToCart(design_id, design_name, is_custom_design, design_link, type, 
         $(id).removeClass('added');
         $(id).addClass('loading');
 
-        console.log(id);
         var size = $(id).attr('data-product_size');
-        console.log(design_name, design_link, type, size, rate);
-        console.log(id);
 
         $.ajax({
             url: "backend/insert-cart-backend.php",
@@ -196,7 +169,6 @@ function addToCart(design_id, design_name, is_custom_design, design_link, type, 
             },
             dataType: "json",
             success: function(data) {
-                console.log(data);
                 if (data == '1') {
                     setTimeout(() => {
                         $(id).removeClass('loading');
@@ -208,7 +180,6 @@ function addToCart(design_id, design_name, is_custom_design, design_link, type, 
                 } else {
                     // $(id).removeClass('added');    
                     $(id).removeClass('loading');
-                    console.log('Something error ' + data);
                 }
             }
         });
@@ -224,11 +195,8 @@ function addToCart(design_id, design_name, is_custom_design, design_link, type, 
 }
 
 function copyLink(element) {
-    console.log(element);
     var $temp = $("<input>");
     $("body").append($temp);
-
-    console.log($('#' + element).text());
 
     $temp.val($('#' + element).text()).select();
     document.execCommand("copy");

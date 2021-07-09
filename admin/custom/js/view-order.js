@@ -1,60 +1,46 @@
-function doPayment(orderId){
+function doPayment(orderId) {
 
-    console.log(switchElement = $(event.target));
-    
+    switchElement = $(event.target);
     targetId = $(event.target).attr('id');
-    
-    console.log(state = $(switchElement).prop('checked'));
-
-    paymentElement = $('#span'+targetId);
-
-    console.log(orderId, $(paymentElement));
-
-    console.log('doPayment calling');
+    state = $(switchElement).prop('checked');
+    paymentElement = $('#span' + targetId);
 
     error = 2;
 
-    if(orderId!="")
-    {
+    if (orderId != "") {
 
         var r = confirm("Are you sure to change the Payment Status?");
 
         if (r != true) {
             $(switchElement).prop('checked', !state);
             return false;
-        }
-        else{
-            if(state == true){
-                    isPaid = true;
-            }
-            else{
+        } else {
+            if (state == true) {
+                isPaid = true;
+            } else {
                 isPaid = false;
-            }    
+            }
         }
 
 
         $.ajax({
-            url:"ajax/doPayment.php",
-            method:"post",
-            data:{
-                orderId:orderId,
+            url: "ajax/doPayment.php",
+            method: "post",
+            data: {
+                orderId: orderId,
                 isPaid: isPaid,
             },
-            dataType:"json",
-            success:function(data)
-            {
-                console.log((data));
-                if(data && data == 1){
+            dataType: "json",
+            success: function(data) {
+                if (data && data == 1) {
                     alert('Payment Status changed');
-                    if(state == true){
+                    if (state == true) {
                         $(paymentElement).html('Paid');
-                    }
-                    else{
+                    } else {
                         $(paymentElement).html('Unpaid');
                     }
-                
-                }
-                else{
+
+                } else {
                     alert('Someting went wrong 1');
                     $(switchElement).prop('checked', !state);
                     error = 1;
@@ -62,9 +48,7 @@ function doPayment(orderId){
             }
         });
 
-    }   
-    else
-    {
+    } else {
         alert('Something went wrong..!');
         error = 1;
         $(switchElement).prop('checked', !state);

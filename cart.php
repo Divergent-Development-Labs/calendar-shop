@@ -153,21 +153,6 @@
 
 		<?php include 'footer.php'; ?>
 		<?php include 'scripts.php'; ?>
-		<!-- <script type="text/javascript">
-			$('#make_order_form').submit(function(event) {
-				$.confirm({
-					//confirm dialog options...
-					confirm: function() {
-					console.log('Submit the form');
-					},
-					cancel: function() {
-					//Cancel submission
-					console.log('Cancel submission');
-					event.preventDefault();
-					}
-				});
-			});
-		</script> -->
 		<script type="text/javascript" src="custom/js/cart.js"></script>
 </body>
 

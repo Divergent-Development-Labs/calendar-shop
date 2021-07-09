@@ -69,21 +69,7 @@
               <div class="d-flex justify-content-start">
                   <div class="header-logo">
                       <a href="home.php" class="custom-logo-link" rel="home" aria-current="page"><img width="150" height="70" src="wp-contents/uploads/sites/64/2017/06/logo.png" class="custom-logo" alt="Tyche Demo" /></a>
-                  </div>          
-                            <?php if($userId && $userId != null){ ?>
-                            <li itemscope="itemscope" id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
-                                <a title="Orders" href="orders.php">Orders</a>
-                            </li>
-                            <?php } ?>
-                            <li itemscope="itemscope" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
-                                <a title="Home" href="about.php">About Us</a>
-                            </li>                              
-                            <li itemscope="itemscope" id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85">
-                                <a title="Contact" href="contact.php">Contact</a>
-                            </li>
-                        </ul>                  
-                    </nav>
-                  </div>   -->
+                  </div>       
                   <div class="flex-fill text-right">  
                         <button href="#" id="mobile-menu-trigger" class="" onclick="slideMenu()">
                             <i class="fa fa-bars"></i>
