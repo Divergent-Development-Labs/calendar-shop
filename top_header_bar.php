@@ -30,7 +30,7 @@
 
                     <?php if($userId && $userId != null){ ?>
                     <!-- Account -->
-                    <li class="top-account">
+                    <li class="top-accountz">
                         <a href="orders.php" class=" top-header-bar__white-border-btn" id="accountLink" data="<?php echo $userId;?>"><i class="fa fa-user"></i> <?php echo $userName; ?>
                         </a>
                     </li>
