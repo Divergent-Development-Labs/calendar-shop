@@ -1,6 +1,10 @@
 
 <?php
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+
 include '../admin/db/connection.php'; 
 
 session_start();
@@ -10,8 +14,7 @@ if(isset($_POST["removeItem"])) {
     
     $sql2 = "DELETE FROM `carts` WHERE `carts`.`id` = $cart_id";
 
-    if ($conn->query($sql2) === TRUE) {        
-        header('Location: ../index.php');
+    if ($conn->query($sql2) === TRUE) {
         echo "1";
     } else {
         echo "Error: " . $sql2 . "<br>" . $conn->error;
@@ -21,7 +24,7 @@ if(isset($_POST["removeItem"])) {
 else{
     session_destroy();
     echo 'cart id required';
-    header('Location: ../index.php');    
+    // header('Location: ../index.php');    
 } 
     
 

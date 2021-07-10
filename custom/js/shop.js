@@ -50,6 +50,9 @@ function designTabSelection() {
 }
 
 function retrieveDesignRecords(txt, type, size, rate) {
+    let sizeInNumber = size.match(/[0-9]{2}/g);
+    console.log(sizeInNumber);
+
     console.log('design.js record retrieve calling');
 
     listDiv = $('#designsList');
@@ -84,6 +87,7 @@ function retrieveDesignRecords(txt, type, size, rate) {
             console.log(data.length);
             if (data[0]) {
                 data.forEach(element => {
+                    let passData = JSON.parse(JSON.stringify(element));
                     if (element.user_id == 0 || element.user_id == userId) {
                         // let temp = '<li class="zoom border p-0 mx-md-2 mx-lg-3 shadow-sm col-sm-6 col-12 col-md-6 col-lg-5 col-xl-5 mr-md-2 product type-product post-62 status-publish instock product_cat-shirts product_cat-trends product_tag-amari product_tag-shirt has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">';
                         let temp = '<li class="border flex-fillz mx-lg-3 mx-md-2 p-0 product zoom" style="max-width: 30% !important; min-width: 21rem !important">';
@@ -110,7 +114,7 @@ function retrieveDesignRecords(txt, type, size, rate) {
                         if (rate) {
                             temp += '<span class="font-weight-bold"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#x20B9;	</span><span class="product_rate">' + rate + '</span></bdi></span></span></div><br>';
                             temp += `<div class="flex-fill align-self-center">
-                            <a type="button" data-quantity="1" onclick="addToCart(${element.id, element.name, element.is_custom_design, element.design_link, type, rate})" id="add-btn-' + element.id + '" class="btn product_type_simple add_to_cart_button ajax_add_to_cartz" data-product_size=' + size + ' data-product_sku="" aria-label="Add &ldquo; ' + element.name + '&rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a></div></div>\
+                            <a type="button" data-quantity="1" onclick='addToCart("${type}", "${rate}", "${passData.id}", "${passData.name}", "${passData.is_custom_design}", "${passData.design_link}")' id="add-btn-${element.id}" class="btn product_type_simple add_to_cart_button ajax_add_to_cartz" data-product_size="${sizeInNumber}" data-product_sku="" aria-label="Add &ldquo; ${element.name} ' &rdquo; to your cart" rel="nofollow"><span class="fa fa-shopping-cart"></span> Add to cart</a></div></div>\
                             </li>`;
                         }
 
@@ -168,8 +172,21 @@ function selectCalendarType(e) {
     retrieveDesignRecords(txt, type, size, rate);
 }
 
-function addToCart(design_id, design_name, is_custom_design, design_link, type, rate) {
+function addToCart(type, rate, ...arg) {
+    // debugger;
+    console.log(arguments[0], arg);
+    let element = arg;
+
+    console.log('element ', element[0], element[1], element[2], element[3])
+
+    let design_id = element[0];
+    let design_name = element[1];
+    let is_custom_design = element[2];
+    let design_link = element[3];
+
     let userId = $('#accountLink').attr('data');
+
+    console.log(design_id, design_name, is_custom_design, design_link);
 
     if (userId) {
 
@@ -179,7 +196,12 @@ function addToCart(design_id, design_name, is_custom_design, design_link, type, 
         $(id).addClass('loading');
 
         console.log(id);
+
         var size = $(id).attr('data-product_size');
+        let sizeFilter = size.match(/[0-9]{2}/g)
+
+        console.log(sizeFilter);
+
         console.log(design_name, design_link, type, size, rate);
         console.log(id);
 
@@ -191,7 +213,7 @@ function addToCart(design_id, design_name, is_custom_design, design_link, type, 
                 is_custom_design: is_custom_design,
                 design_link: design_link,
                 type: type,
-                size: size,
+                size: sizeFilter[0] + '"x' + sizeFilter[1] + '"',
                 rate: rate,
             },
             dataType: "json",
@@ -215,7 +237,7 @@ function addToCart(design_id, design_name, is_custom_design, design_link, type, 
     } else {
         var con = confirm('Kindly Login into your accout');
         if (con == true) {
-            window.open('login.php', '_blank');
+            window.open('login.php', '_self');
         } else {
             return false;
         }

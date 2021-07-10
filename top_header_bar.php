@@ -1,5 +1,5 @@
-      <!-- Top Header Bar -->
-      <header class="top-header-bar-container">
+ <!-- Top Header Bar -->
+ <header class="top-header-bar-container">
           <div class="container-fluid px-3">
                 <ul class="top-header-bar">
                     <!-- Email -->
@@ -15,20 +15,20 @@
                         <a href="cart.php" class=" top-header-bar__white-border-btn">
                             <i class="fa fa-shopping-cart"></i> 
                             My Cart - &#x20B9;
-                            <!-- <span class="price" id="cart_price"> -->
+                            <label class="price" id="cart_price">
                                 <?php 
                                     $sql = "SELECT SUM(cost) as totalcost FROM `carts` WHERE `carts`.`customer`='$userId'";
                                     $result = $conn->query($sql);
                                     $cart_price = $result->fetch_assoc()['totalcost'];
                                     echo number_format($cart_price, 2);
                                 ?>
-                            <!-- </span> -->
+                            </label>
                         </a>
                     </li>
                     <!-- / Cart -->
 
 
-                    <?php if($userId && $userId != null){ ?>
+                    <?php if($userId && $userId != null && $userId != ''){ ?>
                     <!-- Account -->
                     <li class="top-accountz">
                         <a href="orders.php" class=" top-header-bar__white-border-btn" id="accountLink" data="<?php echo $userId;?>"><i class="fa fa-user"></i> <?php echo $userName; ?>
@@ -44,7 +44,7 @@
                     <!-- / New user -->
 
                     <!-- Account -->
-                    <li class="top-account">
+                    <li class="top-accountz">
                         <a href="login.php" class=" top-header-bar__white-border-btn"><i class="fa fa-sign-in"></i> Login
                         </a>
                     </li>
@@ -69,21 +69,8 @@
               <div class="d-flex justify-content-start">
                   <div class="header-logo">
                       <a href="home.php" class="custom-logo-link" rel="home" aria-current="page"><img width="150" height="70" src="wp-contents/uploads/sites/64/2017/06/logo.png" class="custom-logo" alt="Tyche Demo" /></a>
-                  </div>          
-                            <?php if($userId && $userId != null){ ?>
-                            <li itemscope="itemscope" id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
-                                <a title="Orders" href="orders.php">Orders</a>
-                            </li>
-                            <?php } ?>
-                            <li itemscope="itemscope" id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86">
-                                <a title="Home" href="about.php">About Us</a>
-                            </li>                              
-                            <li itemscope="itemscope" id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85">
-                                <a title="Contact" href="contact.php">Contact</a>
-                            </li>
-                        </ul>                  
-                    </nav>
-                  </div>   -->
+                  </div>
+
                   <div class="flex-fill text-right">  
                         <button href="#" id="mobile-menu-trigger" class="" onclick="slideMenu()">
                             <i class="fa fa-bars"></i>
