@@ -2746,7 +2746,7 @@ a:active {
 .sf-menu>li.sfHover>a:focus,
 .sf-menu>li>a:hover,
 .sf-menu>li>a:focus {
-    color: var(--my-secondary) !important;
+    color: var(--my-primary) !important;
 }
 
 

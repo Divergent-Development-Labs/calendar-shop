@@ -2,9 +2,8 @@
 <footer class="site-copyright">
     <div class="site-info ">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="menu-social" class="menu pull-left">
+                <div class="d-md-flex flex-wrap justify-content-md-between">
+                    <div id="menu-social" class="menu">
                         <ul id="menu-social-items" class="menu-items">
                             <li id="menu-item-88" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88"><a href="http://facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
                             <li id="menu-item-89" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-89"><a href="http://twitter.com"><span class="screen-reader-text">Twitter</span></a></li>
@@ -13,18 +12,24 @@
                             <li id="menu-item-92" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-92"><a href="http://youtube.com"><span class="screen-reader-text">YouTube</span></a></li>
                         </ul>
                     </div>
-                    <div class="copyright-text pull-right">
+                    <div class="copyright-text text-center">
                         Copyright &copy; 2021 <span class="sep">|</span> 
                         <a href="https://kvncloud.com/" target="_blank" style="color: #74788d;" >Developed by KVN Cloud</a>                            
                      </div>
                 </div>
-            </div>
         </div>
     </div>
 </footer><!-- / Copyright -->
 
+<section class="whatsapp-section">
+	<div>
+		<a href="https://wa.me/9566130131" class="whatsapp-link" target="_blank" >
+			<i class="fa fa-whatsapp whatsapp-link-icon" ></i>
+		</a>
+	</div>
+</section>
 <!-- sample modal content -->
-<div id="cartModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+<div id="cartModal" class="modal fade d-none" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
     <div class="modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">

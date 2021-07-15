@@ -51,6 +51,7 @@
 
 <link rel="stylesheet" id="font-awesome-css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css" media="all" />
 <link rel="stylesheet" id="font-awesome-css" href="wp-contents/pluginss/elementor/assets/lib/font-awesome/css/font-awesome.min.css" type="text/css" media="all" />
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 <link rel="stylesheet" id="owlCarousel-css" href="wp-contents/themess/tyche/assets/vendors/owl-carousel/owl.carousel.min.css" type="text/css" media="all" />
 <!-- <link rel="stylesheet" id="owlCarousel-theme-css" href="wp-contents/themess/tyche/assets/vendors/owl-carousel/owl.theme.default.css" type="text/css" media="all" /> -->
 <link rel="stylesheet" id="dashicons-css" href="wp-includes/css/dashicons.min.css" type="text/css" media="all" />

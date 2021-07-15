@@ -49,7 +49,7 @@ $designArray = $conn->query($sql3);
 		<?php include 'top_header_bar.php'; ?>
 
 		<div class="site-content bg-white">
-			<div class="containerz shop-container">
+			<div class="container shop-container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="tyche-breadcrumbs"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="home.php"><span itemprop="title">Home </span></a></span><span class="tyche-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Shop</span></div>

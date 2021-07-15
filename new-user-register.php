@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>New User Register - Tyche Demo</title>
+    <title>New User Register - Calendar Shop</title>
     <?php include 'head.php'; ?>
 </head>
 
